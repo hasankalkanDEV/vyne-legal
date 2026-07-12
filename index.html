@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyne — Privacy Policy</title>
+<style>
+  :root {
+    --paper: #F5F6F1; --surface: #FFFFFF; --ink: #1F231D; --ink-sub: #6B7566; --ink-faint: #97A08D;
+    --line: #DEE2D6; --accent: #4F7A49; --accent-soft: #E3ECDC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #14160F; --surface: #1B1F16; --ink: #EDEFE7; --ink-sub: #9BA491; --ink-faint: #6A7362; --line: #2B3125; --accent: #8FB884; --accent-soft: #20301F; }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--paper); margin: 0; }
+  .doc { max-width: 680px; margin: 0 auto; padding: 56px 28px 96px; color: var(--ink); font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 15.5px; line-height: 1.7; }
+  h1 { font-family: Georgia, serif; font-size: 28px; font-weight: 600; margin: 0 0 6px; }
+  h2 { font-family: Georgia, serif; font-size: 18px; font-weight: 600; margin: 34px 0 10px; }
+  .updated { color: var(--ink-faint); font-size: 13px; margin-bottom: 30px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 4px; padding: 14px 16px; margin: 20px 0; font-size: 14px; }
+  .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-top: 30px; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 40px 0 30px; }
+  .foot { color: var(--ink-faint); font-size: 12.5px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="doc">
+  <h1>Vyne — Privacy Policy</h1>
+  <div class="updated">Last updated: July 12, 2026</div>
+
+  <p>Vyne ("the App") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.</p>
+
+  <h2>What Vyne collects</h2>
+  <p>Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing is sent anywhere unless you choose to turn on Cloud Backup.</p>
+  <ul>
+    <li><strong>If you enable Cloud Backup:</strong> we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.</li>
+    <li><strong>Your content</strong> (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.</li>
+  </ul>
+  <p>We do not collect your name, location, contacts, photos, browsing activity, or any device identifiers beyond what's needed to operate the app. As of the date above, Vyne shows no ads and uses no advertising or analytics SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
+
+  <h2>Notifications</h2>
+  <p>Vyne can send local reminders (due-date alerts, an optional once-a-day habit check-in) directly from your device. These are scheduled on-device and never involve sending your data to a server.</p>
+
+  <h2>Calendar</h2>
+  <p>If you tap "Add to Calendar" on a due date, Vyne opens your phone's own calendar app to create that one event. Vyne does not read, scan, or store your existing calendar entries.</p>
+
+  <h2>How your data is protected</h2>
+  <p>Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Local data is protected by your device's own app sandboxing.</p>
+
+  <h2>Sharing with third parties</h2>
+  <p>We do not sell, rent, or share your data with advertisers or data brokers. The only third-party processor involved is Google Firebase, which stores your backup data on our behalf under the terms above — it does not use your data for its own purposes.</p>
+
+  <h2>Deleting your data</h2>
+  <div class="callout">To delete your account and any cloud-stored backup, email us at the address below with the subject "Delete my data" from the email address associated with your account. We'll confirm deletion within a few days. Uninstalling the app removes all data stored locally on your device immediately.</div>
+
+  <h2>Children</h2>
+  <p>Vyne is not directed at children under 13, and we do not knowingly collect information from children under that age.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "last updated" date above will change accordingly. Continued use of the app after an update means you accept the revised policy.</p>
+
+  <div class="contact">
+    <strong>Contact</strong>
+    <p style="margin-top:8px; margin-bottom:0;">Questions about this policy or your data: <a href="mailto:VYNE_CONTACT_EMAIL">VYNE_CONTACT_EMAIL</a></p>
+  </div>
+
+  <hr>
+  <p class="foot">Vyne — your life, beautifully mapped 🌿</p>
+</div>
+</body>
+</html>

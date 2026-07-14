@@ -31,7 +31,7 @@
 <body>
 <div class="doc">
   <h1>Vyne — Privacy Policy</h1>
-  <div class="updated">Last updated: July 12, 2026</div>
+  <div class="updated">Last updated: July 14, 2026</div>
 
   <p>Vyne ("the App") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.</p>
 
@@ -40,8 +40,12 @@
   <ul>
     <li><strong>If you enable Cloud Backup:</strong> we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.</li>
     <li><strong>Your content</strong> (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.</li>
+    <li><strong>Crash and diagnostic data:</strong> when the app encounters an error, technical information about it (see "Crash and performance diagnostics" below) is sent to our crash-reporting service so we can find and fix bugs.</li>
   </ul>
-  <p>We do not collect your name, location, contacts, photos, browsing activity, or any device identifiers beyond what's needed to operate the app. As of the date above, Vyne shows no ads and uses no advertising or analytics SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
+  <p>We do not collect your name, location, contacts, photos, or browsing activity. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
+
+  <h2>Crash and performance diagnostics</h2>
+  <p>Vyne uses Sentry, a third-party crash-reporting service, to help us find and fix bugs. When the app runs into an error, Sentry receives technical details about it — things like the error message, which screen it happened on, basic device/app info (device model, OS version, app version), and an anonymous identifier for your device so we can tell how many different devices hit the same issue. It also keeps a short record of your most recent taps in the app, purely so we can see what led up to a crash. This data is not linked to your name or email, and Sentry does not use it for advertising or for its own purposes — only to help us diagnose problems.</p>
 
   <h2>Notifications</h2>
   <p>Vyne can send local reminders (due-date alerts, an optional once-a-day habit check-in) directly from your device. These are scheduled on-device and never involve sending your data to a server.</p>
@@ -53,7 +57,7 @@
   <p>Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Local data is protected by your device's own app sandboxing.</p>
 
   <h2>Sharing with third parties</h2>
-  <p>We do not sell, rent, or share your data with advertisers or data brokers. The only third-party processor involved is Google Firebase, which stores your backup data on our behalf under the terms above — it does not use your data for its own purposes.</p>
+  <p>We do not sell, rent, or share your data with advertisers or data brokers. The third-party processors involved are Google Firebase, which stores your backup data on our behalf, and Sentry, which receives crash and diagnostic data as described above — both under the terms above, and neither uses your data for its own purposes.</p>
 
   <h2>Deleting your data</h2>
   <div class="callout">If you use Cloud Backup, you can permanently delete your account and cloud-stored data any time from Settings → Cloud Backup → "Delete My Account & Cloud Data," right in the app — no waiting, it takes effect immediately. You can also email us at the address below and we'll delete it for you. Uninstalling the app removes all data stored locally on your device immediately.</div>

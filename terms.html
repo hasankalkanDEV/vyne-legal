@@ -14,8 +14,12 @@
   }
   * { box-sizing: border-box; }
   body { background: var(--paper); margin: 0; }
-  .doc { max-width: 680px; margin: 0 auto; padding: 56px 28px 96px; color: var(--ink); font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 15.5px; line-height: 1.7; }
-  h1 { font-family: Georgia, serif; font-size: 28px; font-weight: 600; margin: 0 0 6px; }
+  .doc { max-width: 680px; margin: 0 auto; padding: 24px 28px 96px; color: var(--ink); font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 15.5px; line-height: 1.7; }
+  .langbar { display: flex; justify-content: flex-end; padding-top: 8px; }
+  .lang-switch { display: flex; gap: 3px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+  .lang-switch button { border: none; background: transparent; font-size: 12px; font-weight: 700; letter-spacing: 0.02em; padding: 6px 12px; border-radius: 999px; cursor: pointer; color: var(--ink-sub); font-family: inherit; }
+  .lang-switch button.active { background: var(--accent); color: #fff; }
+  h1 { font-family: Georgia, serif; font-size: 28px; font-weight: 600; margin: 22px 0 6px; }
   h2 { font-family: Georgia, serif; font-size: 18px; font-weight: 600; margin: 34px 0 10px; }
   .updated { color: var(--ink-faint); font-size: 13px; margin-bottom: 30px; }
   p { margin: 0 0 12px; }
@@ -30,42 +34,129 @@
 </head>
 <body>
 <div class="doc">
-  <h1>Vyne — Terms of Service</h1>
-  <div class="updated">Last updated: July 12, 2026</div>
+  <div class="langbar">
+    <div class="lang-switch">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="tr">TR</button>
+    </div>
+  </div>
+  <h1 data-i18n="h1">Vyne — Terms of Service</h1>
+  <div class="updated" data-i18n="updated">Last updated: July 12, 2026</div>
 
-  <p>These terms cover your use of Vyne (the "App"), a personal life-organization app. Vyne is developed and operated by an independent developer, not a company. By using the App, you agree to these terms.</p>
+  <p data-i18n="intro">These terms cover your use of Vyne (the "App"), a personal life-organization app. Vyne is developed and operated by an independent developer, not a company. By using the App, you agree to these terms.</p>
 
-  <h2>What Vyne is</h2>
-  <p>Vyne lets you organize your life into branching categories, habits, and due dates, stored on your device. An optional Cloud Backup feature lets you sign in and keep a copy of your data on our servers (via Firebase) so you can restore it on another device.</p>
+  <h2 data-i18n="h2_what">What Vyne is</h2>
+  <p data-i18n="p_what">Vyne lets you organize your life into branching categories, habits, and due dates, stored on your device. An optional Cloud Backup feature lets you sign in and keep a copy of your data on our servers (via Firebase) so you can restore it on another device.</p>
 
-  <h2>Your account</h2>
-  <p>Cloud Backup is optional and requires an email and password. You're responsible for keeping your password safe. If you believe your account has been accessed without your permission, contact us right away.</p>
+  <h2 data-i18n="h2_account">Your account</h2>
+  <p data-i18n="p_account">Cloud Backup is optional and requires an email and password. You're responsible for keeping your password safe. If you believe your account has been accessed without your permission, contact us right away.</p>
 
-  <h2>Your content</h2>
-  <p>Everything you create in Vyne, categories, habits, notes, due dates, belongs to you. We don't read it, sell it, or use it for anything other than storing and returning it to you if you use Cloud Backup. You can delete your account and cloud-stored content at any time from within the App.</p>
+  <h2 data-i18n="h2_content">Your content</h2>
+  <p data-i18n="p_content">Everything you create in Vyne, categories, habits, notes, due dates, belongs to you. We don't read it, sell it, or use it for anything other than storing and returning it to you if you use Cloud Backup. You can delete your account and cloud-stored content at any time from within the App.</p>
 
-  <h2>Acceptable use</h2>
-  <p>Use Vyne for its intended purpose: organizing your own life. Don't try to break, reverse-engineer, or abuse the App or the backup service, and don't use it for anything illegal.</p>
+  <h2 data-i18n="h2_use">Acceptable use</h2>
+  <p data-i18n="p_use">Use Vyne for its intended purpose: organizing your own life. Don't try to break, reverse-engineer, or abuse the App or the backup service, and don't use it for anything illegal.</p>
 
-  <h2>No warranty</h2>
-  <div class="callout">Vyne is provided "as is." We work to keep it reliable, but we can't guarantee it will always be available, error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up.</div>
+  <h2 data-i18n="h2_warranty">No warranty</h2>
+  <div class="callout" data-i18n="p_warranty">Vyne is provided "as is." We work to keep it reliable, but we can't guarantee it will always be available, error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up.</div>
 
-  <h2>Limitation of liability</h2>
-  <p>To the extent permitted by law, Vyne's developer isn't liable for indirect, incidental, or consequential damages arising from your use of the App, including lost data.</p>
+  <h2 data-i18n="h2_liability">Limitation of liability</h2>
+  <p data-i18n="p_liability">To the extent permitted by law, Vyne's developer isn't liable for indirect, incidental, or consequential damages arising from your use of the App, including lost data.</p>
 
-  <h2>Changes to the App and these terms</h2>
-  <p>Vyne may change over time, features can be added, changed, or removed. If these terms change materially, the "last updated" date above will change, and continued use of the App means you accept the revised terms.</p>
+  <h2 data-i18n="h2_changes">Changes to the App and these terms</h2>
+  <p data-i18n="p_changes">Vyne may change over time, features can be added, changed, or removed. If these terms change materially, the "last updated" date above will change, and continued use of the App means you accept the revised terms.</p>
 
-  <h2>Ending your use</h2>
-  <p>You can stop using Vyne at any time by uninstalling it, and delete your cloud account from within the App or by emailing us. We may discontinue the App or the Cloud Backup service with reasonable notice if we ever need to.</p>
+  <h2 data-i18n="h2_ending">Ending your use</h2>
+  <p data-i18n="p_ending">You can stop using Vyne at any time by uninstalling it, and delete your cloud account from within the App or by emailing us. We may discontinue the App or the Cloud Backup service with reasonable notice if we ever need to.</p>
 
   <div class="contact">
-    <strong>Contact</strong>
-    <p style="margin-top:8px; margin-bottom:0;">Questions about these terms: <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a></p>
+    <strong data-i18n="contact_label">Contact</strong>
+    <p style="margin-top:8px; margin-bottom:0;"><span data-i18n="contact_body">Questions about these terms:</span> <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a></p>
   </div>
 
   <hr>
-  <p class="foot">Vyne — your life, beautifully mapped 🌿</p>
+  <p class="foot" data-i18n="foot">Vyne — your life, beautifully mapped 🌿</p>
 </div>
+<script>
+(function () {
+  var translations = {
+    en: {
+      title: "Vyne — Terms of Service",
+      h1: "Vyne — Terms of Service",
+      updated: "Last updated: July 12, 2026",
+      intro: "These terms cover your use of Vyne (the \"App\"), a personal life-organization app. Vyne is developed and operated by an independent developer, not a company. By using the App, you agree to these terms.",
+      h2_what: "What Vyne is",
+      p_what: "Vyne lets you organize your life into branching categories, habits, and due dates, stored on your device. An optional Cloud Backup feature lets you sign in and keep a copy of your data on our servers (via Firebase) so you can restore it on another device.",
+      h2_account: "Your account",
+      p_account: "Cloud Backup is optional and requires an email and password. You're responsible for keeping your password safe. If you believe your account has been accessed without your permission, contact us right away.",
+      h2_content: "Your content",
+      p_content: "Everything you create in Vyne, categories, habits, notes, due dates, belongs to you. We don't read it, sell it, or use it for anything other than storing and returning it to you if you use Cloud Backup. You can delete your account and cloud-stored content at any time from within the App.",
+      h2_use: "Acceptable use",
+      p_use: "Use Vyne for its intended purpose: organizing your own life. Don't try to break, reverse-engineer, or abuse the App or the backup service, and don't use it for anything illegal.",
+      h2_warranty: "No warranty",
+      p_warranty: "Vyne is provided \"as is.\" We work to keep it reliable, but we can't guarantee it will always be available, error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up.",
+      h2_liability: "Limitation of liability",
+      p_liability: "To the extent permitted by law, Vyne's developer isn't liable for indirect, incidental, or consequential damages arising from your use of the App, including lost data.",
+      h2_changes: "Changes to the App and these terms",
+      p_changes: "Vyne may change over time, features can be added, changed, or removed. If these terms change materially, the \"last updated\" date above will change, and continued use of the App means you accept the revised terms.",
+      h2_ending: "Ending your use",
+      p_ending: "You can stop using Vyne at any time by uninstalling it, and delete your cloud account from within the App or by emailing us. We may discontinue the App or the Cloud Backup service with reasonable notice if we ever need to.",
+      contact_label: "Contact",
+      contact_body: "Questions about these terms:",
+      foot: "Vyne — your life, beautifully mapped 🌿"
+    },
+    tr: {
+      title: "Vyne — Kullanım Şartları",
+      h1: "Vyne — Kullanım Şartları",
+      updated: "Son güncelleme: 12 Temmuz 2026",
+      intro: "Bu şartlar, kişisel yaşam organizasyonu uygulaması olan Vyne'ı (\"Uygulama\") kullanımınızı kapsar. Vyne, bir şirket değil, bağımsız bir geliştirici tarafından geliştirilir ve işletilir. Uygulamayı kullanarak bu şartları kabul etmiş olursunuz.",
+      h2_what: "Vyne nedir",
+      p_what: "Vyne, hayatınızı dallanan kategorilere, alışkanlıklara ve son tarihlere ayırarak organize etmenizi sağlar, bunlar cihazınızda saklanır. İsteğe bağlı Bulut Yedekleme özelliği, giriş yapıp verinizin bir kopyasını sunucularımızda (Firebase aracılığıyla) tutmanızı sağlar, böylece başka bir cihazda geri yükleyebilirsiniz.",
+      h2_account: "Hesabınız",
+      p_account: "Bulut Yedekleme isteğe bağlıdır ve bir e-posta ile şifre gerektirir. Şifrenizi güvende tutmaktan siz sorumlusunuz. Hesabınıza izniniz olmadan erişildiğini düşünüyorsanız, hemen bizimle iletişime geçin.",
+      h2_content: "İçeriğiniz",
+      p_content: "Vyne'de oluşturduğunuz her şey — kategoriler, alışkanlıklar, notlar, son tarihler — size aittir. Bunu okumuyor, satmıyor veya Bulut Yedeklemeyi kullanıyorsanız saklayıp size geri vermek dışında başka bir amaçla kullanmıyoruz. Hesabınızı ve bulutta saklanan içeriğinizi istediğiniz zaman Uygulama içinden silebilirsiniz.",
+      h2_use: "Kabul edilebilir kullanım",
+      p_use: "Vyne'i amaçlandığı şekilde kullanın: kendi hayatınızı organize etmek için. Uygulamayı veya yedekleme hizmetini kırmaya, tersine mühendislik yapmaya veya kötüye kullanmaya çalışmayın ve yasa dışı hiçbir şey için kullanmayın.",
+      h2_warranty: "Garanti yoktur",
+      p_warranty: "Vyne \"olduğu gibi\" sunulur. Güvenilir tutmak için çalışıyoruz, ancak her zaman kullanılabilir, hatasız olacağını veya özellikle Bulut Yedeklemeyi kullanmıyorsanız verinizin asla kaybolmayacağını garanti edemeyiz. Önemli olan her şeyi yedekli tutun.",
+      h2_liability: "Sorumluluğun sınırlandırılması",
+      p_liability: "Yasaların izin verdiği ölçüde, Vyne'in geliştiricisi, kaybolan veriler dahil, Uygulamayı kullanımınızdan kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu değildir.",
+      h2_changes: "Uygulama ve bu şartlardaki değişiklikler",
+      p_changes: "Vyne zamanla değişebilir, özellikler eklenebilir, değiştirilebilir veya kaldırılabilir. Bu şartlar önemli ölçüde değişirse, yukarıdaki \"son güncelleme\" tarihi değişir ve Uygulamayı kullanmaya devam etmeniz, güncellenmiş şartları kabul ettiğiniz anlamına gelir.",
+      h2_ending: "Kullanımınızı sonlandırma",
+      p_ending: "Vyne'i istediğiniz zaman kaldırarak kullanmayı durdurabilir, bulut hesabınızı Uygulama içinden veya bize e-posta göndererek silebilirsiniz. Gerekirse, makul bir bildirimle Uygulamayı veya Bulut Yedekleme hizmetini sonlandırabiliriz.",
+      contact_label: "İletişim",
+      contact_body: "Bu şartlar hakkında sorular:",
+      foot: "Vyne — hayatın, güzelce haritalanıyor 🌿"
+    }
+  };
+
+  var LANG_KEY = "vyne-site-lang";
+
+  function applyLang(lang) {
+    var dict = translations[lang] || translations.en;
+    document.documentElement.lang = lang;
+    document.title = dict.title;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (dict[key] != null) el.textContent = dict[key];
+    });
+    document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
+
+  document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+    btn.addEventListener("click", function () { applyLang(btn.getAttribute("data-lang")); });
+  });
+
+  var saved;
+  try { saved = localStorage.getItem(LANG_KEY); } catch (e) {}
+  var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+  applyLang(initial);
+})();
+</script>
 </body>
 </html>

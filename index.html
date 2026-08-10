@@ -29,6 +29,7 @@
   .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-top: 30px; }
   a { color: var(--accent); }
   hr { border: none; border-top: 1px solid var(--line); margin: 40px 0 30px; }
+  .links { text-align: center; font-size: 12.5px; margin: 0 0 10px; }
   .foot { color: var(--ink-faint); font-size: 12.5px; text-align: center; }
 </style>
 </head>
@@ -46,10 +47,10 @@
   <p data-i18n="intro">Vyne ("the App") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.</p>
 
   <h2 data-i18n="h2_collect">What Vyne collects</h2>
-  <p data-i18n="p_collect_intro">Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see "Local backup files" below).</p>
+  <p data-i18n="p_collect_intro">Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates, amounts — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see "Local backup files" below).</p>
   <ul>
     <li data-i18n="li_cloud">If you enable Cloud Backup: we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.</li>
-    <li data-i18n="li_content">Your content (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.</li>
+    <li data-i18n="li_content">Your content (branches, habits, notes, due dates, any amounts you record) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.</li>
     <li data-i18n="li_crash">Crash and diagnostic data: when the app encounters an error, technical information about it (see "Crash and performance diagnostics" below) is sent to our crash-reporting service so we can find and fix bugs.</li>
   </ul>
   <p data-i18n="p_collect_outro">We do not collect your location, contacts, photos, or browsing activity, and we never ask for your real name. A profile name is part of the content you create: it stays on your device, and reaches our servers only if you turn on Cloud Backup. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
@@ -87,7 +88,8 @@
   </div>
 
   <hr>
-  <p class="foot" data-i18n="foot">Vyne — your life, beautifully mapped 🌿</p>
+  <p class="links"><a href="terms.html" data-i18n="link_terms">Terms of Service</a> · <a href="delete-account.html" data-i18n="link_delete">Delete your account</a></p>
+  <p class="foot" data-i18n="foot">Vyne — your life, one branching map 🌿</p>
 </div>
 <script>
 (function () {
@@ -98,9 +100,9 @@
       updated: "Last updated: August 9, 2026",
       intro: "Vyne (\"the App\") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.",
       h2_collect: "What Vyne collects",
-      p_collect_intro: "Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see \"Local backup files\" below).",
+      p_collect_intro: "Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates, amounts — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see \"Local backup files\" below).",
       li_cloud: "If you enable Cloud Backup: we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.",
-      li_content: "Your content (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.",
+      li_content: "Your content (branches, habits, notes, due dates, any amounts you record) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.",
       li_crash: "Crash and diagnostic data: when the app encounters an error, technical information about it (see \"Crash and performance diagnostics\" below) is sent to our crash-reporting service so we can find and fix bugs.",
       p_collect_outro: "We do not collect your location, contacts, photos, or browsing activity, and we never ask for your real name. A profile name is part of the content you create: it stays on your device, and reaches our servers only if you turn on Cloud Backup. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.",
       h2_crash: "Crash and performance diagnostics",
@@ -123,7 +125,9 @@
       p_changes: "If this policy changes, the \"last updated\" date above will change accordingly. Continued use of the app after an update means you accept the revised policy.",
       contact_label: "Contact",
       contact_body: "Questions about this policy or your data:",
-      foot: "Vyne — your life, beautifully mapped 🌿"
+      link_terms: "Terms of Service",
+      link_delete: "Delete your account",
+      foot: "Vyne — your life, one branching map 🌿"
     },
     tr: {
       title: "Vyne — Gizlilik Politikası",
@@ -131,9 +135,9 @@
       updated: "Son güncelleme: 9 Ağustos 2026",
       intro: "Vyne (\"Uygulama\"), kişisel yaşam organizasyonu uygulamasıdır. Bu sayfa, Uygulamanın hangi bilgileri topladığını, bunların nasıl kullanıldığını ve verilerinizi nasıl kontrol edebileceğinizi veya kaldırabileceğinizi açıklar. Vyne, bir şirket değil, bağımsız bir geliştirici tarafından geliştirilir ve işletilir.",
       h2_collect: "Vyne ne topluyor",
-      p_collect_intro: "Vyne tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Oluşturduğunuz her şey — kategoriler, dallar, alışkanlıklar, notlar, son tarihler — varsayılan olarak cihazınızda yerel olarak saklanır. Bulut Yedeklemeyi açmadığınız ya da kendiniz bir yedek dosyası dışa aktarmadığınız sürece hiçbir şey cihazınızdan çıkmaz (aşağıdaki \"Yerel yedek dosyaları\" bölümüne bakın).",
+      p_collect_intro: "Vyne tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Oluşturduğunuz her şey — kategoriler, dallar, alışkanlıklar, notlar, son tarihler, tutarlar — varsayılan olarak cihazınızda yerel olarak saklanır. Bulut Yedeklemeyi açmadığınız ya da kendiniz bir yedek dosyası dışa aktarmadığınız sürece hiçbir şey cihazınızdan çıkmaz (aşağıdaki \"Yerel yedek dosyaları\" bölümüne bakın).",
       li_cloud: "Bulut Yedeklemeyi etkinleştirirseniz: Firebase Authentication (bir Google hizmeti) aracılığıyla kaydolduğunuz e-posta adresini toplarız, böylece yeni bir cihazda tekrar giriş yapıp verilerinizi geri yükleyebilirsiniz.",
-      li_content: "İçeriğiniz (dallar, alışkanlıklar, notlar, son tarihler) daha sonra sadece sizin erişebileceğiniz bir hesap altında Firebase Firestore'da (bir Google Cloud veritabanı) da saklanır.",
+      li_content: "İçeriğiniz (dallar, alışkanlıklar, notlar, son tarihler, kaydettiğiniz tutarlar) daha sonra sadece sizin erişebileceğiniz bir hesap altında Firebase Firestore'da (bir Google Cloud veritabanı) da saklanır.",
       li_crash: "Çökme ve tanılama verisi: uygulama bir hatayla karşılaştığında, bununla ilgili teknik bilgiler (aşağıdaki \"Çökme ve performans tanılaması\" bölümüne bakın) hataları bulup düzeltebilmemiz için çökme raporlama hizmetimize gönderilir.",
       p_collect_outro: "Konumunuzu, kişilerinizi, fotoğraflarınızı veya gezinme etkinliğinizi toplamıyoruz ve gerçek adınızı hiçbir zaman istemiyoruz. Profil adı, oluşturduğunuz içeriğin bir parçasıdır: cihazınızda kalır ve yalnızca Bulut Yedeklemeyi açarsanız sunucularımıza ulaşır. Yukarıdaki tarih itibarıyla Vyne hiç reklam göstermiyor ve hiçbir reklam SDK'sı kullanmıyor. Bu durum bir gün değişirse — örneğin reklam veya ücretli abonelik eklersek — değişiklik yürürlüğe girmeden önce bu politikayı güncelleyip yeni veri uygulamalarını açıklayacağız.",
       h2_crash: "Çökme ve performans tanılaması",
@@ -156,7 +160,9 @@
       p_changes: "Bu politika değişirse, yukarıdaki \"son güncelleme\" tarihi de buna göre değişir. Bir güncellemeden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.",
       contact_label: "İletişim",
       contact_body: "Bu politika veya verileriniz hakkında sorular:",
-      foot: "Vyne — hayatın, güzelce haritalanıyor 🌿"
+      link_terms: "Kullanım Şartları",
+      link_delete: "Hesabınızı silin",
+      foot: "Vyne — hayatının dallanan haritası 🌿"
     }
   };
 

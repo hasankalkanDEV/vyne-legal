@@ -25,40 +25,130 @@
   .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-top: 30px; }
   a { color: var(--accent); }
   hr { border: none; border-top: 1px solid var(--line); margin: 40px 0 30px; }
+  .langbar { display: flex; justify-content: flex-end; padding-top: 8px; }
+  .lang-switch { display: flex; gap: 3px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+  .lang-switch button { border: none; background: transparent; font-size: 12px; font-weight: 700; letter-spacing: 0.02em; padding: 6px 12px; border-radius: 999px; cursor: pointer; color: var(--ink-sub); font-family: inherit; }
+  .lang-switch button.active { background: var(--accent); color: #fff; }
+  .links { text-align: center; font-size: 12.5px; margin: 0 0 10px; }
   .foot { color: var(--ink-faint); font-size: 12.5px; text-align: center; }
 </style>
 </head>
 <body>
 <div class="doc">
-  <h1>Vyne — Delete Your Account</h1>
-  <div class="updated">Last updated: August 9, 2026</div>
+  <div class="langbar">
+    <div class="lang-switch">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="tr">TR</button>
+    </div>
+  </div>
+  <h1 data-i18n="h1">Vyne — Delete Your Account</h1>
+  <div class="updated" data-i18n="updated">Last updated: August 9, 2026</div>
 
-  <p>Vyne's optional Cloud Backup lets you keep a copy of your data (via Firebase) so you can restore it on another device. If you'd like to delete your account and that cloud-stored data, here's how.</p>
+  <p data-i18n="intro">Vyne's optional Cloud Backup lets you keep a copy of your data (via Firebase) so you can restore it on another device. If you'd like to delete your account and that cloud-stored data, here's how.</p>
 
-  <h2>Option 1: Delete it yourself, in the app</h2>
+  <h2 data-i18n="h2_self">Option 1: Delete it yourself, in the app</h2>
   <ol>
-    <li>Open Vyne and go to the <strong>More</strong> tab (bottom right).</li>
-    <li>Scroll to the Cloud Backup section.</li>
-    <li>Tap <strong>"🗑️ Delete My Account & Cloud Data"</strong> and confirm.</li>
+    <li data-i18n="step1">Open Vyne and go to the More tab (bottom right).</li>
+    <li data-i18n="step2">Scroll down to the Cloud Backup section.</li>
+    <li data-i18n="step3">Tap "🗑️ Delete My Account &amp; Cloud Data" and confirm.</li>
   </ol>
-  <p>This is immediate and permanent — there's no waiting period.</p>
+  <p data-i18n="p_self">The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent — there is no waiting period.</p>
 
-  <h2>Option 2: Request deletion by email</h2>
-  <p>If you can't access the app (lost your device, uninstalled it, etc.), email us at <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a> from the address associated with your account and ask us to delete it. We'll confirm once it's done, usually within a few days.</p>
+  <h2 data-i18n="h2_email">Option 2: Request deletion by email</h2>
+  <p><span data-i18n="p_email_a">If you can't access the app (lost your device, uninstalled it, and so on), email us at</span> <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a> <span data-i18n="p_email_b">from the address associated with your account and ask us to delete it. We'll confirm once it's done, usually within a few days.</span></p>
 
-  <h2>What gets deleted</h2>
-  <div class="callout">Your account (email/password sign-in) and everything stored in Cloud Backup, your categories, habits, notes, due dates, are permanently deleted from our servers. This can't be undone.</div>
+  <h2 data-i18n="h2_what">What gets deleted</h2>
+  <div class="callout" data-i18n="p_what">Your account (email and password sign-in) and everything stored in Cloud Backup — your categories, habits, notes, due dates and amounts — are permanently deleted from our servers. This can't be undone.</div>
 
-  <h2>What's kept</h2>
-  <p>Nothing is retained on our servers after deletion. If you also have data saved locally on a device (Vyne works fully offline too), deleting your cloud account doesn't touch that, it stays on your device until you delete it there or uninstall the app.</p>
+  <h2 data-i18n="h2_kept">What's kept</h2>
+  <p data-i18n="p_kept">Nothing is retained on our servers after deletion. If you also have data saved locally on a device (Vyne works fully offline too), deleting your cloud account doesn't touch it: it stays on your device until you delete it there or uninstall the app.</p>
 
   <div class="contact">
-    <strong>Contact</strong>
-    <p style="margin-top:8px; margin-bottom:0;">Questions about account deletion: <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a></p>
+    <strong data-i18n="contact_label">Contact</strong>
+    <p style="margin-top:8px; margin-bottom:0;"><span data-i18n="contact_body">Questions about account deletion:</span> <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a></p>
   </div>
 
   <hr>
-  <p class="foot">Vyne — your life, beautifully mapped 🌿</p>
+  <p class="links"><a href="index.html" data-i18n="link_privacy">Privacy Policy</a> · <a href="terms.html" data-i18n="link_terms">Terms of Service</a></p>
+  <p class="foot" data-i18n="foot">Vyne — your life, one branching map 🌿</p>
 </div>
+<script>
+(function () {
+  var translations = {
+    en: {
+      title: "Vyne — Delete Your Account",
+      h1: "Vyne — Delete Your Account",
+      updated: "Last updated: August 9, 2026",
+      intro: "Vyne's optional Cloud Backup lets you keep a copy of your data (via Firebase) so you can restore it on another device. If you'd like to delete your account and that cloud-stored data, here's how.",
+      h2_self: "Option 1: Delete it yourself, in the app",
+      step1: "Open Vyne and go to the More tab (bottom right).",
+      step2: "Scroll down to the Cloud Backup section.",
+      step3: "Tap \"🗑️ Delete My Account & Cloud Data\" and confirm.",
+      p_self: "The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent — there is no waiting period.",
+      h2_email: "Option 2: Request deletion by email",
+      p_email_a: "If you can't access the app (lost your device, uninstalled it, and so on), email us at",
+      p_email_b: "from the address associated with your account and ask us to delete it. We'll confirm once it's done, usually within a few days.",
+      h2_what: "What gets deleted",
+      p_what: "Your account (email and password sign-in) and everything stored in Cloud Backup — your categories, habits, notes, due dates and amounts — are permanently deleted from our servers. This can't be undone.",
+      h2_kept: "What's kept",
+      p_kept: "Nothing is retained on our servers after deletion. If you also have data saved locally on a device (Vyne works fully offline too), deleting your cloud account doesn't touch it: it stays on your device until you delete it there or uninstall the app.",
+      contact_label: "Contact",
+      contact_body: "Questions about account deletion:",
+      link_privacy: "Privacy Policy",
+      link_terms: "Terms of Service",
+      foot: "Vyne — your life, one branching map 🌿"
+    },
+    tr: {
+      title: "Vyne — Hesabınızı Silin",
+      h1: "Vyne — Hesabınızı Silin",
+      updated: "Son güncelleme: 9 Ağustos 2026",
+      intro: "Vyne'in isteğe bağlı Bulut Yedekleme özelliği, verinizin bir kopyasını (Firebase aracılığıyla) tutmanızı ve başka bir cihazda geri yüklemenizi sağlar. Hesabınızı ve bulutta saklanan bu veriyi silmek isterseniz, nasıl yapılacağı aşağıda.",
+      h2_self: "1. Yol: Uygulama içinden kendiniz silin",
+      step1: "Vyne'i açın ve Daha Fazla sekmesine gidin (sağ altta).",
+      step2: "Bulut Yedekleme bölümüne kadar aşağı kaydırın.",
+      step3: "\"🗑️ Hesabımı & Bulut Verimi Sil\" düğmesine dokunun ve onaylayın.",
+      p_self: "Bu düğme, Bulut Yedekleme'ye giriş yaptıktan sonra orada görünür. Silme işlemi anında ve kalıcıdır; bekleme süresi yoktur.",
+      h2_email: "2. Yol: E-posta ile silme talebi",
+      p_email_a: "Uygulamaya erişemiyorsanız (cihazınızı kaybettiyseniz, uygulamayı kaldırdıysanız vb.), hesabınızla ilişkili adresten bize şu adrese yazın:",
+      p_email_b: "ve silinmesini isteyin. İşlem bitince size teyit ederiz, genellikle birkaç gün içinde.",
+      h2_what: "Ne siliniyor",
+      p_what: "Hesabınız (e-posta ve parola girişi) ve Bulut Yedekleme'de saklanan her şey — kategorileriniz, alışkanlıklarınız, notlarınız, son tarihleriniz ve tutarlarınız — sunucularımızdan kalıcı olarak silinir. Bu geri alınamaz.",
+      h2_kept: "Ne kalıyor",
+      p_kept: "Silme işleminden sonra sunucularımızda hiçbir şey tutulmaz. Cihazınızda yerel olarak kayıtlı veriniz de varsa (Vyne tamamen çevrimdışı da çalışır), bulut hesabınızı silmek ona dokunmaz: siz orada silene ya da uygulamayı kaldırana kadar cihazınızda kalır.",
+      contact_label: "İletişim",
+      contact_body: "Hesap silme hakkında sorular:",
+      link_privacy: "Gizlilik Politikası",
+      link_terms: "Kullanım Şartları",
+      foot: "Vyne — hayatının dallanan haritası 🌿"
+    }
+  };
+
+  var LANG_KEY = "vyne-site-lang";
+
+  function applyLang(lang) {
+    var dict = translations[lang] || translations.en;
+    document.documentElement.lang = lang;
+    document.title = dict.title;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (dict[key] != null) el.textContent = dict[key];
+    });
+    document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
+
+  document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+    btn.addEventListener("click", function () { applyLang(btn.getAttribute("data-lang")); });
+  });
+
+  var saved;
+  try { saved = localStorage.getItem(LANG_KEY); } catch (e) {}
+  var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+  applyLang(initial);
+})();
+</script>
 </body>
+
 </html>

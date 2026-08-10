@@ -41,18 +41,18 @@
     </div>
   </div>
   <h1 data-i18n="h1">Vyne — Privacy Policy</h1>
-  <div class="updated" data-i18n="updated">Last updated: July 14, 2026</div>
+  <div class="updated" data-i18n="updated">Last updated: August 9, 2026</div>
 
   <p data-i18n="intro">Vyne ("the App") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.</p>
 
   <h2 data-i18n="h2_collect">What Vyne collects</h2>
-  <p data-i18n="p_collect_intro">Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing is sent anywhere unless you choose to turn on Cloud Backup.</p>
+  <p data-i18n="p_collect_intro">Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see "Local backup files" below).</p>
   <ul>
     <li data-i18n="li_cloud">If you enable Cloud Backup: we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.</li>
     <li data-i18n="li_content">Your content (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.</li>
     <li data-i18n="li_crash">Crash and diagnostic data: when the app encounters an error, technical information about it (see "Crash and performance diagnostics" below) is sent to our crash-reporting service so we can find and fix bugs.</li>
   </ul>
-  <p data-i18n="p_collect_outro">We do not collect your name, location, contacts, photos, or browsing activity. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
+  <p data-i18n="p_collect_outro">We do not collect your location, contacts, photos, or browsing activity, and we never ask for your real name. A profile name is part of the content you create: it stays on your device, and reaches our servers only if you turn on Cloud Backup. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.</p>
 
   <h2 data-i18n="h2_crash">Crash and performance diagnostics</h2>
   <p data-i18n="p_crash">Vyne uses Sentry, a third-party crash-reporting service, to help us find and fix bugs. When the app runs into an error, Sentry receives technical details about it — things like the error message, which screen it happened on, basic device/app info (device model, OS version, app version), and an anonymous identifier for your device so we can tell how many different devices hit the same issue. It also keeps a short record of your most recent taps in the app, purely so we can see what led up to a crash. This data is not linked to your name or email, and Sentry does not use it for advertising or for its own purposes — only to help us diagnose problems.</p>
@@ -63,14 +63,17 @@
   <h2 data-i18n="h2_cal">Calendar</h2>
   <p data-i18n="p_cal">If you tap "Add to Calendar" on a due date, Vyne opens your phone's own calendar app to create that one event. Vyne does not read, scan, or store your existing calendar entries.</p>
 
+  <h2 data-i18n="h2_local">Local backup files</h2>
+  <p data-i18n="p_local">Vyne can export all of your data as a single backup file, and you choose which profiles go into it. The file is created on your device and handed to your phone's own share sheet, so it goes wherever you send it — email, a cloud drive, another app. We never receive a copy and cannot read it. Importing a backup only ever adds profiles; it never overwrites or deletes what is already on your device.</p>
+
   <h2 data-i18n="h2_protect">How your data is protected</h2>
-  <p data-i18n="p_protect">Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Local data is protected by your device's own app sandboxing.</p>
+  <p data-i18n="p_protect">Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Cloud backups are held on Google Cloud servers in the United States, so if you use Cloud Backup from outside the US your data is transferred there. Local data is protected by your device's own app sandboxing.</p>
 
   <h2 data-i18n="h2_share">Sharing with third parties</h2>
   <p data-i18n="p_share">We do not sell, rent, or share your data with advertisers or data brokers. The third-party processors involved are Google Firebase, which stores your backup data on our behalf, and Sentry, which receives crash and diagnostic data as described above — both under the terms above, and neither uses your data for its own purposes.</p>
 
   <h2 data-i18n="h2_delete">Deleting your data</h2>
-  <div class="callout" data-i18n="p_delete">If you use Cloud Backup, you can permanently delete your account and cloud-stored data any time from Settings → Cloud Backup → "Delete My Account & Cloud Data," right in the app — no waiting, it takes effect immediately. You can also email us at the address below and we'll delete it for you. Uninstalling the app removes all data stored locally on your device immediately.</div>
+  <div class="callout" data-i18n="p_delete">If you use Cloud Backup, you can permanently delete your account and cloud-stored data any time from the More tab → Cloud Backup → "Delete My Account &amp; Cloud Data," right in the app — no waiting, it takes effect immediately. You can also email us at the address below and we'll delete it for you. Uninstalling the app removes all data stored locally on your device immediately.</div>
 
   <h2 data-i18n="h2_children">Children</h2>
   <p data-i18n="p_children">Vyne is not directed at children under 13, and we do not knowingly collect information from children under that age.</p>
@@ -92,26 +95,28 @@
     en: {
       title: "Vyne — Privacy Policy",
       h1: "Vyne — Privacy Policy",
-      updated: "Last updated: July 14, 2026",
+      updated: "Last updated: August 9, 2026",
       intro: "Vyne (\"the App\") is a personal life-organization app. This page explains what information the App collects, how it's used, and how you can control or remove it. Vyne is developed and operated by an independent developer, not a company.",
       h2_collect: "What Vyne collects",
-      p_collect_intro: "Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing is sent anywhere unless you choose to turn on Cloud Backup.",
+      p_collect_intro: "Vyne is built to work fully offline. Everything you create — categories, branches, habits, notes, due dates — is stored locally on your device by default. Nothing leaves your device unless you turn on Cloud Backup, or export a backup file yourself (see \"Local backup files\" below).",
       li_cloud: "If you enable Cloud Backup: we collect the email address you sign up with, via Firebase Authentication (a Google service), so you can sign back in and restore your data on a new device.",
       li_content: "Your content (branches, habits, notes, due dates) is then also stored in Firebase Firestore (a Google Cloud database), under an account only you can access.",
       li_crash: "Crash and diagnostic data: when the app encounters an error, technical information about it (see \"Crash and performance diagnostics\" below) is sent to our crash-reporting service so we can find and fix bugs.",
-      p_collect_outro: "We do not collect your name, location, contacts, photos, or browsing activity. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.",
+      p_collect_outro: "We do not collect your location, contacts, photos, or browsing activity, and we never ask for your real name. A profile name is part of the content you create: it stays on your device, and reaches our servers only if you turn on Cloud Backup. As of the date above, Vyne shows no ads and uses no advertising SDKs. If that ever changes — for example, if we add ads or a paid subscription — we'll update this policy to describe the new data practices before the change takes effect.",
       h2_crash: "Crash and performance diagnostics",
       p_crash: "Vyne uses Sentry, a third-party crash-reporting service, to help us find and fix bugs. When the app runs into an error, Sentry receives technical details about it — things like the error message, which screen it happened on, basic device/app info (device model, OS version, app version), and an anonymous identifier for your device so we can tell how many different devices hit the same issue. It also keeps a short record of your most recent taps in the app, purely so we can see what led up to a crash. This data is not linked to your name or email, and Sentry does not use it for advertising or for its own purposes — only to help us diagnose problems.",
       h2_notif: "Notifications",
       p_notif: "Vyne can send local reminders (due-date alerts, an optional once-a-day habit check-in) directly from your device. These are scheduled on-device and never involve sending your data to a server.",
       h2_cal: "Calendar",
       p_cal: "If you tap \"Add to Calendar\" on a due date, Vyne opens your phone's own calendar app to create that one event. Vyne does not read, scan, or store your existing calendar entries.",
+      h2_local: "Local backup files",
+      p_local: "Vyne can export all of your data as a single backup file, and you choose which profiles go into it. The file is created on your device and handed to your phone's own share sheet, so it goes wherever you send it — email, a cloud drive, another app. We never receive a copy and cannot read it. Importing a backup only ever adds profiles; it never overwrites or deletes what is already on your device.",
       h2_protect: "How your data is protected",
-      p_protect: "Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Local data is protected by your device's own app sandboxing.",
+      p_protect: "Cloud-stored data is scoped to your account only — access rules on our database ensure no one else, including us, can read another user's data through the app. Cloud backups are held on Google Cloud servers in the United States, so if you use Cloud Backup from outside the US your data is transferred there. Local data is protected by your device's own app sandboxing.",
       h2_share: "Sharing with third parties",
       p_share: "We do not sell, rent, or share your data with advertisers or data brokers. The third-party processors involved are Google Firebase, which stores your backup data on our behalf, and Sentry, which receives crash and diagnostic data as described above — both under the terms above, and neither uses your data for its own purposes.",
       h2_delete: "Deleting your data",
-      p_delete: "If you use Cloud Backup, you can permanently delete your account and cloud-stored data any time from Settings → Cloud Backup → \"Delete My Account & Cloud Data,\" right in the app — no waiting, it takes effect immediately. You can also email us at the address below and we'll delete it for you. Uninstalling the app removes all data stored locally on your device immediately.",
+      p_delete: "If you use Cloud Backup, you can permanently delete your account and cloud-stored data any time from the More tab → Cloud Backup → \"Delete My Account & Cloud Data,\" right in the app — no waiting, it takes effect immediately. You can also email us at the address below and we'll delete it for you. Uninstalling the app removes all data stored locally on your device immediately.",
       h2_children: "Children",
       p_children: "Vyne is not directed at children under 13, and we do not knowingly collect information from children under that age.",
       h2_changes: "Changes to this policy",
@@ -123,26 +128,28 @@
     tr: {
       title: "Vyne — Gizlilik Politikası",
       h1: "Vyne — Gizlilik Politikası",
-      updated: "Son güncelleme: 14 Temmuz 2026",
+      updated: "Son güncelleme: 9 Ağustos 2026",
       intro: "Vyne (\"Uygulama\"), kişisel yaşam organizasyonu uygulamasıdır. Bu sayfa, Uygulamanın hangi bilgileri topladığını, bunların nasıl kullanıldığını ve verilerinizi nasıl kontrol edebileceğinizi veya kaldırabileceğinizi açıklar. Vyne, bir şirket değil, bağımsız bir geliştirici tarafından geliştirilir ve işletilir.",
       h2_collect: "Vyne ne topluyor",
-      p_collect_intro: "Vyne tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Oluşturduğunuz her şey — kategoriler, dallar, alışkanlıklar, notlar, son tarihler — varsayılan olarak cihazınızda yerel olarak saklanır. Bulut Yedeklemeyi açmadığınız sürece hiçbir şey hiçbir yere gönderilmez.",
+      p_collect_intro: "Vyne tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Oluşturduğunuz her şey — kategoriler, dallar, alışkanlıklar, notlar, son tarihler — varsayılan olarak cihazınızda yerel olarak saklanır. Bulut Yedeklemeyi açmadığınız ya da kendiniz bir yedek dosyası dışa aktarmadığınız sürece hiçbir şey cihazınızdan çıkmaz (aşağıdaki \"Yerel yedek dosyaları\" bölümüne bakın).",
       li_cloud: "Bulut Yedeklemeyi etkinleştirirseniz: Firebase Authentication (bir Google hizmeti) aracılığıyla kaydolduğunuz e-posta adresini toplarız, böylece yeni bir cihazda tekrar giriş yapıp verilerinizi geri yükleyebilirsiniz.",
       li_content: "İçeriğiniz (dallar, alışkanlıklar, notlar, son tarihler) daha sonra sadece sizin erişebileceğiniz bir hesap altında Firebase Firestore'da (bir Google Cloud veritabanı) da saklanır.",
       li_crash: "Çökme ve tanılama verisi: uygulama bir hatayla karşılaştığında, bununla ilgili teknik bilgiler (aşağıdaki \"Çökme ve performans tanılaması\" bölümüne bakın) hataları bulup düzeltebilmemiz için çökme raporlama hizmetimize gönderilir.",
-      p_collect_outro: "Adınızı, konumunuzu, kişilerinizi, fotoğraflarınızı veya gezinme etkinliğinizi toplamıyoruz. Yukarıdaki tarih itibarıyla Vyne hiç reklam göstermiyor ve hiçbir reklam SDK'sı kullanmıyor. Bu durum bir gün değişirse — örneğin reklam veya ücretli abonelik eklersek — değişiklik yürürlüğe girmeden önce bu politikayı güncelleyip yeni veri uygulamalarını açıklayacağız.",
+      p_collect_outro: "Konumunuzu, kişilerinizi, fotoğraflarınızı veya gezinme etkinliğinizi toplamıyoruz ve gerçek adınızı hiçbir zaman istemiyoruz. Profil adı, oluşturduğunuz içeriğin bir parçasıdır: cihazınızda kalır ve yalnızca Bulut Yedeklemeyi açarsanız sunucularımıza ulaşır. Yukarıdaki tarih itibarıyla Vyne hiç reklam göstermiyor ve hiçbir reklam SDK'sı kullanmıyor. Bu durum bir gün değişirse — örneğin reklam veya ücretli abonelik eklersek — değişiklik yürürlüğe girmeden önce bu politikayı güncelleyip yeni veri uygulamalarını açıklayacağız.",
       h2_crash: "Çökme ve performans tanılaması",
       p_crash: "Vyne, hataları bulup düzeltmemize yardımcı olması için üçüncü taraf bir çökme raporlama hizmeti olan Sentry kullanır. Uygulama bir hatayla karşılaştığında, Sentry bununla ilgili teknik detaylar alır — hata mesajı, hangi ekranda gerçekleştiği, temel cihaz/uygulama bilgisi (cihaz modeli, işletim sistemi sürümü, uygulama sürümü) ve aynı soruna kaç farklı cihazın rastladığını anlayabilmemiz için cihazınıza ait anonim bir tanımlayıcı gibi. Ayrıca, bir çökmeden önce neler olduğunu görebilmemiz için son dokunuşlarınızın kısa bir kaydını da tutar. Bu veri adınıza veya e-postanıza bağlı değildir ve Sentry bunu reklam amacıyla ya da kendi amaçları için kullanmaz — sadece sorunları teşhis etmemize yardımcı olur.",
       h2_notif: "Bildirimler",
       p_notif: "Vyne, cihazınızdan doğrudan yerel hatırlatmalar (son tarih uyarıları, isteğe bağlı günde bir kez alışkanlık kontrolü) gönderebilir. Bunlar cihaz üzerinde zamanlanır ve hiçbir zaman verinizin bir sunucuya gönderilmesini gerektirmez.",
       h2_cal: "Takvim",
       p_cal: "Bir son tarihte \"Takvime Ekle\"ye dokunursanız, Vyne o tek etkinliği oluşturmak için telefonunuzun kendi takvim uygulamasını açar. Vyne mevcut takvim kayıtlarınızı okumaz, taramaz veya saklamaz.",
+      h2_local: "Yerel yedek dosyaları",
+      p_local: "Vyne, verilerinizin tamamını tek bir yedek dosyası olarak dışa aktarabilir ve bu dosyaya hangi profillerin gireceğini siz seçersiniz. Dosya cihazınızda oluşturulur ve telefonunuzun kendi paylaşım ekranına verilir; yani nereye gönderirseniz oraya gider — e-posta, bir bulut sürücüsü, başka bir uygulama. Bizim bir kopyamız olmaz ve içeriğini okuyamayız. Bir yedeği içe aktarmak yalnızca profil ekler; cihazınızda hâlihazırda olanı asla silmez ya da üzerine yazmaz.",
       h2_protect: "Verileriniz nasıl korunuyor",
-      p_protect: "Bulutta saklanan veriler sadece sizin hesabınıza özeldir — veritabanımızdaki erişim kuralları, biz dahil hiç kimsenin uygulama üzerinden başka bir kullanıcının verisini okuyamamasını sağlar. Yerel veriler, cihazınızın kendi uygulama korumasıyla (sandboxing) güvence altındadır.",
+      p_protect: "Bulutta saklanan veriler sadece sizin hesabınıza özeldir — veritabanımızdaki erişim kuralları, biz dahil hiç kimsenin uygulama üzerinden başka bir kullanıcının verisini okuyamamasını sağlar. Bulut yedekleri Google Cloud'un Amerika Birleşik Devletleri'ndeki sunucularında tutulur; yani Bulut Yedeklemeyi ABD dışından kullanıyorsanız verileriniz oraya aktarılır. Yerel veriler, cihazınızın kendi uygulama korumasıyla (sandboxing) güvence altındadır.",
       h2_share: "Üçüncü taraflarla paylaşım",
       p_share: "Verilerinizi reklamverenlere veya veri komisyoncularına satmıyor, kiralamıyor veya paylaşmıyoruz. Dahil olan üçüncü taraf işlemciler, yedek verinizi bizim adımıza saklayan Google Firebase ve yukarıda açıklandığı gibi çökme ve tanılama verisi alan Sentry'dir — her ikisi de yukarıdaki şartlar altında çalışır ve hiçbiri verinizi kendi amaçları için kullanmaz.",
       h2_delete: "Verinizi silme",
-      p_delete: "Bulut Yedeklemeyi kullanıyorsanız, hesabınızı ve bulutta saklanan verilerinizi istediğiniz zaman uygulama içinden Ayarlar → Bulut Yedekleme → \"Hesabımı ve Bulut Verilerimi Sil\" ile kalıcı olarak silebilirsiniz — beklemeye gerek yok, hemen etkili olur. Ayrıca bize aşağıdaki adresten e-posta gönderebilirsiniz, sizin için silelim. Uygulamayı kaldırmak, cihazınızda yerel olarak saklanan tüm verileri anında kaldırır.",
+      p_delete: "Bulut Yedeklemeyi kullanıyorsanız, hesabınızı ve bulutta saklanan verilerinizi istediğiniz zaman uygulama içinden Daha Fazla sekmesi → Bulut Yedekleme → \"Hesabımı ve Bulut Verilerimi Sil\" ile kalıcı olarak silebilirsiniz — beklemeye gerek yok, hemen etkili olur. Ayrıca bize aşağıdaki adresten e-posta gönderebilirsiniz, sizin için silelim. Uygulamayı kaldırmak, cihazınızda yerel olarak saklanan tüm verileri anında kaldırır.",
       h2_children: "Çocuklar",
       p_children: "Vyne, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaşın altındaki çocuklardan bilerek bilgi toplamayız.",
       h2_changes: "Bu politikadaki değişiklikler",

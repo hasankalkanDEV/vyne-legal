@@ -1,0 +1,626 @@
+{
+ "updated": [
+  "Last updated: September 30, 2026",
+  "Son güncelleme: 30 Eylül 2026"
+ ],
+ "links": {
+  "index.html": [
+   "Privacy Policy",
+   "Gizlilik Politikası"
+  ],
+  "terms.html": [
+   "Terms of Service",
+   "Kullanım Şartları"
+  ],
+  "delete-account.html": [
+   "Delete your account",
+   "Hesabını sil"
+  ]
+ },
+ "pages": {
+  "index.html": {
+   "kicker": [
+    "Privacy",
+    "Gizlilik"
+   ],
+   "hero": "shield",
+   "notes": [
+    "mobile",
+    "no",
+    "bars",
+    "lock"
+   ],
+   "links": [
+    "terms.html",
+    "delete-account.html"
+   ],
+   "blocks": [
+    [
+     "h1",
+     "Vyne — Privacy Policy",
+     "Vyne — Gizlilik Politikası"
+    ],
+    [
+     "updated",
+     "Last updated: September 30, 2026",
+     "Son güncelleme: 30 Eylül 2026"
+    ],
+    [
+     "p",
+     "Vyne (\"the App\") is a personal app for habits, notes and a journal. It is made and run by one independent developer, not a company; \"I\" and \"me\" on this page mean that developer. This page explains what the App collects, why, and how you can control or delete it.",
+     "Vyne (\"Uygulama\"), alışkanlıklar, notlar ve günlük için kişisel bir uygulamadır. Bir şirket değil, tek bir bağımsız geliştirici tarafından yapılır ve yürütülür; bu sayfadaki \"ben\" o geliştiricidir. Bu sayfa Uygulama'nın neyi, neden topladığını ve bunları nasıl kontrol edip silebileceğini anlatır."
+    ],
+    [
+     "callout",
+     [
+      [
+       "Everything stays on your phone unless you turn on Cloud Backup.",
+       "Bulut Yedekleme'yi açmadıkça her şey telefonunda kalır."
+      ],
+      [
+       "No account is needed, there are no ads, and your data is never sold.",
+       "Hesap gerekmez, reklam yoktur ve verin asla satılmaz."
+      ],
+      [
+       "Crash reports go to Sentry, without your name or email.",
+       "Hata raporları Sentry'ye adın ya da e-postan olmadan gider."
+      ],
+      [
+       "Cloud Backup is not end-to-end encrypted: I could technically read it, and I don't.",
+       "Bulut yedeği uçtan uca şifreli değildir: teknik olarak okuyabilirim, okumam."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "What Vyne collects",
+     "Vyne neleri toplar",
+     "tray"
+    ],
+    [
+     "p",
+     "Vyne works fully offline and needs no account. Everything you create is stored on your device:",
+     "Vyne tamamen çevrimdışı çalışır ve hesap gerektirmez. Oluşturduğun her şey cihazında saklanır:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "Branches, habits and their check-ins, due dates and amounts",
+       "Dallar, alışkanlıklar ve işaretlemelerin, tarihli işler ve tutarlar"
+      ],
+      [
+       "Notes, lists and reminders",
+       "Notlar, listeler ve hatırlatıcılar"
+      ],
+      [
+       "Your daily journal and weekly diary",
+       "Günlüğün ve haftalık defterin"
+      ],
+      [
+       "The people you add and their birthdays",
+       "Eklediğin kişiler ve doğum günleri"
+      ],
+      [
+       "Your profile name",
+       "Profil adın"
+      ]
+     ]
+    ],
+    [
+     "p",
+     "Nothing leaves your device unless you turn on Cloud Backup or export a backup file yourself.",
+     "Bulut Yedekleme'yi açmadıkça ya da kendin bir yedek dosyası dışa aktarmadıkça hiçbir şey cihazından çıkmaz."
+    ],
+    [
+     "ul",
+     [
+      [
+       "If you turn on Cloud Backup, the email address you sign up with is handled by Firebase Authentication (a Google service), so you can sign back in and restore your data on another phone. Your password is handled by Firebase; I never see it.",
+       "Bulut Yedekleme'yi açarsan kayıt olduğun e-posta adresi Firebase Authentication (bir Google hizmeti) tarafından işlenir; böylece başka bir telefonda tekrar giriş yapıp verini geri yükleyebilirsin. Şifren Firebase tarafından işlenir; ben hiç görmem."
+      ],
+      [
+       "Your content (everything listed above) is then also stored in Firebase Firestore (a Google Cloud database), linked to your account. Along with it, Vyne stores a random ID for each installation of the app and the platform (iOS or Android), so it can tell which phone wrote a backup. That ID is created by Vyne, isn't tied to your hardware or to any advertising ID, and changes if you reinstall.",
+       "İçeriğin (yukarıda sayılan her şey) bu durumda Firebase Firestore'da (bir Google Cloud veritabanı) da hesabına bağlı olarak saklanır. Yanında, yedeği hangi telefonun yazdığını ayırt etmek için her kurulumun rastgele bir kimliği ve platform bilgisi (iOS ya da Android) tutulur. Bu kimliği Vyne üretir; donanımına ya da herhangi bir reklam kimliğine bağlı değildir ve uygulamayı yeniden kurunca değişir."
+      ],
+      [
+       "Crash and performance diagnostics are sent to Sentry, as described in the next section.",
+       "Hata ve performans bilgileri, bir sonraki bölümde anlatıldığı gibi Sentry'ye gönderilir."
+      ]
+     ]
+    ],
+    [
+     "p",
+     "Vyne does not collect your location, contacts, photos, microphone or browsing activity, and never asks for your real name. People you add on the People page are typed in by you; Vyne does not read your phone's contacts. Vyne shows no ads and contains no advertising or analytics SDKs. If that ever changes, this policy will be updated before the change takes effect.",
+     "Vyne konumunu, rehberini, fotoğraflarını, mikrofonunu ya da internet geçmişini toplamaz ve gerçek adını hiç sormaz. Çevre sayfasına eklediğin kişileri sen yazarsın; Vyne telefonunun rehberini okumaz. Vyne reklam göstermez ve içinde reklam ya da analiz SDK'sı yoktur. Bu bir gün değişirse, bu politika değişiklik yürürlüğe girmeden önce güncellenir."
+    ],
+    [
+     "h2",
+     "Crash and performance diagnostics",
+     "Hata ve performans bilgileri",
+     "wrench"
+    ],
+    [
+     "p",
+     "Vyne uses Sentry, a crash-reporting service, to find and fix bugs. When the app runs into an error, Sentry receives:",
+     "Vyne, hataları bulup düzeltmek için bir hata raporlama hizmeti olan Sentry'yi kullanır. Uygulama bir hatayla karşılaşınca Sentry'ye şunlar gider:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "the error message and the screen it happened on",
+       "hata mesajı ve hatanın olduğu ekran"
+      ],
+      [
+       "the device model, OS version and app version",
+       "cihaz modeli, işletim sistemi ve uygulama sürümü"
+      ],
+      [
+       "an anonymous identifier for the device",
+       "cihaz için anonim bir kimlik"
+      ],
+      [
+       "a short trail of the most recent taps and screens before the problem",
+       "sorundan hemen önceki son dokunuşların ve ekranların kısa bir kaydı"
+      ]
+     ]
+    ],
+    [
+     "p",
+     "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for a limited time and then deletes it automatically.",
+     "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda sınırlı bir süre tutar, sonra kendiliğinden siler."
+    ],
+    [
+     "h2",
+     "Notifications",
+     "Bildirimler",
+     "bell"
+    ],
+    [
+     "p",
+     "If you allow notifications, Vyne schedules them on your device, at the times you choose:",
+     "Bildirimlere izin verirsen Vyne bunları cihazında, senin seçtiğin saatlerde kurar:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "reminders for due dates, list items and reminders",
+       "tarihli işler, liste maddeleri ve hatırlatıcılar için hatırlatmalar"
+      ],
+      [
+       "a habit's own reminder time",
+       "bir alışkanlığın kendi hatırlatma saati"
+      ],
+      [
+       "the birthdays of people you add",
+       "eklediğin kişilerin doğum günleri"
+      ],
+      [
+       "an optional daily check-in",
+       "isteğe bağlı günlük hatırlatma"
+      ],
+      [
+       "a short weekly note on Monday mornings",
+       "Pazartesi sabahları kısa bir haftalık not"
+      ]
+     ]
+    ],
+    [
+     "p",
+     "They are created on your phone and never involve sending your data to a server. You can turn them off in the app or in your phone's settings.",
+     "Hepsi telefonunda oluşturulur, verin hiçbir sunucuya gönderilmez. Uygulamadan ya da telefonunun ayarlarından kapatabilirsin."
+    ],
+    [
+     "h2",
+     "Calendar",
+     "Takvim",
+     "calendar"
+    ],
+    [
+     "p",
+     "If you tap \"Add to Calendar\", Vyne opens your phone's own new-event screen with that item filled in, and you decide whether and where to save it. Vyne does not ask for calendar access and cannot read your calendar.",
+     "\"Takvime Ekle\"ye dokunursan Vyne, telefonunun kendi yeni etkinlik ekranını o madde doldurulmuş olarak açar; kaydedip kaydetmeyeceğine ve nereye kaydedeceğine sen karar verirsin. Vyne takvim izni istemez ve takvimini okuyamaz."
+    ],
+    [
+     "h2",
+     "Backup files",
+     "Yedek dosyaları",
+     "floppy"
+    ],
+    [
+     "p",
+     "Vyne can export your data as a backup file, and you choose which profiles go into it. The file is created on your device and handed to your phone's share sheet, so it goes wherever you send it; I never receive a copy. When you import a file, you choose:",
+     "Vyne verini bir yedek dosyası olarak dışa aktarabilir; içine hangi profillerin gireceğini sen seçersin. Dosya cihazında oluşturulur ve telefonunun paylaşım ekranına verilir, yani sen nereye gönderirsen oraya gider; bana hiçbir kopyası gelmez. Bir dosyayı içe aktarırken şunlardan birini seçersin:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "\"Add\": only what is missing is added.",
+       "\"Ekle\": sadece eksikler eklenir."
+      ],
+      [
+       "\"Replace\": a profile that is already on the phone is overwritten by the file's copy.",
+       "\"Değiştir\": telefonda zaten olan bir profil, dosyadaki kopyasıyla değiştirilir."
+      ]
+     ]
+    ],
+    [
+     "p",
+     "Your last 3 imports can be undone, and profiles that aren't in the file are never touched.",
+     "Son 3 içe aktarma geri alınabilir; dosyada olmayan profillere hiç dokunulmaz."
+    ],
+    [
+     "h2",
+     "How your data is protected",
+     "Verin nasıl korunur",
+     "lock"
+    ],
+    [
+     "p",
+     "Cloud data is linked to your account, and the database's access rules stop other users from reading it. Google encrypts it in transit and at rest, but it is not end-to-end encrypted: as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
+     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
+    ],
+    [
+     "p",
+     "Cloud Backup data (Google Firebase) and crash reports (Sentry) are stored on servers in the United States; if you use Vyne from outside the US, this data is transferred there. On your phone, your data is protected by the operating system's app sandbox.",
+     "Bulut yedeği (Google Firebase) ve hata raporları (Sentry) Amerika Birleşik Devletleri'ndeki sunucularda saklanır; Vyne'ı ABD dışından kullanıyorsan bu veriler oraya aktarılır. Telefonunda verin, işletim sisteminin uygulama korumasıyla (sandbox) korunur."
+    ],
+    [
+     "h2",
+     "Sharing with third parties",
+     "Üçüncü taraflarla paylaşım",
+     "handshake"
+    ],
+    [
+     "p",
+     "I don't sell, rent or share your data with advertisers or data brokers. The only third-party services involved are Google Firebase (sign-in and backup storage, on my behalf) and Sentry (crash and performance diagnostics). Neither uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies.",
+     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. İşin içindeki üçüncü taraf hizmetler yalnızca Google Firebase (giriş ve yedek depolama, benim adıma) ve Sentry'dir (hata ve performans bilgileri). İkisi de verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir."
+    ],
+    [
+     "h2",
+     "Why I can use your data",
+     "Verini hangi gerekçeyle kullanıyorum",
+     "clipboard"
+    ],
+    [
+     "p",
+     "The person responsible for your data (the \"data controller\") is the developer of Vyne, reachable at vyneapp.help@gmail.com. I use your data only on these grounds:",
+     "Verinden sorumlu kişi (\"veri sorumlusu\") Vyne'ın geliştiricisidir ve vyneapp.help@gmail.com adresinden ulaşılabilir. Verini sadece şu gerekçelerle kullanırım:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "Cloud Backup: to give you the service you asked for, keeping your data and returning it to you (performance of a contract).",
+       "Bulut Yedekleme: istediğin hizmeti vermek, yani verini saklayıp sana geri vermek için (sözleşmenin ifası)."
+      ],
+      [
+       "Crash and performance data: my legitimate interest in keeping the app working and fixing bugs. You can object by emailing me.",
+       "Hata ve performans bilgileri: uygulamanın çalışmasını sağlamak ve hataları düzeltmek konusundaki meşru menfaatim. Bana e-posta atarak itiraz edebilirsin."
+      ],
+      [
+       "Nothing is used for advertising, profiling or automated decisions about you.",
+       "Hiçbir şey reklam, profil çıkarma ya da hakkında otomatik karar vermek için kullanılmaz."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "Keeping and deleting your data",
+     "Verinin saklanması ve silinmesi",
+     "trash"
+    ],
+    [
+     "callout_p",
+     "Cloud data is kept only as long as your account exists; there is no separate archive. You can permanently delete your account and cloud data any time from the More tab → Cloud Backup → \"Delete My Account & Cloud Data\" (the button appears once you are signed in). It takes effect immediately. You can also email me and I'll delete it for you. Uninstalling the app removes the data stored on your phone.",
+     "Buluttaki verin sadece hesabın var olduğu sürece saklanır; ayrı bir arşiv yoktur. Hesabını ve bulut verini istediğin an Daha Fazla sekmesi → Bulut Yedekleme → \"Hesabımı & Bulut Verimi Sil\" ile kalıcı olarak silebilirsin (düğme giriş yaptıktan sonra görünür). Hemen gerçekleşir. İstersen bana e-posta at, ben silerim. Uygulamayı kaldırmak telefonundaki veriyi siler."
+    ],
+    [
+     "h2",
+     "Your rights",
+     "Hakların",
+     "scale"
+    ],
+    [
+     "p",
+     "Depending on where you live (for example under the GDPR in the EU and UK, Turkey's KVKK, or US state privacy laws), you may have the right to access, correct, export or delete your data, or to object to how it is used. You can do most of this yourself in the app: edit anything, export a backup file, or delete your account. For anything else, email me.",
+     "Yaşadığın yere göre (örneğin AB ve Birleşik Krallık'ta GDPR, Türkiye'de KVKK ya da ABD eyalet yasaları) verine erişme, düzeltme, dışa aktarma, silme ya da kullanılma şekline itiraz etme hakkın olabilir. Bunların çoğunu uygulamada kendin yapabilirsin: her şeyi düzenleyebilir, yedek dosyası alabilir ya da hesabını silebilirsin. Geri kalanı için bana e-posta at."
+    ],
+    [
+     "h2",
+     "Children",
+     "Çocuklar",
+     "person"
+    ],
+    [
+     "p",
+     "Vyne is not directed at children under 13, and I don't knowingly collect data from them. If you believe a child under 13 has created a Cloud Backup account, email me and I'll delete it.",
+     "Vyne 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek veri toplamam. 13 yaşından küçük bir çocuğun Bulut Yedekleme hesabı açtığını düşünüyorsan bana e-posta at, silerim."
+    ],
+    [
+     "h2",
+     "Changes to this policy",
+     "Bu politikadaki değişiklikler",
+     "repeat"
+    ],
+    [
+     "p",
+     "When this policy changes, the date at the top changes too. Continued use of the app after an update means you accept the revised policy.",
+     "Bu politika değişirse en üstteki tarih de değişir. Güncellemeden sonra uygulamayı kullanmaya devam etmen, yeni politikayı kabul ettiğin anlamına gelir."
+    ],
+    [
+     "contact",
+     "Questions about this policy or your data:",
+     "Bu politika ya da verin hakkında sorular:"
+    ]
+   ]
+  },
+  "terms.html": {
+   "kicker": [
+    "Terms",
+    "Şartlar"
+   ],
+   "hero": "clipboard",
+   "links": [
+    "index.html",
+    "delete-account.html"
+   ],
+   "blocks": [
+    [
+     "h1",
+     "Vyne — Terms of Service",
+     "Vyne — Kullanım Şartları"
+    ],
+    [
+     "updated",
+     "Last updated: September 30, 2026",
+     "Son güncelleme: 30 Eylül 2026"
+    ],
+    [
+     "p",
+     "These terms cover your use of Vyne (the \"App\"), a personal app for habits, notes and a journal. Vyne is made and run by one independent developer, not a company; \"I\" and \"me\" here mean that developer. By using the App, you agree to these terms.",
+     "Bu şartlar, alışkanlıklar, notlar ve günlük için kişisel bir uygulama olan Vyne'ı (\"Uygulama\") kullanımını kapsar. Vyne bir şirket değil, tek bir bağımsız geliştirici tarafından yapılır ve yürütülür; buradaki \"ben\" o geliştiricidir. Uygulama'yı kullanarak bu şartları kabul etmiş olursun."
+    ],
+    [
+     "h2",
+     "What Vyne is",
+     "Vyne nedir",
+     "tree"
+    ],
+    [
+     "p",
+     "Vyne helps you organize your life as a vine of branches, with habits, due dates, notes, lists, reminders, a journal and a page for the people you care about. Everything is stored on your device. Optional Cloud Backup keeps a copy on servers I run through Google Firebase, so you can restore it on another phone. You can also export a backup file at any time and import it later; that file stays with you.",
+     "Vyne hayatını dallardan oluşan bir sarmaşık gibi düzenlemene yardım eder: alışkanlıklar, tarihli işler, notlar, listeler, hatırlatıcılar, bir günlük ve sevdiklerin için bir sayfa. Her şey cihazında saklanır. İsteğe bağlı Bulut Yedekleme, Google Firebase üzerinden işlettiğim sunucularda bir kopya tutar; böylece başka bir telefonda geri yükleyebilirsin. İstediğin an bir yedek dosyası alıp sonra içe aktarabilirsin; o dosya sende kalır."
+    ],
+    [
+     "p",
+     "Vyne is free to download and use, and it has no ads.",
+     "Vyne'ı indirmek ve kullanmak ücretsizdir ve içinde reklam yoktur."
+    ],
+    [
+     "h2",
+     "Your account",
+     "Hesabın",
+     "lock"
+    ],
+    [
+     "p",
+     "Cloud Backup is optional and needs an email address and password. You must be at least 13 years old to create an account. Keep your password safe; if you think someone else has used your account, contact me right away.",
+     "Bulut Yedekleme isteğe bağlıdır ve bir e-posta adresi ile şifre gerektirir. Hesap açmak için en az 13 yaşında olmalısın. Şifreni güvende tut; hesabını başka birinin kullandığını düşünürsen hemen bana yaz."
+    ],
+    [
+     "h2",
+     "Your content",
+     "İçeriğin",
+     "journal"
+    ],
+    [
+     "p",
+     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted; the Privacy Policy explains what that means. You can delete your account and cloud data at any time from within the App.",
+     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; bunun ne demek olduğunu Gizlilik Politikası anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
+    ],
+    [
+     "h2",
+     "Not professional advice",
+     "Profesyonel tavsiye değildir",
+     "pill"
+    ],
+    [
+     "p",
+     "Vyne's habits, streaks, statistics, suggestions and the wheel are tools for organizing your own life. They are not medical, psychological, financial or other professional advice, and amounts you track are only the records you type in.",
+     "Vyne'daki alışkanlıklar, seriler, istatistikler, öneriler ve çark kendi hayatını düzenlemen için araçlardır. Tıbbi, psikolojik, finansal ya da başka bir profesyonel tavsiye değildir; takip ettiğin tutarlar sadece senin girdiğin kayıtlardır."
+    ],
+    [
+     "h2",
+     "Reminders",
+     "Hatırlatmalar",
+     "alarm"
+    ],
+    [
+     "p",
+     "Reminders depend on your phone's notification settings, battery settings and operating system, and they may occasionally not arrive. Don't rely on Vyne alone for anything critical, such as medication or legal deadlines.",
+     "Hatırlatmalar telefonunun bildirim ve pil ayarlarına ve işletim sistemine bağlıdır ve bazen gelmeyebilir. İlaç ya da yasal süreler gibi önemli şeyler için yalnızca Vyne'a güvenme."
+    ],
+    [
+     "h2",
+     "Acceptable use",
+     "Kabul edilebilir kullanım",
+     "check"
+    ],
+    [
+     "p",
+     "Use Vyne for its intended purpose: organizing your own life. Don't try to break, reverse-engineer or abuse the App or the backup service, and don't use it for anything illegal.",
+     "Vyne'ı amacına uygun kullan: kendi hayatını düzenlemek için. Uygulama'yı ya da yedekleme hizmetini bozmaya, tersine mühendislikle çözmeye ya da kötüye kullanmaya çalışma ve yasa dışı hiçbir şey için kullanma."
+    ],
+    [
+     "h2",
+     "App stores",
+     "Uygulama mağazaları",
+     "mobile"
+    ],
+    [
+     "p",
+     "If you got Vyne from the Apple App Store, Apple's standard Licensed Application End User License Agreement also applies; if you got it from Google Play, the Google Play Terms of Service also apply. Apple and Google are not responsible for the App or its support; I am.",
+     "Vyne'ı Apple App Store'dan indirdiysen Apple'ın standart Lisanslı Uygulama Son Kullanıcı Lisans Sözleşmesi de geçerlidir; Google Play'den indirdiysen Google Play Hizmet Şartları da geçerlidir. Uygulama'dan ve desteğinden Apple ya da Google değil, ben sorumluyum."
+    ],
+    [
+     "h2",
+     "No warranty",
+     "Garanti yoktur",
+     "warning"
+    ],
+    [
+     "p",
+     "Vyne is provided \"as is.\" I work to keep it reliable, but I can't guarantee it will always be available or error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up, with Cloud Backup or an exported backup file.",
+     "Vyne \"olduğu gibi\" sunulur. Güvenilir olması için çalışıyorum, ancak her zaman erişilebilir ya da hatasız olacağını veya verinin hiç kaybolmayacağını garanti edemem; özellikle Bulut Yedekleme kullanmıyorsan. Önemli olan her şeyi Bulut Yedekleme ya da bir yedek dosyasıyla yedekle."
+    ],
+    [
+     "h2",
+     "Limitation of liability",
+     "Sorumluluğun sınırı",
+     "scale"
+    ],
+    [
+     "p",
+     "To the extent permitted by law, I am not liable for indirect, incidental or consequential damages arising from your use of the App, including lost data.",
+     "Yasanın izin verdiği ölçüde, Uygulama'yı kullanmandan doğan dolaylı, arızi ya da sonuçsal zararlardan, veri kaybı dahil, sorumlu değilim."
+    ],
+    [
+     "h2",
+     "Changes to the App and these terms",
+     "Uygulama'daki ve bu şartlardaki değişiklikler",
+     "repeat"
+    ],
+    [
+     "p",
+     "Vyne changes over time: features can be added, changed or removed. When these terms change, the date at the top changes too, and continued use of the App means you accept the revised terms.",
+     "Vyne zamanla değişir: özellikler eklenebilir, değişebilir ya da kaldırılabilir. Bu şartlar değişirse en üstteki tarih de değişir; Uygulama'yı kullanmaya devam etmen yeni şartları kabul ettiğin anlamına gelir."
+    ],
+    [
+     "h2",
+     "Ending your use",
+     "Kullanımı bırakmak",
+     "wave"
+    ],
+    [
+     "p",
+     "You can stop using Vyne at any time by uninstalling it, and delete your cloud account from within the App or by emailing me. If I ever need to discontinue the App or Cloud Backup, I'll give reasonable notice so you can export your data first.",
+     "Vyne'ı istediğin an kaldırarak kullanmayı bırakabilir, bulut hesabını Uygulama'nın içinden ya da bana e-posta atarak silebilirsin. Uygulama'yı ya da Bulut Yedekleme'yi bir gün kapatmam gerekirse, önce verini dışa aktarabilmen için makul bir süre önceden haber veririm."
+    ],
+    [
+     "h2",
+     "Governing law",
+     "Geçerli yasa",
+     "globe"
+    ],
+    [
+     "p",
+     "These terms are governed by the laws of the United States, without regard to conflict-of-law rules. If you live somewhere whose consumer protection laws give you more rights, those rights still apply to you.",
+     "Bu şartlar, kanunlar ihtilafı kuralları dikkate alınmaksızın Amerika Birleşik Devletleri yasalarına tabidir. Yaşadığın yerin tüketici koruma yasaları sana daha fazla hak tanıyorsa, o hakların yine geçerlidir."
+    ],
+    [
+     "contact",
+     "Questions about these terms:",
+     "Bu şartlar hakkında sorular:"
+    ]
+   ]
+  },
+  "delete-account.html": {
+   "kicker": [
+    "Your account",
+    "Hesabın"
+   ],
+   "hero": "trash",
+   "links": [
+    "index.html",
+    "terms.html"
+   ],
+   "blocks": [
+    [
+     "h1",
+     "Vyne — Delete Your Account",
+     "Vyne — Hesabını Sil"
+    ],
+    [
+     "updated",
+     "Last updated: September 30, 2026",
+     "Son güncelleme: 30 Eylül 2026"
+    ],
+    [
+     "p",
+     "Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.",
+     "Vyne'ın isteğe bağlı Bulut Yedekleme'si, başka bir telefonda geri yükleyebilmen için verinin bir kopyasını (Google Firebase üzerinden) tutar. Hesabını ve bu bulut verisini silmek istersen şöyle yapılır."
+    ],
+    [
+     "h2",
+     "Option 1: Delete it yourself, in the app",
+     "1. yol: Uygulamanın içinden kendin sil",
+     "mobile"
+    ],
+    [
+     "ol",
+     [
+      [
+       "Open Vyne and go to the More tab (bottom right).",
+       "Vyne'ı aç ve Daha Fazla sekmesine git (sağ altta)."
+      ],
+      [
+       "Scroll down to the Cloud Backup section.",
+       "Aşağı kaydırıp Bulut Yedekleme bölümüne gel."
+      ],
+      [
+       "Tap \"Delete My Account & Cloud Data\" and confirm.",
+       "\"Hesabımı & Bulut Verimi Sil\"e dokun ve onayla."
+      ]
+     ]
+    ],
+    [
+     "p",
+     "The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.",
+     "Düğme, Bulut Yedekleme'ye giriş yaptıktan sonra orada görünür. Silme hemen gerçekleşir ve kalıcıdır; bekleme süresi yoktur."
+    ],
+    [
+     "h2",
+     "Option 2: Ask by email",
+     "2. yol: E-postayla iste",
+     "mail"
+    ],
+    [
+     "p",
+     "If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.",
+     "Uygulamayı kullanamıyorsan (telefonunu kaybettin, uygulamayı kaldırdın vb.), hesabındaki adresten vyneapp.help@gmail.com adresine yaz ve silmemi iste. Silince sana dönerim."
+    ],
+    [
+     "h2",
+     "What gets deleted",
+     "Neler silinir",
+     "trash"
+    ],
+    [
+     "p",
+     "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.",
+     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Geri alınamaz."
+    ],
+    [
+     "h2",
+     "What's kept",
+     "Neler kalır",
+     "shield"
+    ],
+    [
+     "p",
+     "Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
+     "Silmeden sonra sunucularda hiçbir şey kalmaz. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
+    ],
+    [
+     "contact",
+     "Questions about deleting your account:",
+     "Hesap silme hakkında sorular:"
+    ]
+   ]
+  }
+ }
+}

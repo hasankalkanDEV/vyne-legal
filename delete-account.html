@@ -45,7 +45,15 @@ h1{font-size:clamp(30px,6vw,42px);line-height:1.1;letter-spacing:-.02em;margin:2
 .notes li{position:relative;padding:16px 16px 18px;border-radius:4px;font-weight:800;font-size:16px;line-height:1.35;box-shadow:0 8px 18px rgba(60,45,20,.13);color:#2C2A26;display:grid;gap:8px;align-content:start}
 .notes li svg.g{font-size:32px}
 .notes li:nth-child(1){background:#FBE7A6;rotate:-1.2deg}.notes li:nth-child(2){background:#D6EBCB;rotate:1deg}.notes li:nth-child(3){background:#D3DDF4;rotate:.8deg}.notes li:nth-child(4){background:#F1D3E6;rotate:-.9deg}
-.toc{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 10px}
+.toc{margin:30px 0 10px;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:4px 14px}
+.toc summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;font-weight:900;font-size:16px;min-height:44px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"";margin-left:auto;width:9px;height:9px;border-right:2.5px solid var(--slate);border-bottom:2.5px solid var(--slate);rotate:45deg;translate:0 -3px;transition:rotate .2s}
+.toc[open] summary::after{rotate:225deg;translate:0 3px}
+.toc summary small{font-size:12.5px;font-weight:900;color:var(--slate);background:var(--card-alt);border-radius:999px;padding:1px 8px}
+.toc-in{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 14px}
+.totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--btn-bg);color:var(--btn-ink);text-decoration:none;font-size:22px;font-weight:900;box-shadow:var(--shadow);z-index:6}
+.totop[hidden]{display:none}
 .toc a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--ink);background:var(--card);border:1.5px solid var(--border);border-radius:999px;padding:5px 12px 5px 6px;font-size:14px;font-weight:800;min-height:36px}
 .toc a i{width:24px;height:24px;border-radius:8px;background:var(--c);display:grid;place-items:center}
 .toc a i svg.g{font-size:18px}
@@ -76,7 +84,7 @@ li::marker{color:var(--green)}
 @media (max-width:560px){.notes{gap:12px}.notes li{font-size:15px;padding:14px 13px 15px}.sec{padding:18px 16px 8px}.contact{grid-template-columns:1fr}.contact .ic{grid-row:auto}h2{font-size:19.5px}}
 @media (max-width:340px){.notes{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{.bar,.toc{display:none}.sec,.contact{box-shadow:none;break-inside:avoid}}
+@media print{.bar,.toc,.totop{display:none}.sec,.contact{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -85,6 +93,7 @@ li::marker{color:var(--green)}
 <main class="doc">
 <section class="hero"><div class="hero-top"><span class="hero-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M13 8 V5.5 H19 V8" fill="none" stroke="#8F99A3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="#8F99A3" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="#BFC6CF"/></g><path d="M13 8 V5.5 H19 V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M19 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><div><span class="kicker" data-i18n="kicker">Vyne · Your account</span><h1 data-i18n="h1">Delete Your Account</h1></div></div><span class="updated" data-i18n="updated">Last updated: September 30, 2026</span><p class="lede" data-i18n="k1">Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.</p></section><section class="sec" id="s1" style="--c:#A8E6C8"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="9" y="3" width="14" height="26" rx="3" fill="#5A5A66"/><rect x="11" y="6" width="10" height="18" rx="1" fill="#96CEEE"/><circle cx="16" cy="26.5" r="1" fill="#BFC6CF"/></g><rect x="9" y="3" width="14" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="11" y="6" width="10" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="16" cy="26.5" r="1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t1">Option 1: Delete it yourself, in the app</h2></div><ol class="steps"><li data-i18n="k2">Open Vyne and go to the More tab (bottom right).</li><li data-i18n="k3">Scroll down to the Cloud Backup section.</li><li data-i18n="k4">Tap &quot;Delete My Account &amp; Cloud Data&quot; and confirm.</li></ol><p data-i18n="k5">The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.</p></section><section class="sec" id="s2" style="--c:#EE96BA"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="3" y="8" width="26" height="17" rx="3" fill="#F3E9D2"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="#B98A5E" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></g><rect x="3" y="8" width="26" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t2">Option 2: Ask by email</h2></div><p data-i18n="k6">If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.</p></section><section class="sec" id="s3" style="--c:#96BEE8"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M13 8 V5.5 H19 V8" fill="none" stroke="#8F99A3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="#8F99A3" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="#BFC6CF"/></g><path d="M13 8 V5.5 H19 V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M19 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t3">What gets deleted</h2></div><p data-i18n="k7">Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.</p></section><section class="sec" id="s4" style="--c:#BEA8EE"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M16 3 L27 7 V15 C27 22 22 27 16 29 C10 27 5 22 5 15 V7 Z" fill="#6F98C4"/><path d="M11 16 L14.5 19.5 L21 12.5" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/></g><path d="M16 3 L27 7 V15 C27 22 22 27 16 29 C10 27 5 22 5 15 V7 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 16 L14.5 19.5 L21 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t4">What's kept</h2></div><p data-i18n="k8">Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.</p></section><div class="contact"><span class="ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="3" y="8" width="26" height="17" rx="3" fill="#F3E9D2"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="#B98A5E" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></g><rect x="3" y="8" width="26" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><b data-i18n="contact_label">Write to me</b><span data-i18n="contact_body">Questions about deleting your account:</span><a class="mail" href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a><span class="sig">— Hasan</span></div><footer class="foot"><div class="links"><a href="index.html" data-i18n="link_index">Privacy Policy</a><a href="terms.html" data-i18n="link_terms">Terms of Service</a><a href="https://hasankalkandev.github.io/vyne-website/" data-i18n="link_site">Vyne website</a></div><span class="tag">vyne · <span data-i18n="foot">your life, one branching map</span></span></footer>
 </main>
+<a class="totop" id="totop" href="#" data-i18n-aria="totop" aria-label="Back to top" hidden>↑</a>
 <script>
 (function () {
   var translations = {
@@ -110,7 +119,8 @@ li::marker{color:var(--green)}
   "link_index": "Privacy Policy",
   "link_terms": "Terms of Service",
   "link_site": "Vyne website",
-  "foot": "your life, one branching map"
+  "foot": "your life, one branching map",
+  "totop": "Back to top"
  },
  "tr": {
   "title": "Vyne — Hesabını Sil",
@@ -134,7 +144,8 @@ li::marker{color:var(--green)}
   "link_index": "Gizlilik Politikası",
   "link_terms": "Kullanım Şartları",
   "link_site": "Vyne sitesi",
-  "foot": "hayatın, dallanan tek bir harita"
+  "foot": "hayatın, dallanan tek bir harita",
+  "totop": "Başa dön"
  }
 };
   var LANG_KEY = "vyne-site-lang";
@@ -150,6 +161,10 @@ li::marker{color:var(--green)}
       var on = btn.getAttribute("data-lang") === lang;
       btn.classList.toggle("active", on); btn.setAttribute("aria-pressed", String(on));
     });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria");
+      if (dict[key] != null) el.setAttribute("aria-label", dict[key]);
+    });
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
   }
   document.querySelectorAll(".lang-switch button").forEach(function (btn) {
@@ -160,6 +175,12 @@ li::marker{color:var(--green)}
   var q = (location.search.match(/[?&]lang=(en|tr)/) || [])[1];
   var initial = q || saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
   applyLang(initial);
+  var toc = document.getElementById("toc");
+  if (toc && window.matchMedia("(min-width: 700px)").matches) toc.open = true;
+  var top = document.getElementById("totop");
+  function onScroll() { top.hidden = window.scrollY < 700; }
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  top.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 })();
 </script>
 </body>

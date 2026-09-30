@@ -4,124 +4,140 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vyne — Delete Your Account</title>
+<meta name="description" content="Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.">
+<link rel="icon" href="app-icon.png" type="image/png">
+<meta name="theme-color" content="#F8F6F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1C18" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  :root {
-    --paper: #F5F6F1; --surface: #FFFFFF; --ink: #1F231D; --ink-sub: #6B7566; --ink-faint: #97A08D;
-    --line: #DEE2D6; --accent: #4F7A49; --accent-soft: #E3ECDC;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --paper: #14160F; --surface: #1B1F16; --ink: #EDEFE7; --ink-sub: #9BA491; --ink-faint: #6A7362; --line: #2B3125; --accent: #8FB884; --accent-soft: #20301F; }
-  }
-  * { box-sizing: border-box; }
-  body { background: var(--paper); margin: 0; }
-  .doc { max-width: 680px; margin: 0 auto; padding: 56px 28px 96px; color: var(--ink); font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 15.5px; line-height: 1.7; }
-  h1 { font-family: Georgia, serif; font-size: 28px; font-weight: 600; margin: 0 0 6px; }
-  h2 { font-family: Georgia, serif; font-size: 18px; font-weight: 600; margin: 34px 0 10px; }
-  .updated { color: var(--ink-faint); font-size: 13px; margin-bottom: 30px; }
-  p { margin: 0 0 12px; }
-  ol, ul { margin: 0 0 12px; padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 4px; padding: 14px 16px; margin: 20px 0; font-size: 14px; }
-  .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin-top: 30px; }
-  a { color: var(--accent); }
-  hr { border: none; border-top: 1px solid var(--line); margin: 40px 0 30px; }
-  .langbar { display: flex; justify-content: flex-end; padding-top: 8px; }
-  .lang-switch { display: flex; gap: 3px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
-  .lang-switch button { border: none; background: transparent; font-size: 12px; font-weight: 700; letter-spacing: 0.02em; padding: 6px 12px; border-radius: 999px; cursor: pointer; color: var(--ink-sub); font-family: inherit; }
-  .lang-switch button.active { background: var(--accent); color: #fff; }
-  .links { text-align: center; font-size: 12.5px; margin: 0 0 10px; }
-  .foot { color: var(--ink-faint); font-size: 12.5px; text-align: center; }
+@font-face{font-family:'Nunito';font-style:normal;font-weight:200 1000;font-display:swap;src:url(fonts/nunito-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Nunito';font-style:normal;font-weight:200 1000;font-display:swap;src:url(fonts/nunito-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/caveat-latin-ext-700.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/caveat-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--bg:#F8F6F0;--card:#FFFFFF;--card-alt:#F2EFE8;--border:#E8E4DC;--ink:#2C2A26;--slate:#6C6860;--green:#6E9468;--green-text:#4A6E45;--green-soft:#E4F4E0;--btn-bg:#4A6E45;--btn-ink:#fff;--pen:#3F5FA8;
+  --shadow:0 2px 4px rgba(44,42,38,.04),0 12px 28px rgba(44,42,38,.07);--hand:'Caveat','Segoe Print',cursive;--sans:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#1E1C18;--card:#2C2A26;--card-alt:#363430;--border:#3C3A36;--ink:#F0EDE8;--slate:#A19E9A;--green:#A6CB9E;--green-text:#A6CB9E;--green-soft:#2C3A2C;--btn-bg:#A6CB9E;--btn-ink:#16200F;--pen:#9DB4EA;
+  --shadow:0 2px 4px rgba(0,0,0,.24),0 12px 28px rgba(0,0,0,.3);color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.65;overflow-x:clip}
+a{color:var(--green-text)}
+svg.g{width:1em;height:1em;flex:none;display:inline-block;vertical-align:-.15em;color:#2C2A26;overflow:visible}
+svg.g .gf{opacity:1}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.bar-in{max-width:760px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font-weight:900;font-size:21px;letter-spacing:-.02em}
+.brand img{border-radius:8px}
+.lang-switch{margin-left:auto;display:flex;gap:3px;background:var(--card);border:1.5px solid var(--border);border-radius:999px;padding:3px}
+.lang-switch button{border:0;background:transparent;font:inherit;font-size:13.5px;font-weight:900;padding:6px 13px;border-radius:999px;cursor:pointer;color:var(--slate);min-height:34px}
+.lang-switch button.active{background:var(--btn-bg);color:var(--btn-ink)}
+.doc{max-width:760px;margin:0 auto;padding:30px 20px 60px}
+.hero{display:grid;gap:12px;margin-bottom:26px}
+.hero-top{display:flex;align-items:center;gap:14px}
+.hero-ic{width:64px;height:64px;border-radius:20px;background:#E4F4E0;display:grid;place-items:center;flex:none;box-shadow:var(--shadow)}
+.hero-ic svg.g{font-size:46px}
+.kicker{font-size:13.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--green-text)}
+h1{font-size:clamp(30px,6vw,42px);line-height:1.1;letter-spacing:-.02em;margin:2px 0 0;font-weight:900}
+.updated{justify-self:start;font-size:13.5px;font-weight:800;color:var(--slate);background:var(--card);border:1px solid var(--border);border-radius:999px;padding:4px 12px}
+.lede{font-size:17.5px;color:var(--ink);margin:4px 0 0}
+.hand{font-family:var(--hand);font-weight:700;font-size:32px;line-height:1;margin:34px 0 14px;color:var(--pen)}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;list-style:none;margin:0;padding:0}
+.notes li{position:relative;padding:16px 16px 18px;border-radius:4px;font-weight:800;font-size:16px;line-height:1.35;box-shadow:0 8px 18px rgba(60,45,20,.13);color:#2C2A26;display:grid;gap:8px;align-content:start}
+.notes li svg.g{font-size:32px}
+.notes li:nth-child(1){background:#FBE7A6;rotate:-1.2deg}.notes li:nth-child(2){background:#D6EBCB;rotate:1deg}.notes li:nth-child(3){background:#D3DDF4;rotate:.8deg}.notes li:nth-child(4){background:#F1D3E6;rotate:-.9deg}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 10px}
+.toc a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--ink);background:var(--card);border:1.5px solid var(--border);border-radius:999px;padding:5px 12px 5px 6px;font-size:14px;font-weight:800;min-height:36px}
+.toc a i{width:24px;height:24px;border-radius:8px;background:var(--c);display:grid;place-items:center}
+.toc a i svg.g{font-size:18px}
+.toc a:hover{border-color:var(--green)}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:20px 22px 12px;margin-top:16px;box-shadow:var(--shadow);border-top:5px solid var(--c)}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.sec-ic{width:46px;height:46px;border-radius:14px;background:var(--c);display:grid;place-items:center;flex:none}
+.sec-ic svg.g{font-size:32px}
+h2{font-size:21px;line-height:1.25;margin:0;font-weight:900;letter-spacing:-.01em}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:8px}
+li::marker{color:var(--green)}
+.callout{background:var(--green-soft);border-radius:14px;padding:14px 16px;margin:0 0 12px;font-weight:700}
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:10px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;background:var(--card-alt);border-radius:14px;padding:10px 14px 10px 10px;margin:0;font-weight:700}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--btn-bg);color:var(--btn-ink);display:grid;place-items:center;font-weight:900}
+.contact{margin-top:28px;background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center;box-shadow:var(--shadow)}
+.contact .ic{grid-row:span 3;width:58px;height:58px;border-radius:18px;background:#F0D8A8;display:grid;place-items:center}
+.contact .ic svg.g{font-size:40px}
+.contact b{font-size:19px;font-weight:900}
+.contact span{color:var(--slate)}
+.mail{justify-self:start;display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border-radius:999px;background:var(--btn-bg);color:var(--btn-ink);text-decoration:none;font-weight:900;font-size:15.5px;word-break:break-all}
+.sig{grid-column:1 / -1;justify-self:end;font-family:var(--hand);font-size:30px;font-weight:700;color:var(--green-text);line-height:1;margin-top:4px}
+.foot{margin-top:34px;text-align:center;display:grid;gap:10px;color:var(--slate);font-size:14.5px}
+.foot .links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-weight:800}
+.foot .tag{font-family:var(--hand);font-size:22px;font-weight:700;color:var(--green-text)}
+@media (max-width:560px){.notes{gap:12px}.notes li{font-size:15px;padding:14px 13px 15px}.sec{padding:18px 16px 8px}.contact{grid-template-columns:1fr}.contact .ic{grid-row:auto}h2{font-size:19.5px}}
+@media (max-width:340px){.notes{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.bar,.toc{display:none}.sec,.contact{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
 <body>
-<div class="doc">
-  <div class="langbar">
-    <div class="lang-switch">
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="tr">TR</button>
-    </div>
-  </div>
-  <h1 data-i18n="h1">Vyne — Delete Your Account</h1>
-  <div class="updated" data-i18n="updated">Last updated: September 30, 2026</div>
-  <p data-i18n="k1">Vyne&#x27;s optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you&#x27;d like to delete your account and that cloud data, here&#x27;s how.</p>
-
-  <h2 data-i18n="k2">Option 1: Delete it yourself, in the app</h2>
-  <ol>
-    <li data-i18n="k3">Open Vyne and go to the More tab (bottom right).</li>
-    <li data-i18n="k4">Scroll down to the Cloud Backup section.</li>
-    <li data-i18n="k5">Tap &quot;Delete My Account &amp; Cloud Data&quot; and confirm.</li>
-  </ol>
-  <p data-i18n="k6">The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.</p>
-
-  <h2 data-i18n="k7">Option 2: Ask by email</h2>
-  <p data-i18n="k8">If you can&#x27;t use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I&#x27;ll write back once it&#x27;s done.</p>
-
-  <h2 data-i18n="k9">What gets deleted</h2>
-  <p data-i18n="k10">Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can&#x27;t be undone.</p>
-
-  <h2 data-i18n="k11">What&#x27;s kept</h2>
-  <p data-i18n="k12">Nothing is kept on the servers after deletion. Data on your phone isn&#x27;t touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren&#x27;t linked to your account and are deleted automatically after a limited time.</p>
-
-  <div class="contact">
-    <strong data-i18n="contact_label">Contact</strong>
-    <p style="margin-top:8px; margin-bottom:0;"><span data-i18n="contact_body">Questions about deleting your account:</span> <a href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a></p>
-  </div>
-
-  <hr>
-  <p class="links"><a href="index.html" data-i18n="link_index">Privacy Policy</a> · <a href="terms.html" data-i18n="link_terms">Terms of Service</a></p>
-  <p class="foot" data-i18n="foot">Vyne — your life, one branching map 🌿</p>
-</div>
+<header class="bar"><div class="bar-in"><a class="brand" href="https://hasankalkandev.github.io/vyne-website/"><img src="app-icon.png" alt="" width="30" height="30">vyne</a>
+<div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="tr">TR</button></div></div></header>
+<main class="doc">
+<section class="hero"><div class="hero-top"><span class="hero-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M13 8 V5.5 H19 V8" fill="none" stroke="#8F99A3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="#8F99A3" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="#BFC6CF"/></g><path d="M13 8 V5.5 H19 V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M19 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><div><span class="kicker" data-i18n="kicker">Vyne · Your account</span><h1 data-i18n="h1">Delete Your Account</h1></div></div><span class="updated" data-i18n="updated">Last updated: September 30, 2026</span><p class="lede" data-i18n="k1">Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.</p></section><section class="sec" id="s1" style="--c:#A8E6C8"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="9" y="3" width="14" height="26" rx="3" fill="#5A5A66"/><rect x="11" y="6" width="10" height="18" rx="1" fill="#96CEEE"/><circle cx="16" cy="26.5" r="1" fill="#BFC6CF"/></g><rect x="9" y="3" width="14" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><rect x="11" y="6" width="10" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="16" cy="26.5" r="1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t1">Option 1: Delete it yourself, in the app</h2></div><ol class="steps"><li data-i18n="k2">Open Vyne and go to the More tab (bottom right).</li><li data-i18n="k3">Scroll down to the Cloud Backup section.</li><li data-i18n="k4">Tap &quot;Delete My Account &amp; Cloud Data&quot; and confirm.</li></ol><p data-i18n="k5">The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.</p></section><section class="sec" id="s2" style="--c:#EE96BA"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="3" y="8" width="26" height="17" rx="3" fill="#F3E9D2"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="#B98A5E" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></g><rect x="3" y="8" width="26" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t2">Option 2: Ask by email</h2></div><p data-i18n="k6">If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.</p></section><section class="sec" id="s3" style="--c:#96BEE8"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M13 8 V5.5 H19 V8" fill="none" stroke="#8F99A3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="#8F99A3" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="#BFC6CF"/></g><path d="M13 8 V5.5 H19 V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 8 H26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 10 H24 L22.5 27 A1.5 1.5 0 0 1 21 28 H11 A1.5 1.5 0 0 1 9.5 27 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M19 14 V24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t3">What gets deleted</h2></div><p data-i18n="k7">Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.</p></section><section class="sec" id="s4" style="--c:#BEA8EE"><div class="sec-h"><span class="sec-ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><path d="M16 3 L27 7 V15 C27 22 22 27 16 29 C10 27 5 22 5 15 V7 Z" fill="#6F98C4"/><path d="M11 16 L14.5 19.5 L21 12.5" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/></g><path d="M16 3 L27 7 V15 C27 22 22 27 16 29 C10 27 5 22 5 15 V7 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 16 L14.5 19.5 L21 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><h2 data-i18n="t4">What's kept</h2></div><p data-i18n="k8">Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.</p></section><div class="contact"><span class="ic"><svg class="g" viewBox="-1 -1 35 35" aria-hidden="true" focusable="false"><g class="gf" transform="translate(1.4 1.4)"><rect x="3" y="8" width="26" height="17" rx="3" fill="#F3E9D2"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="#B98A5E" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></g><rect x="3" y="8" width="26" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M3.5 9 L16 18.5 L28.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg></span><b data-i18n="contact_label">Write to me</b><span data-i18n="contact_body">Questions about deleting your account:</span><a class="mail" href="mailto:vyneapp.help@gmail.com">vyneapp.help@gmail.com</a><span class="sig">— Hasan</span></div><footer class="foot"><div class="links"><a href="index.html" data-i18n="link_index">Privacy Policy</a><a href="terms.html" data-i18n="link_terms">Terms of Service</a><a href="https://hasankalkandev.github.io/vyne-website/" data-i18n="link_site">Vyne website</a></div><span class="tag">vyne · <span data-i18n="foot">your life, one branching map</span></span></footer>
+</main>
 <script>
 (function () {
   var translations = {
-    "en": {
-      "h1": "Vyne — Delete Your Account",
-      "updated": "Last updated: September 30, 2026",
-      "k1": "Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.",
-      "k2": "Option 1: Delete it yourself, in the app",
-      "k3": "Open Vyne and go to the More tab (bottom right).",
-      "k4": "Scroll down to the Cloud Backup section.",
-      "k5": "Tap \"Delete My Account & Cloud Data\" and confirm.",
-      "k6": "The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.",
-      "k7": "Option 2: Ask by email",
-      "k8": "If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.",
-      "k9": "What gets deleted",
-      "k10": "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.",
-      "k11": "What's kept",
-      "k12": "Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
-      "contact_label": "Contact",
-      "contact_body": "Questions about deleting your account:",
-      "link_index": "Privacy Policy",
-      "link_terms": "Terms of Service",
-      "foot": "Vyne — your life, one branching map 🌿",
-      "title": "Vyne — Delete Your Account"
-    },
-    "tr": {
-      "h1": "Vyne — Hesabını Sil",
-      "updated": "Son güncelleme: 30 Eylül 2026",
-      "k1": "Vyne'ın isteğe bağlı Bulut Yedekleme'si, başka bir telefonda geri yükleyebilmen için verinin bir kopyasını (Google Firebase üzerinden) tutar. Hesabını ve bu bulut verisini silmek istersen şöyle yapılır.",
-      "k2": "1. yol: Uygulamanın içinden kendin sil",
-      "k3": "Vyne'ı aç ve Daha Fazla sekmesine git (sağ altta).",
-      "k4": "Aşağı kaydırıp Bulut Yedekleme bölümüne gel.",
-      "k5": "\"Hesabımı & Bulut Verimi Sil\"e dokun ve onayla.",
-      "k6": "Düğme, Bulut Yedekleme'ye giriş yaptıktan sonra orada görünür. Silme hemen gerçekleşir ve kalıcıdır; bekleme süresi yoktur.",
-      "k7": "2. yol: E-postayla iste",
-      "k8": "Uygulamayı kullanamıyorsan (telefonunu kaybettin, uygulamayı kaldırdın vb.), hesabındaki adresten vyneapp.help@gmail.com adresine yaz ve silmemi iste. Silince sana dönerim.",
-      "k9": "Neler silinir",
-      "k10": "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Geri alınamaz.",
-      "k11": "Neler kalır",
-      "k12": "Silmeden sonra sunucularda hiçbir şey kalmaz. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir.",
-      "contact_label": "İletişim",
-      "contact_body": "Hesap silme hakkında sorular:",
-      "link_index": "Gizlilik Politikası",
-      "link_terms": "Kullanım Şartları",
-      "foot": "Vyne — hayatın, dallanan tek bir harita 🌿",
-      "title": "Vyne — Hesabını Sil"
-    }
-  };
-
+ "en": {
+  "title": "Vyne — Delete Your Account",
+  "h1": "Delete Your Account",
+  "kicker": "Vyne · Your account",
+  "updated": "Last updated: September 30, 2026",
+  "k1": "Vyne's optional Cloud Backup keeps a copy of your data (through Google Firebase) so you can restore it on another phone. If you'd like to delete your account and that cloud data, here's how.",
+  "t1": "Option 1: Delete it yourself, in the app",
+  "k2": "Open Vyne and go to the More tab (bottom right).",
+  "k3": "Scroll down to the Cloud Backup section.",
+  "k4": "Tap \"Delete My Account & Cloud Data\" and confirm.",
+  "k5": "The button appears there once you are signed in to Cloud Backup. Deletion is immediate and permanent; there is no waiting period.",
+  "t2": "Option 2: Ask by email",
+  "k6": "If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.",
+  "t3": "What gets deleted",
+  "k7": "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.",
+  "t4": "What's kept",
+  "k8": "Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
+  "contact_label": "Write to me",
+  "contact_body": "Questions about deleting your account:",
+  "link_index": "Privacy Policy",
+  "link_terms": "Terms of Service",
+  "link_site": "Vyne website",
+  "foot": "your life, one branching map"
+ },
+ "tr": {
+  "title": "Vyne — Hesabını Sil",
+  "h1": "Hesabını Sil",
+  "kicker": "Vyne · Hesabın",
+  "updated": "Son güncelleme: 30 Eylül 2026",
+  "k1": "Vyne'ın isteğe bağlı Bulut Yedekleme'si, başka bir telefonda geri yükleyebilmen için verinin bir kopyasını (Google Firebase üzerinden) tutar. Hesabını ve bu bulut verisini silmek istersen şöyle yapılır.",
+  "t1": "1. yol: Uygulamanın içinden kendin sil",
+  "k2": "Vyne'ı aç ve Daha Fazla sekmesine git (sağ altta).",
+  "k3": "Aşağı kaydırıp Bulut Yedekleme bölümüne gel.",
+  "k4": "\"Hesabımı & Bulut Verimi Sil\"e dokun ve onayla.",
+  "k5": "Düğme, Bulut Yedekleme'ye giriş yaptıktan sonra orada görünür. Silme hemen gerçekleşir ve kalıcıdır; bekleme süresi yoktur.",
+  "t2": "2. yol: E-postayla iste",
+  "k6": "Uygulamayı kullanamıyorsan (telefonunu kaybettin, uygulamayı kaldırdın vb.), hesabındaki adresten vyneapp.help@gmail.com adresine yaz ve silmemi iste. Silince sana dönerim.",
+  "t3": "Neler silinir",
+  "k7": "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Geri alınamaz.",
+  "t4": "Neler kalır",
+  "k8": "Silmeden sonra sunucularda hiçbir şey kalmaz. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir.",
+  "contact_label": "Bana yaz",
+  "contact_body": "Hesap silme hakkında sorular:",
+  "link_index": "Gizlilik Politikası",
+  "link_terms": "Kullanım Şartları",
+  "link_site": "Vyne sitesi",
+  "foot": "hayatın, dallanan tek bir harita"
+ }
+};
   var LANG_KEY = "vyne-site-lang";
-
   function applyLang(lang) {
     var dict = translations[lang] || translations.en;
     document.documentElement.lang = lang;
@@ -131,18 +147,18 @@
       if (dict[key] != null) el.textContent = dict[key];
     });
     document.querySelectorAll(".lang-switch button").forEach(function (btn) {
-      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+      var on = btn.getAttribute("data-lang") === lang;
+      btn.classList.toggle("active", on); btn.setAttribute("aria-pressed", String(on));
     });
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
   }
-
   document.querySelectorAll(".lang-switch button").forEach(function (btn) {
     btn.addEventListener("click", function () { applyLang(btn.getAttribute("data-lang")); });
   });
-
   var saved;
   try { saved = localStorage.getItem(LANG_KEY); } catch (e) {}
-  var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+  var q = (location.search.match(/[?&]lang=(en|tr)/) || [])[1];
+  var initial = q || saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
   applyLang(initial);
 })();
 </script>

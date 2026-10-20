@@ -278,18 +278,18 @@
     ],
     [
      "p",
-     "Where it is kept. On your phone, in Vyne's own storage. Your phone's own backup (iCloud Backup on iPhone, Google backup on Android) may include the app's local files, cycle data among them, depending on your device settings. Apple or Google run those backups under their terms, not ours.",
-     "Nerede saklanır. Telefonunda, Vyne'ın kendi depolamasında. Telefonunun kendi yedeği (iPhone'da iCloud Yedekleme, Android'de Google yedeği), cihaz ayarlarına bağlı olarak uygulamanın yerel dosyalarını, döngü verileri de dahil, içerebilir. Bu yedekleri Apple ya da Google kendi koşullarıyla yürütür, biz değil."
+     "Where it is kept. On your phone, in Vyne's own storage. Your phone's own backup (iCloud Backup on iPhone, Google backup on Android) may include the app's local files, cycle data among them, depending on your device settings. Apple or Google run those backups under their terms, not mine.",
+     "Nerede saklanır. Telefonunda, Vyne'ın kendi depolamasında. Telefonunun kendi yedeği (iPhone'da iCloud Yedekleme, Android'de Google yedeği), cihaz ayarlarına bağlı olarak uygulamanın yerel dosyalarını, döngü verileri de dahil, içerebilir. Bu yedekleri Apple ya da Google kendi koşullarıyla yürütür, ben değil."
     ],
     [
      "p",
-     "Vyne's cloud. Cycle data reaches Vyne's cloud only if you have turned on end-to-end encryption for your account. It is then encrypted on your phone with a key that only your devices hold, before it leaves the phone. We cannot read it, and we cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data stays on your phone and is not sent to Vyne's cloud. If you turn end-to-end encryption off, the encrypted cycle copies are deleted from Vyne's cloud and your data stays on your phones.",
-     "Vyne'ın bulutu. Döngü verileri Vyne'ın bulutuna yalnızca hesabın için uçtan uca şifrelemeyi açtıysan ulaşır. O zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Biz okuyamayız ve kimseye okunabilir hâlde veremeyiz. Uçtan uca şifreleme yoksa döngü verileri telefonunda kalır, Vyne'ın bulutuna gönderilmez. Uçtan uca şifrelemeyi kapatırsan şifreli döngü kopyaları Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
+     "Vyne's cloud. Cycle data reaches Vyne's cloud only if you have turned on end-to-end encryption for your account. It is then encrypted on your phone with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data stays on your phone and is not sent to Vyne's cloud. If you turn end-to-end encryption off, the encrypted cycle copies are deleted from Vyne's cloud and your data stays on your phones.",
+     "Vyne'ın bulutu. Döngü verileri Vyne'ın bulutuna yalnızca hesabın için uçtan uca şifrelemeyi açtıysan ulaşır. O zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri telefonunda kalır, Vyne'ın bulutuna gönderilmez. Uçtan uca şifrelemeyi kapatırsan şifreli döngü kopyaları Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
     ],
     [
      "p",
-     "Never shared. We do not share, sell or rent cycle data. It is never placed in a shared profile. It is not used for advertising, analytics, research or to train any model, and Vyne has no advertising or analytics tools.",
-     "Asla paylaşılmaz. Döngü verilerini paylaşmayız, satmayız, kiralamayız. Ortak bir profile asla konmaz. Reklam, analiz, araştırma ya da herhangi bir modeli eğitmek için kullanılmaz; Vyne'da reklam ya da analiz aracı yoktur."
+     "Never shared. I do not share, sell or rent cycle data. It is never placed in a shared profile. It is not used for advertising, analytics, research or to train any model, and Vyne has no advertising or analytics tools.",
+     "Asla paylaşılmaz. Döngü verilerini paylaşmam, satmam, kiralamam. Ortak bir profile asla konmaz. Reklam, analiz, araştırma ya da herhangi bir modeli eğitmek için kullanılmaz; Vyne'da reklam ya da analiz aracı yoktur."
     ],
     [
      "p",
@@ -313,8 +313,8 @@
     ],
     [
      "p",
-     "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data are listed above; we collect them only to show them back to you; they come only from you (what you enter or import); we share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask us anything about it, write to vyneapp.help@gmail.com.",
-     "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarız; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmayız. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz."
+     "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data are listed above; I collect them only to show them back to you; they come only from you (what you enter or import); I share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask me anything about it, write to vyneapp.help@gmail.com.",
+     "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarım; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmam. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz."
     ],
     [
      "link",
@@ -853,8 +853,8 @@
     ],
     [
      "updated",
-     "Effective and last updated: October 20, 2026",
-     "Yürürlük ve son güncelleme: 20 Ekim 2026"
+     "Last updated: October 20, 2026",
+     "Son güncelleme: 20 Ekim 2026"
     ],
     [
      "p",
@@ -1064,6 +1064,11 @@
      ]
     ],
     [
+     "p",
+     "I answer requests within 45 days. If I need more time, I can extend this once by up to 45 more days, and I will tell you.",
+     "İsteklere 45 gün içinde cevap veririm. Daha fazla zaman gerekirse bu süreyi bir kez, en fazla 45 gün daha uzatabilirim ve bunu sana bildiririm."
+    ],
+    [
      "h2",
      "How to appeal",
      "Nasıl itiraz edilir",
@@ -1073,6 +1078,23 @@
      "p",
      "If I turn down your request, or you disagree with my answer, reply to the same email at vyneapp.help@gmail.com and say you are appealing. I will look at it again and write back with what I decided and why.",
      "İsteğini reddedersem ya da cevabıma katılmazsan, vyneapp.help@gmail.com adresindeki aynı e-postaya cevap ver ve itiraz ettiğini yaz. Yeniden bakar, ne karar verdiğimi ve nedenini sana yazarım."
+    ],
+    [
+     "p",
+     "If your appeal is denied, you can contact your state Attorney General: people in Washington, the Washington State Attorney General; people in Nevada, the Nevada Attorney General.",
+     "İtirazın reddedilirse eyaletinin Başsavcılığına başvurabilirsin: Washington'da yaşıyorsan Washington Eyaleti Başsavcılığına, Nevada'da yaşıyorsan Nevada Başsavcılığına."
+    ],
+    [
+     "link",
+     "https://www.atg.wa.gov/file-complaint",
+     "Washington State Attorney General: file a complaint →",
+     "Washington Eyaleti Başsavcılığı: şikâyet başvurusu →"
+    ],
+    [
+     "link",
+     "https://ag.nv.gov/Complaints/File_Complaint/",
+     "Nevada Attorney General: file a complaint →",
+     "Nevada Başsavcılığı: şikâyet başvurusu →"
     ],
     [
      "h2",

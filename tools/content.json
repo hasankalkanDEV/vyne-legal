@@ -66,8 +66,8 @@
        "Hata raporları Sentry'ye adın ya da e-postan olmadan gider."
       ],
       [
-       "Cloud Backup is not end-to-end encrypted: I could technically read it, and I don't.",
-       "Bulut yedeği uçtan uca şifreli değildir: teknik olarak okuyabilirim, okumam."
+       "Cloud Backup is not end-to-end encrypted, except cycle data when you turn on end-to-end encryption: I could technically read the rest, and I don't.",
+       "Bulut yedeği uçtan uca şifreli değildir; uçtan uca şifrelemeyi açtığında döngü verileri hariç: gerisini teknik olarak okuyabilirim, okumam."
       ]
      ]
     ],
@@ -258,6 +258,57 @@
     ],
     [
      "h2",
+     "Cycle tracking",
+     "Döngü takibi",
+     "repeat"
+    ],
+    [
+     "p",
+     "Cycle tracking is off until you turn it on. When you turn it on, Vyne keeps the health data you enter or import: temperatures, period and bleeding, cervical mucus, cervix observations, LH and pregnancy test results, symptoms, how you feel, sex, things that may have affected a reading, your own marks on the chart, and your notes.",
+     "Döngü takibi sen açana kadar kapalıdır. Açtığında Vyne girdiğin ya da içe aktardığın sağlık verilerini saklar: sıcaklıklar, regl ve kanama, servikal akıntı, rahim ağzı gözlemleri, LH ve gebelik testi sonuçları, belirtiler, ruh hâlin, cinsel ilişki, bir ölçümü etkilemiş olabilecek şeyler, grafikteki kendi işaretlerin ve notların."
+    ],
+    [
+     "p",
+     "Where it is kept. On your phone, in Vyne's own storage. Like all app data, it is also part of your phone's own backup (iCloud Backup on iPhone, Google backup on Android), which Apple or Google run under their terms, not ours.",
+     "Nerede saklanır. Telefonunda, Vyne'ın kendi depolamasında. Tüm uygulama verileri gibi telefonunun kendi yedeğinin de (iPhone'da iCloud Yedekleme, Android'de Google yedeği) parçasıdır; bu yedekleri Apple ya da Google kendi koşullarıyla yürütür, biz değil."
+    ],
+    [
+     "p",
+     "Vyne's cloud. Cycle data reaches Vyne's cloud only if you have turned on end-to-end encryption for your account. It is then encrypted on your phone with a key that only your devices hold, before it leaves the phone. We cannot read it, and we cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data stays on your phone and is not sent to Vyne's cloud. If you turn end-to-end encryption off, the encrypted cycle copies are deleted from Vyne's cloud and your data stays on your phones.",
+     "Vyne'ın bulutu. Döngü verileri Vyne'ın bulutuna yalnızca hesabın için uçtan uca şifrelemeyi açtıysan ulaşır. O zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Biz okuyamayız ve kimseye okunabilir hâlde veremeyiz. Uçtan uca şifreleme yoksa döngü verileri telefonunda kalır, Vyne'ın bulutuna gönderilmez. Uçtan uca şifrelemeyi kapatırsan şifreli döngü kopyaları Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
+    ],
+    [
+     "p",
+     "Never shared. We do not share, sell or rent cycle data. It is never placed in a shared profile. It is not used for advertising, analytics, research or to train any model, and Vyne has no advertising or analytics tools.",
+     "Asla paylaşılmaz. Döngü verilerini paylaşmayız, satmayız, kiralamayız. Ortak bir profile asla konmaz. Reklam, analiz, araştırma ya da herhangi bir modeli eğitmek için kullanılmaz; Vyne'da reklam ya da analiz aracı yoktur."
+    ],
+    [
+     "p",
+     "Files you make. Import reads a file you choose on your phone. Export (Vyne file, spreadsheet) and the PDF for a clinician are made only when you ask, and go only where you send them through your phone's share sheet.",
+     "Senin oluşturduğun dosyalar. İçe aktarma, telefonunda seçtiğin bir dosyayı okur. Dışa aktarma (Vyne dosyası, tablo) ve hekim için PDF yalnızca sen istediğinde oluşturulur ve yalnızca telefonunun paylaşım ekranından gönderdiğin yere gider."
+    ],
+    [
+     "p",
+     "Error reports. Vyne sends crash reports to Sentry to fix bugs. While a cycle screen is open no activity trail is recorded, cycle terms are removed from every report, and a crash inside a cycle screen is reported as one fixed message without content.",
+     "Hata raporları. Vyne hataları düzeltmek için çökme raporlarını Sentry'ye gönderir. Bir döngü ekranı açıkken hiçbir etkinlik izi kaydedilmez, döngüyle ilgili terimler her rapordan çıkarılır ve bir döngü ekranındaki çökme, içerik taşımayan tek bir sabit mesaj olarak bildirilir."
+    ],
+    [
+     "p",
+     "Deleting it. Settings → Cycle tracking → Delete all cycle data removes every day from your phone and from the encrypted cloud copy. Deleting your account deletes your cloud data and offers to delete cycle data from your phone too. Uninstalling Vyne removes the data from the phone (a copy may remain in your phone's own backup until that backup is replaced).",
+     "Silmek. Ayarlar → Döngü takibi → Tüm döngü verilerini sil, her günü telefonundan ve şifreli bulut kopyasından kaldırır. Hesabını silmek bulut verilerini siler ve döngü verilerini telefonundan da silmeyi önerir. Vyne'ı kaldırmak verileri telefondan kaldırır (telefonunun kendi yedeğinde, o yedek yenilenene kadar bir kopya kalabilir)."
+    ],
+    [
+     "p",
+     "Not medical advice. Vyne shows what you logged. It does not predict, does not tell you when you are fertile or safe, is not medical advice and is not birth control.",
+     "Tıbbi tavsiye değildir. Vyne yalnızca kaydettiğini gösterir. Tahmin yapmaz, ne zaman doğurgan ya da güvende olduğunu söylemez; tıbbi tavsiye ve doğum kontrol yöntemi değildir."
+    ],
+    [
+     "p",
+     "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data are listed above; we collect them only to show them back to you; they come only from you (what you enter or import); we share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask us anything about it, write to vyneapp.help@gmail.com.",
+     "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarız; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmayız. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz."
+    ],
+    [
+     "h2",
      "Shared profiles",
      "Ortak profiller",
      "people"
@@ -347,8 +398,8 @@
     ],
     [
      "p",
-     "Cloud data is linked to your account, and the database's access rules stop other users from reading it, except the other member of a profile you chose to share. Google encrypts it in transit and at rest, but it is not end-to-end encrypted: as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
-     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları, paylaşmayı seçtiğin bir profilin diğer üyesi dışında, diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
+     "Cloud data is linked to your account, and the database's access rules stop other users from reading it, except the other member of a profile you chose to share. Google encrypts it in transit and at rest, but it is not end-to-end encrypted (the exception is cycle data once you turn on end-to-end encryption, as described under \"Cycle tracking\"): as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
+     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları, paylaşmayı seçtiğin bir profilin diğer üyesi dışında, diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir (istisnası, uçtan uca şifrelemeyi açtığında döngü verileridir; \"Döngü takibi\" bölümünde anlatıldığı gibi): veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
     ],
     [
      "p",
@@ -543,8 +594,8 @@
     ],
     [
      "p",
-     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted; the Privacy Policy explains what that means. If you share a profile, I also show it to its other member, as the Privacy Policy explains. You can delete your account and cloud data at any time from within the App.",
-     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; bunun ne demek olduğunu Gizlilik Politikası anlatır. Bir profili paylaşırsan onu diğer üyesine de gösteririm; Gizlilik Politikası bunu anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
+     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted, except cycle data when you turn on end-to-end encryption; the Privacy Policy explains what that means. If you share a profile, I also show it to its other member, as the Privacy Policy explains. You can delete your account and cloud data at any time from within the App.",
+     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; uçtan uca şifrelemeyi açtığında döngü verileri hariç; bunun ne demek olduğunu Gizlilik Politikası anlatır. Bir profili paylaşırsan onu diğer üyesine de gösteririm; Gizlilik Politikası bunu anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
     ],
     [
      "h2",

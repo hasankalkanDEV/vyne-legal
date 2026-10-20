@@ -7,6 +7,7 @@ GitHub Pages `main` dalından yayınlıyor: `main`'e push = canlı (~1 dakika).
 | `index.html` | Gizlilik Politikası |
 | `terms.html` | Kullanım Şartları |
 | `delete-account.html` | Hesabını sil |
+| `consumer-health-data.html` | Tüketici Sağlık Verisi Gizlilik Politikası (Washington MHMDA, Nevada SB 370) |
 
 **Sayfaları elle düzenleme.** Metinler `tools/content.json`'da, İngilizce ve Türkçe yan yana.
 Değiştir, sonra:

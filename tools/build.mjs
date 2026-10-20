@@ -1,7 +1,8 @@
-// Vyne yasal sayfaları (index.html gizlilik, terms.html şartlar, delete-account.html hesap silme).
+// Vyne yasal sayfaları (index.html gizlilik, terms.html şartlar, delete-account.html hesap silme,
+// consumer-health-data.html tüketici sağlık verisi).
 // METİNLER tools/content.json'da (EN ve TR yan yana). Değiştirdikten sonra:  node tools/build.mjs
 // Sayfaları elle düzenleme: metin hem sayfada hem dil sözlüğünde durur, ikisini bu betik birlikte yazar.
-// Bloklar: ["h2", EN, TR, ikon] yeni bölüm · ["p", EN, TR] · ["ul"|"ol", [[EN, TR], ...]] · ["callout_p", EN, TR]
+// Bloklar: ["h2", EN, TR, ikon] yeni bölüm · ["p", EN, TR] · ["ul"|"ol", [[EN, TR], ...]] · ["callout_p", EN, TR] · ["link", href, EN, TR]
 //          ["callout", [[EN, TR], ...]] "Kısaca" notları · ["contact", EN, TR] · ["h1"|"updated", EN, TR].
 // İkonlar uygulamanın çizimleri, tools/glyphs.json'da hazır SVG. Yeni ikon: node tools/export-glyphs.mjs ikon1 ikon2 …
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -118,6 +119,7 @@ function page(fn) {
   }
   const renderBody = (b) => {
     if (b[0] === 'p') return `<p data-i18n="${T(key(), b[1], b[2])}">${E(b[1])}</p>`;
+    if (b[0] === 'link') return `<p><a href="${E(b[1])}" data-i18n="${T(key(), b[2], b[3])}">${E(b[2])}</a></p>`;
     if (b[0] === 'callout_p') return `<p class="callout" data-i18n="${T(key(), b[1], b[2])}">${E(b[1])}</p>`;
     if (b[0] === 'ul' || b[0] === 'ol') {
       const cls = b[0] === 'ol' ? ' class="steps"' : '';

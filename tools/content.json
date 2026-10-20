@@ -15,6 +15,10 @@
   "delete-account.html": [
    "Delete your account",
    "Hesabını sil"
+  ],
+  "consumer-health-data.html": [
+   "Consumer Health Data Privacy Policy",
+   "Tüketici Sağlık Verisi Gizlilik Politikası"
   ]
  },
  "pages": {
@@ -32,6 +36,7 @@
    ],
    "links": [
     "terms.html",
+    "consumer-health-data.html",
     "delete-account.html"
    ],
    "blocks": [
@@ -273,8 +278,8 @@
     ],
     [
      "p",
-     "Where it is kept. On your phone, in Vyne's own storage. Like all app data, it is also part of your phone's own backup (iCloud Backup on iPhone, Google backup on Android), which Apple or Google run under their terms, not ours.",
-     "Nerede saklanır. Telefonunda, Vyne'ın kendi depolamasında. Tüm uygulama verileri gibi telefonunun kendi yedeğinin de (iPhone'da iCloud Yedekleme, Android'de Google yedeği) parçasıdır; bu yedekleri Apple ya da Google kendi koşullarıyla yürütür, biz değil."
+     "Where it is kept. On your phone, in Vyne's own storage. Your phone's own backup (iCloud Backup on iPhone, Google backup on Android) may include the app's local files, cycle data among them, depending on your device settings. Apple or Google run those backups under their terms, not ours.",
+     "Nerede saklanır. Telefonunda, Vyne'ın kendi depolamasında. Telefonunun kendi yedeği (iPhone'da iCloud Yedekleme, Android'de Google yedeği), cihaz ayarlarına bağlı olarak uygulamanın yerel dosyalarını, döngü verileri de dahil, içerebilir. Bu yedekleri Apple ya da Google kendi koşullarıyla yürütür, biz değil."
     ],
     [
      "p",
@@ -310,6 +315,12 @@
      "p",
      "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data are listed above; we collect them only to show them back to you; they come only from you (what you enter or import); we share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask us anything about it, write to vyneapp.help@gmail.com.",
      "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarız; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmayız. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz."
+    ],
+    [
+     "link",
+     "consumer-health-data.html",
+     "Consumer Health Data Privacy Policy (Washington and Nevada) →",
+     "Tüketici Sağlık Verisi Gizlilik Politikası (Washington ve Nevada) →"
     ],
     [
      "h2",
@@ -814,6 +825,270 @@
      "contact",
      "Questions about deleting your account:",
      "Hesap silme hakkında sorular:"
+    ]
+   ]
+  },
+  "consumer-health-data.html": {
+   "kicker": [
+    "Health data",
+    "Sağlık verisi"
+   ],
+   "hero": "shield",
+   "notes": [
+    "mobile",
+    "lock",
+    "no",
+    "trash"
+   ],
+   "links": [
+    "index.html",
+    "terms.html",
+    "delete-account.html"
+   ],
+   "blocks": [
+    [
+     "h1",
+     "Vyne — Consumer Health Data Privacy Policy",
+     "Vyne — Tüketici Sağlık Verisi Gizlilik Politikası"
+    ],
+    [
+     "updated",
+     "Effective and last updated: October 20, 2026",
+     "Yürürlük ve son güncelleme: 20 Ekim 2026"
+    ],
+    [
+     "p",
+     "This policy explains how Vyne handles consumer health data, as defined by Washington's My Health My Data Act (RCW 19.373) and Nevada's consumer health data law (SB 370). Vyne is made and run by one independent developer, Hasan Kalkan; \"I\" and \"me\" below mean him.",
+     "Bu politika, Vyne'ın Washington eyaletinin My Health My Data yasası (RCW 19.373) ve Nevada eyaletinin tüketici sağlık verisi yasası (SB 370) anlamındaki tüketici sağlık verilerini nasıl ele aldığını anlatır. Vyne'ı tek bir bağımsız geliştirici, Hasan Kalkan yapar ve yürütür; aşağıda \"ben\" dediğim odur."
+    ],
+    [
+     "p",
+     "It covers the same data as the \"Cycle tracking\" section of the Vyne Privacy Policy, which applies too.",
+     "Vyne Gizlilik Politikası'nın \"Döngü takibi\" bölümüyle aynı veriyi kapsar; o bölüm de geçerlidir."
+    ],
+    [
+     "callout",
+     [
+      [
+       "It stays on your phone, or goes to the cloud only end-to-end encrypted.",
+       "Telefonunda kalır ya da buluta yalnızca uçtan uca şifreli gider."
+      ],
+      [
+       "I can't read the encrypted cloud copy.",
+       "Şifreli bulut kopyasını ben okuyamam."
+      ],
+      [
+       "Never sold, never shared, no third parties.",
+       "Asla satılmaz, paylaşılmaz, üçüncü tarafa gitmez."
+      ],
+      [
+       "You can see, export and delete all of it in the app.",
+       "Hepsini uygulamada görebilir, dışa aktarabilir ve silebilirsin."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "What consumer health data Vyne handles",
+     "Vyne hangi tüketici sağlık verilerini tutar",
+     "tray"
+    ],
+    [
+     "p",
+     "Only your cycle tracking log, and only if you turn cycle tracking on (it is off until you do). That is what you enter or import:",
+     "Yalnızca döngü takibi kayıtların, o da ancak döngü takibini açarsan (sen açana kadar kapalıdır). Yani girdiğin ya da içe aktardığın şunlar:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "temperatures",
+       "sıcaklıklar"
+      ],
+      [
+       "period and bleeding",
+       "regl ve kanama"
+      ],
+      [
+       "cervical mucus and cervix observations",
+       "servikal akıntı ve rahim ağzı gözlemleri"
+      ],
+      [
+       "LH and pregnancy test results",
+       "LH ve gebelik testi sonuçları"
+      ],
+      [
+       "symptoms and how you feel",
+       "belirtiler ve ruh hâlin"
+      ],
+      [
+       "sex",
+       "cinsel ilişki"
+      ],
+      [
+       "things that may have affected a reading",
+       "bir ölçümü etkilemiş olabilecek şeyler"
+      ],
+      [
+       "your own marks on the chart, and your notes",
+       "grafikteki kendi işaretlerin ve notların"
+      ]
+     ]
+    ],
+    [
+     "p",
+     "Vyne does not read Apple Health or Android Health Connect.",
+     "Vyne, Apple Sağlık ya da Android Health Connect verilerini okumaz."
+    ],
+    [
+     "h2",
+     "Why it is used",
+     "Ne için kullanılır",
+     "check"
+    ],
+    [
+     "p",
+     "Only to show your own log back to you: your chart, your days, and the files you ask for (an export, or a PDF for a clinician). It is not used for advertising, analytics, research or to train any model.",
+     "Yalnızca kendi kayıtlarını sana geri göstermek için: grafiğin, günlerin ve istediğin dosyalar (dışa aktarma ya da hekim için PDF). Reklam, analiz, araştırma ya da herhangi bir modeli eğitmek için kullanılmaz."
+    ],
+    [
+     "h2",
+     "Where it comes from",
+     "Nereden gelir",
+     "journal"
+    ],
+    [
+     "p",
+     "Only from you:",
+     "Yalnızca senden:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "what you enter in the app;",
+       "uygulamaya girdiklerin;"
+      ],
+      [
+       "files you choose to import: a Tempdrop CSV or a Vyne cycle file. The file is read on your phone, and the copy the file picker made is deleted right away.",
+       "içe aktarmak için seçtiğin dosyalar: bir Tempdrop CSV dosyası ya da bir Vyne döngü dosyası. Dosya telefonunda okunur; dosya seçicinin yaptığı kopya hemen silinir."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "Where it is kept",
+     "Nerede saklanır",
+     "mobile"
+    ],
+    [
+     "p",
+     "On your phone, in Vyne's own storage.",
+     "Telefonunda, Vyne'ın kendi depolamasında."
+    ],
+    [
+     "p",
+     "Vyne's cloud: only if you have turned on end-to-end encryption for your account. Your data is then encrypted on your phone, with a key that only your devices hold, before it leaves the phone, so I cannot read it and cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data never leaves your phone through Vyne. If you turn end-to-end encryption off, the encrypted copies are deleted from Vyne's cloud and your data stays on your phones.",
+     "Vyne'ın bulutu: yalnızca hesabın için uçtan uca şifrelemeyi açtıysan. Verin o zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir; bu yüzden ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri Vyne üzerinden telefonundan hiç çıkmaz. Uçtan uca şifrelemeyi kapatırsan şifreli kopyalar Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
+    ],
+    [
+     "p",
+     "It is never placed in a shared profile.",
+     "Ortak bir profile asla konmaz."
+    ],
+    [
+     "callout_p",
+     "Your phone's own backup (iCloud Backup on iPhone, Google backup on Android) may include the app's local files, cycle data among them, depending on your device settings. Apple or Google run those backups under their own terms; Vyne does not control them.",
+     "Telefonunun kendi yedeği (iPhone'da iCloud Yedekleme, Android'de Google yedeği), cihaz ayarlarına bağlı olarak uygulamanın yerel dosyalarını, döngü verileri de dahil, içerebilir. Bu yedekleri Apple ya da Google kendi koşullarıyla yürütür; Vyne bunları denetlemez."
+    ],
+    [
+     "h2",
+     "Sharing",
+     "Paylaşım",
+     "handshake"
+    ],
+    [
+     "ul",
+     [
+      [
+       "I do not sell your consumer health data, and I do not share it with anyone.",
+       "Tüketici sağlık verilerini satmam ve kimseyle paylaşmam."
+      ],
+      [
+       "No third party receives it. Vyne has no advertising or analytics tools.",
+       "Hiçbir üçüncü taraf almaz. Vyne'da reklam ya da analiz aracı yoktur."
+      ],
+      [
+       "Crash reports (Sentry) are filtered to exclude it: while a cycle screen is open no activity trail is recorded, cycle terms are removed from every report, and a crash inside a cycle screen is reported as one fixed message without content.",
+       "Hata raporları (Sentry) onu dışarıda bırakacak şekilde süzülür: bir döngü ekranı açıkken hiçbir etkinlik izi kaydedilmez, döngüyle ilgili terimler her rapordan çıkarılır ve bir döngü ekranındaki çökme, içerik taşımayan tek bir sabit mesaj olarak bildirilir."
+      ],
+      [
+       "An export or a PDF goes only where you send it yourself, through your phone's share sheet.",
+       "Bir dışa aktarma ya da PDF yalnızca senin, telefonunun paylaşım ekranından gönderdiğin yere gider."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "Your rights",
+     "Hakların",
+     "scale"
+    ],
+    [
+     "ul",
+     [
+      [
+       "See it: everything you logged is in the app.",
+       "Görmek: kaydettiğin her şey uygulamadadır."
+      ],
+      [
+       "Get a copy: Export (Vyne file or spreadsheet), or the PDF for a clinician.",
+       "Kopyasını almak: Dışa aktar (Vyne dosyası ya da tablo) ya da hekim için PDF."
+      ],
+      [
+       "Delete it: Settings → Cycle tracking → Delete all cycle data removes every day from your phone and from the encrypted cloud copy.",
+       "Silmek: Ayarlar → Döngü takibi → Tüm döngü verilerini sil, her günü telefonundan ve şifreli bulut kopyasından kaldırır."
+      ],
+      [
+       "Delete your account: this deletes your cloud data and offers to delete cycle data from your phone too.",
+       "Hesabını silmek: bulut verilerini siler ve döngü verilerini telefonundan da silmeyi önerir."
+      ],
+      [
+       "Stop: turning cycle tracking off stops it and keeps what you logged; delete it as above if you want it gone.",
+       "Durdurmak: döngü takibini kapatmak onu durdurur, kaydettiklerini korur; tamamen gitmesini istersen yukarıdaki gibi sil."
+      ],
+      [
+       "Anything else, or a question about your data: email vyneapp.help@gmail.com.",
+       "Başka bir şey ya da verinle ilgili bir soru için: vyneapp.help@gmail.com adresine yaz."
+      ]
+     ]
+    ],
+    [
+     "h2",
+     "How to appeal",
+     "Nasıl itiraz edilir",
+     "clipboard"
+    ],
+    [
+     "p",
+     "If I turn down your request, or you disagree with my answer, reply to the same email at vyneapp.help@gmail.com and say you are appealing. I will look at it again and write back with what I decided and why.",
+     "İsteğini reddedersem ya da cevabıma katılmazsan, vyneapp.help@gmail.com adresindeki aynı e-postaya cevap ver ve itiraz ettiğini yaz. Yeniden bakar, ne karar verdiğimi ve nedenini sana yazarım."
+    ],
+    [
+     "h2",
+     "Changes to this policy",
+     "Bu politikadaki değişiklikler",
+     "repeat"
+    ],
+    [
+     "p",
+     "When this policy changes, the date at the top changes too.",
+     "Bu politika değiştiğinde en üstteki tarih de değişir."
+    ],
+    [
+     "contact",
+     "Questions or requests about your consumer health data:",
+     "Tüketici sağlık verilerinle ilgili soru ya da istekler:"
     ]
    ]
   }

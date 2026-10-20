@@ -1,7 +1,7 @@
 {
  "updated": [
-  "Last updated: September 30, 2026",
-  "Son güncelleme: 30 Eylül 2026"
+  "Last updated: October 20, 2026",
+  "Son güncelleme: 20 Ekim 2026"
  ],
  "links": {
   "index.html": [
@@ -42,8 +42,8 @@
     ],
     [
      "updated",
-     "Last updated: September 30, 2026",
-     "Son güncelleme: 30 Eylül 2026"
+     "Last updated: October 20, 2026",
+     "Son güncelleme: 20 Ekim 2026"
     ],
     [
      "p",
@@ -122,6 +122,10 @@
       [
        "Your content (everything listed above) is then also stored in Firebase Firestore (a Google Cloud database), linked to your account. Along with it, Vyne stores a random ID for each installation of the app and the platform (iOS or Android), so it can tell which phone wrote a backup. That ID is created by Vyne, isn't tied to your hardware or to any advertising ID, and changes if you reinstall.",
        "İçeriğin (yukarıda sayılan her şey) bu durumda Firebase Firestore'da (bir Google Cloud veritabanı) da hesabına bağlı olarak saklanır. Yanında, yedeği hangi telefonun yazdığını ayırt etmek için her kurulumun rastgele bir kimliği ve platform bilgisi (iOS ya da Android) tutulur. Bu kimliği Vyne üretir; donanımına ya da herhangi bir reklam kimliğine bağlı değildir ve uygulamayı yeniden kurunca değişir."
+      ],
+      [
+       "If you share a profile, its content and the member details described under \"Shared profiles\" are stored in a shared space that the other member can see.",
+       "Bir profili paylaşırsan, profilin içeriği ve \"Ortak profiller\" bölümünde anlatılan üye bilgileri, diğer üyenin görebildiği ortak bir alanda saklanır."
       ],
       [
        "Crash and performance diagnostics are sent to Sentry, as described in the next section.",
@@ -254,19 +258,102 @@
     ],
     [
      "h2",
+     "Shared profiles",
+     "Ortak profiller",
+     "people"
+    ],
+    [
+     "p",
+     "You can share one of your profiles with one other person. This needs Cloud Backup to be on, and it only starts when you send an invite and they accept it.",
+     "Profillerinden birini bir kişiyle paylaşabilirsin. Bunun için Bulut Yedekleme açık olmalıdır; paylaşım ancak sen bir davet gönderip karşı taraf kabul ettiğinde başlar."
+    ],
+    [
+     "p",
+     "While a profile is shared, everything in it (branches, habits and their history, notes, lists, journal, calendar items and time clock entries) is stored in a shared space in the same Firebase database as Cloud Backup. Both of you can see, change and delete everything in it, including what was in the profile before the other person joined. Members are equal: neither of you can remove the other. Your other profiles, notes and settings stay in your private backup and are not shared.",
+     "Bir profil paylaşıldığı sürece içindeki her şey (dallar, alışkanlıklar ve geçmişleri, notlar, listeler, günlük, takvim öğeleri ve mesai saati kayıtları) Bulut Yedekleme ile aynı Firebase veritabanındaki ortak bir alanda saklanır. İkiniz de içindeki her şeyi görebilir, değiştirebilir ve silebilirsiniz; diğer kişi katılmadan önce profilde olanlar da buna dahildir. Üyeler eşittir: hiçbiriniz diğerini çıkaramaz. Diğer profillerin, notların ve ayarların özel yedeğinde kalır ve paylaşılmaz."
+    ],
+    [
+     "p",
+     "About its members, a shared profile stores your account ID, the date you joined, and the name you chose to show to the other member (it starts as your profile name; you can change it or leave it empty, and then you appear as \"Other member\"). For each habit day, it stores which member marked it and when; the other member sees this as \"Done by\". Like everything Vyne syncs, each item also carries when it was last changed and the random installation ID of the phone that changed it. The other member does not see your email address. Vyne does not record when you open the app, what you look at, or where you are.",
+     "Ortak profil, üyeleri hakkında şunları saklar: hesap kimliğin, katıldığın tarih ve diğer üyeye göstermeyi seçtiğin ad (başta profil adındır; değiştirebilir ya da boş bırakabilirsin, o zaman \"Diğer üye\" olarak görünürsün). Her alışkanlık günü için o günü hangi üyenin ve ne zaman işaretlediğini saklar; diğer üye bunu \"... yaptı\" olarak görür. Vyne'ın eşitlediği her şey gibi, her öğe ayrıca en son ne zaman değiştirildiğini ve onu değiştiren telefonun rastgele kurulum kimliğini taşır. Diğer üye e-posta adresini görmez. Vyne uygulamayı ne zaman açtığını, neye baktığını ya da nerede olduğunu kaydetmez."
+    ],
+    [
+     "p",
+     "An invite is a code and a link that you send yourself, through the app you choose (for example Messages). It includes the profile's name, works once and expires after 24 hours. The invite record (the code, the profile it is for, your account ID and, once used, the account ID of the person who joined) is kept until it is cancelled or replaced, or until you leave the profile or delete your account.",
+     "Davet, senin seçtiğin bir uygulamayla (örneğin Mesajlar) kendin gönderdiğin bir kod ve bağlantıdır. Profilin adını içerir, bir kez ve 24 saat geçerlidir. Davet kaydı (kod, ait olduğu profil, hesap kimliğin ve kullanıldıysa katılan kişinin hesap kimliği) iptal edilene ya da yenisiyle değiştirilene, ya da sen profilden ayrılana veya hesabını silene kadar saklanır."
+    ],
+    [
+     "p",
+     "The other member can see everything in the shared profile. Like Cloud Backup, it is not end-to-end encrypted: as the operator of the database I am technically able to access it, and Google stores it on my behalf. Anything the other member can see, they can also keep: for example by keeping a private copy when they leave, by exporting a backup file, or with a screenshot. Copies like these are outside my control, so only share a profile with someone you trust.",
+     "Diğer üye ortak profildeki her şeyi görebilir. Bulut Yedekleme gibi ortak profil de uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim ve Google onu benim adıma saklar. Diğer üye görebildiği her şeyi saklayabilir de: örneğin ayrılırken kendine özel bir kopya tutarak, bir yedek dosyası dışa aktararak ya da ekran görüntüsü alarak. Bu tür kopyalar benim kontrolümün dışındadır; bu yüzden bir profili sadece güvendiğin biriyle paylaş."
+    ],
+    [
+     "p",
+     "When a branch, note, list, calendar item or time clock entry is removed from a shared profile, a copy goes to \"Recently removed\", where either member can restore it for 30 days. After that it is deleted the next time either of you opens Vyne, so it can stay longer if neither of you opens the app. Entries inside a list, log lines and single ticks are not kept there (they have the usual Undo), and neither is an item moved to a private profile.",
+     "Ortak bir profilden bir dal, not, liste, takvim öğesi ya da mesai saati kaydı silindiğinde bir kopyası \"Son silinenler\"e gider; iki üye de onu 30 gün boyunca geri getirebilir. Bu sürenin ardından, ikinizden biri Vyne'ı bir sonraki açışında silinir; yani ikiniz de uygulamayı açmazsanız daha uzun kalabilir. Bir listenin içindeki maddeler, kayıt satırları ve tek tek işaretlemeler burada tutulmaz (bilinen Geri Al ile geri alınır); özel bir profile taşınan öğe de tutulmaz."
+    ],
+    [
+     "h2",
+     "Leaving a shared profile",
+     "Ortak profilden ayrılmak",
+     "wave"
+    ],
+    [
+     "p",
+     "You can leave a shared profile at any time (Shared space screen → \"Leave this shared profile\"), and you can choose to keep a private copy of it. The copy goes into your private backup, without the record of who did what. When you leave:",
+     "Bir ortak profilden istediğin zaman ayrılabilirsin (Ortak alan ekranı → \"Bu ortak profilden ayrıl\") ve istersen kendine özel bir kopyasını saklayabilirsin. Kopya, kimin ne yaptığı bilgisi olmadan özel yedeğine gider. Ayrıldığında:"
+    ],
+    [
+     "ul",
+     [
+      [
+       "the shared profile is removed from your phones;",
+       "ortak profil telefonlarından kaldırılır;"
+      ],
+      [
+       "your name, account ID and join date are removed from its member list, and your account ID is replaced by a random ID in its items and in Recently removed; the shared profile keeps that random ID and the date you left;",
+       "adın, hesap kimliğin ve katılma tarihin üye listesinden çıkarılır; hesap kimliğin profilin öğelerinde ve Son silinenler'de rastgele bir kimlikle değiştirilir; ortak profilde bu rastgele kimlik ve ayrıldığın tarih kalır;"
+      ],
+      [
+       "invites you made for it, and the one you used to join, are deleted;",
+       "bu profil için oluşturduğun davetler ve katılırken kullandığın davet silinir;"
+      ],
+      [
+       "the other member keeps the shared profile and everything in it, including what you added, and sees \"Former member\" where your name was.",
+       "diğer üye ortak profili, senin eklediklerinle birlikte içindeki her şeyi korur ve adının yerinde \"Eski üye\" görür."
+      ]
+     ]
+    ],
+    [
+     "p",
+     "This does not change text anyone typed into the profile: if you wrote your name or other details into a note, they stay there until someone edits or deletes them. If the other member's phone is offline, it can keep your name and account ID in its own copy until it next connects; then it removes them, keeping only a scrambled, one-way form of your account ID, used only to make sure your ID is never written back. If you are the last member, leaving deletes the shared profile and everything in it, including Recently removed, from the servers.",
+     "Bu işlem, profile birinin yazdığı metni değiştirmez: bir nota adını ya da başka bir bilgiyi yazdıysan, biri onu düzenleyene ya da silene kadar orada kalır. Diğer üyenin telefonu çevrimdışıysa, adını ve hesap kimliğini kendi kopyasında bir sonraki bağlantısına kadar tutabilir; bağlandığında bunları kaldırır ve hesap kimliğinin yalnızca karıştırılmış, geri çevrilemez bir biçimini saklar. Bunun tek amacı kimliğinin bir daha profile yazılmamasını sağlamaktır. Son üye sensen, ayrılmak ortak profili ve içindeki her şeyi, Son silinenler dahil, sunuculardan siler."
+    ],
+    [
+     "p",
+     "If you delete your account, Vyne first takes you out of every shared profile as described above, without keeping a private copy, and removes them from your phone. A shared profile with no other member is deleted with all its content, and your invites are deleted. Only after that are your private backup and your sign-in deleted. If Vyne cannot finish leaving a shared profile (for example, you are offline), nothing in your private backup or account is deleted and you can try again; shared profiles you have already left stay left.",
+     "Hesabını silersen Vyne önce seni yukarıda anlatıldığı gibi, özel kopya tutmadan, bütün ortak profillerden çıkarır ve onları telefonundan kaldırır. Başka üyesi olmayan bir ortak profil bütün içeriğiyle silinir ve davetlerin silinir. Özel yedeğin ve girişin ancak bundan sonra silinir. Vyne bir ortak profilden ayrılmayı tamamlayamazsa (örneğin internete bağlı değilsen) özel yedeğinden ya da hesabından hiçbir şey silinmez ve tekrar deneyebilirsin; zaten ayrıldığın ortak profillerden ayrılmış olarak kalırsın."
+    ],
+    [
+     "p",
+     "After you leave or delete your account, what you added to a profile that another member still uses stays with them, because it is their profile too, without your name or account ID. If you want something you added gone, delete it from the shared profile first; it then stays in Recently removed for 30 days, where the other member can still restore it, and is deleted after that.",
+     "Ayrıldıktan ya da hesabını sildikten sonra, başka bir üyenin hâlâ kullandığı bir profile eklediklerin onda kalır, çünkü o profil onun da profilidir; adın ve hesap kimliğin olmadan. Eklediğin bir şeyin gitmesini istiyorsan önce onu ortak profilden sil; sonra 30 gün boyunca Son silinenler'de kalır, diğer üye bu süre içinde onu hâlâ geri getirebilir, ardından silinir."
+    ],
+    [
+     "h2",
      "How your data is protected",
      "Verin nasıl korunur",
      "lock"
     ],
     [
      "p",
-     "Cloud data is linked to your account, and the database's access rules stop other users from reading it. Google encrypts it in transit and at rest, but it is not end-to-end encrypted: as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
-     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
+     "Cloud data is linked to your account, and the database's access rules stop other users from reading it, except the other member of a profile you chose to share. Google encrypts it in transit and at rest, but it is not end-to-end encrypted: as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
+     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları, paylaşmayı seçtiğin bir profilin diğer üyesi dışında, diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
     ],
     [
      "p",
-     "Cloud Backup data (Google Firebase) and crash reports (Sentry) are stored on servers in the United States; if you use Vyne from outside the US, this data is transferred there. On your phone, your data is protected by the operating system's app sandbox.",
-     "Bulut yedeği (Google Firebase) ve hata raporları (Sentry) Amerika Birleşik Devletleri'ndeki sunucularda saklanır; Vyne'ı ABD dışından kullanıyorsan bu veriler oraya aktarılır. Telefonunda verin, işletim sisteminin uygulama korumasıyla (sandbox) korunur."
+     "Cloud Backup and shared profile data (Google Firebase) and crash reports (Sentry) are stored on servers in the United States; if you use Vyne from outside the US, this data is transferred there. On your phone, your data is protected by the operating system's app sandbox.",
+     "Bulut yedeği ve ortak profiller (Google Firebase) ile hata raporları (Sentry) Amerika Birleşik Devletleri'ndeki sunucularda saklanır; Vyne'ı ABD dışından kullanıyorsan bu veriler oraya aktarılır. Telefonunda verin, işletim sisteminin uygulama korumasıyla (sandbox) korunur."
     ],
     [
      "h2",
@@ -276,8 +363,8 @@
     ],
     [
      "p",
-     "I don't sell, rent or share your data with advertisers or data brokers. The only third-party services involved are Google Firebase (sign-in and backup storage, on my behalf) and Sentry (crash and performance diagnostics). Neither uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies.",
-     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. İşin içindeki üçüncü taraf hizmetler yalnızca Google Firebase (giriş ve yedek depolama, benim adıma) ve Sentry'dir (hata ve performans bilgileri). İkisi de verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir."
+     "I don't sell, rent or share your data with advertisers or data brokers. The only third-party services involved are Google Firebase (sign-in and backup storage, on my behalf) and Sentry (crash and performance diagnostics). Neither uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
+     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. İşin içindeki üçüncü taraf hizmetler yalnızca Google Firebase (giriş ve yedek depolama, benim adıma) ve Sentry'dir (hata ve performans bilgileri). İkisi de verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
     ],
     [
      "h2",
@@ -287,19 +374,23 @@
     ],
     [
      "p",
-     "The person responsible for your data (the \"data controller\") is the developer of Vyne, reachable at vyneapp.help@gmail.com. I use your data only on these grounds:",
-     "Verinden sorumlu kişi (\"veri sorumlusu\") Vyne'ın geliştiricisidir ve vyneapp.help@gmail.com adresinden ulaşılabilir. Verini sadece şu gerekçelerle kullanırım:"
+     "The person responsible for your data (the \"data controller\") is Hasan Kalkan, the independent developer of Vyne, reachable at vyneapp.help@gmail.com. I use your data only on these grounds:",
+     "Verinden sorumlu kişi (\"veri sorumlusu\") Vyne'ın bağımsız geliştiricisi Hasan Kalkan'dır ve vyneapp.help@gmail.com adresinden ulaşılabilir. Verini sadece şu gerekçelerle kullanırım:"
     ],
     [
      "ul",
      [
       [
-       "Cloud Backup: to give you the service you asked for, keeping your data and returning it to you (performance of a contract).",
-       "Bulut Yedekleme: istediğin hizmeti vermek, yani verini saklayıp sana geri vermek için (sözleşmenin ifası)."
+       "Cloud Backup: to give you the service you asked for, keeping your data and returning it to you (performance of a contract; GDPR Art. 6(1)(b), KVKK Art. 5(2)(c)).",
+       "Bulut Yedekleme: istediğin hizmeti vermek, yani verini saklayıp sana geri vermek için (sözleşmenin ifası; GDPR m. 6/1-b, KVKK m. 5/2-c)."
       ],
       [
-       "Crash and performance data: my legitimate interest in keeping the app working and fixing bugs. You can object by emailing me.",
-       "Hata ve performans bilgileri: uygulamanın çalışmasını sağlamak ve hataları düzeltmek konusundaki meşru menfaatim. Bana e-posta atarak itiraz edebilirsin."
+       "Shared profiles: to give you the sharing you asked for (performance of a contract, as above). When you leave or delete your account, what you added stays for the other member, with your name and account ID taken out: their and my legitimate interest in keeping their profile whole (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f)).",
+       "Ortak profiller: istediğin paylaşımı sağlamak için (sözleşmenin ifası, yukarıdaki gibi). Ayrıldığında ya da hesabını sildiğinde eklediklerin, adın ve hesap kimliğin çıkarılarak diğer üye için kalır: diğer üyenin ve benim profilin bütün kalmasındaki meşru menfaatimiz (GDPR m. 6/1-f, KVKK m. 5/2-f)."
+      ],
+      [
+       "Crash and performance data: my legitimate interest in keeping the app working and fixing bugs (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f)). You can object by emailing me.",
+       "Hata ve performans bilgileri: uygulamanın çalışmasını sağlamak ve hataları düzeltmek konusundaki meşru menfaatim (GDPR m. 6/1-f, KVKK m. 5/2-f). Bana e-posta atarak itiraz edebilirsin."
       ],
       [
        "Nothing is used for advertising, profiling or automated decisions about you.",
@@ -315,8 +406,8 @@
     ],
     [
      "callout_p",
-     "Cloud data is kept only as long as your account exists; there is no separate archive. You can permanently delete your account and cloud data any time from the More tab → Cloud Backup → \"Delete My Account & Cloud Data\" (the button appears once you are signed in). It takes effect immediately. You can also email me and I'll delete it for you. Uninstalling the app removes the data stored on your phone.",
-     "Buluttaki verin sadece hesabın var olduğu sürece saklanır; ayrı bir arşiv yoktur. Hesabını ve bulut verini istediğin an Daha Fazla sekmesi → Bulut Yedekleme → \"Hesabımı & Bulut Verimi Sil\" ile kalıcı olarak silebilirsin (düğme giriş yaptıktan sonra görünür). Hemen gerçekleşir. İstersen bana e-posta at, ben silerim. Uygulamayı kaldırmak telefonundaki veriyi siler."
+     "Cloud data is kept only as long as your account exists; there is no separate archive. The exception is a shared profile: what you added stays with the other member after you leave or delete your account, as described under \"Leaving a shared profile\". You can permanently delete your account and cloud data any time from the More tab → Cloud Backup → \"Delete My Account & Cloud Data\" (the button appears once you are signed in). It takes effect immediately. You can also email me and I'll delete it for you, taking the same steps for shared profiles. Uninstalling the app removes the data stored on your phone.",
+     "Buluttaki verin sadece hesabın var olduğu sürece saklanır; ayrı bir arşiv yoktur. İstisnası ortak profillerdir: ayrıldığında ya da hesabını sildiğinde eklediklerin, \"Ortak profilden ayrılmak\" bölümünde anlatıldığı gibi diğer üyede kalır. Hesabını ve bulut verini istediğin an Daha Fazla sekmesi → Bulut Yedekleme → \"Hesabımı & Bulut Verimi Sil\" ile kalıcı olarak silebilirsin (düğme giriş yaptıktan sonra görünür). Hemen gerçekleşir. İstersen bana e-posta at, ortak profiller için de aynı adımları izleyerek ben silerim. Uygulamayı kaldırmak telefonundaki veriyi siler."
     ],
     [
      "h2",
@@ -328,6 +419,39 @@
      "p",
      "Depending on where you live (for example under the GDPR in the EU and UK, Turkey's KVKK, or US state privacy laws), you may have the right to access, correct, export or delete your data, or to object to how it is used. You can do most of this yourself in the app: edit anything, export a backup file, or delete your account. For anything else, email me.",
      "Yaşadığın yere göre (örneğin AB ve Birleşik Krallık'ta GDPR, Türkiye'de KVKK ya da ABD eyalet yasaları) verine erişme, düzeltme, dışa aktarma, silme ya da kullanılma şekline itiraz etme hakkın olabilir. Bunların çoğunu uygulamada kendin yapabilirsin: her şeyi düzenleyebilir, yedek dosyası alabilir ya da hesabını silebilirsin. Geri kalanı için bana e-posta at."
+    ],
+    [
+     "h2",
+     "Information notice for Turkey (KVKK)",
+     "KVKK aydınlatma metni",
+     "globe"
+    ],
+    [
+     "p",
+     "Together with the sections above, this is the information notice under Turkey's Personal Data Protection Law No. 6698 (KVKK). The data controller, the data, the purposes and legal grounds, and who receives the data are described above, in \"What Vyne collects\", \"Shared profiles\", \"Sharing with third parties\" and \"Why I can use your data\".",
+     "Yukarıdaki bölümlerle birlikte bu, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki aydınlatma metnidir. Veri sorumlusu, işlenen veriler, amaçlar ve hukuki sebepler ile verinin kimlere aktarıldığı yukarıda, \"Vyne neleri toplar\", \"Ortak profiller\", \"Üçüncü taraflarla paylaşım\" ve \"Verini hangi gerekçeyle kullanıyorum\" bölümlerinde anlatılır."
+    ],
+    [
+     "ul",
+     [
+      [
+       "How it is collected: electronically, through the app, when you sign up, when you use Cloud Backup or sharing, and automatically when the app runs into an error.",
+       "Toplama yöntemi: elektronik ortamda, uygulama üzerinden; kayıt olduğunda, Bulut Yedekleme'yi ya da paylaşımı kullandığında ve uygulama bir hatayla karşılaştığında otomatik olarak."
+      ],
+      [
+       "Transfer abroad: Cloud Backup and shared profile data are stored by Google, and crash reports by Sentry, on servers in the United States. Cloud data goes there only if you turn on Cloud Backup, and for that I rely on your explicit consent, which you give by turning it on; you can withdraw it at any time by deleting your account. Crash reports are not linked to your name or email.",
+       "Yurt dışına aktarım: Bulut yedeği ve ortak profiller Google tarafından, hata raporları Sentry tarafından Amerika Birleşik Devletleri'ndeki sunucularda saklanır. Bulut verisi oraya yalnızca Bulut Yedekleme'yi açarsan gider ve bunun için, açarak verdiğin açık rızana dayanırım; hesabını silerek bu rızayı istediğin an geri alabilirsin. Hata raporları adına ya da e-postana bağlı değildir."
+      ],
+      [
+       "Your rights under KVKK Art. 11: to learn whether your data is processed and, if so, to ask for information about it; to learn the purpose and whether it is used for that purpose; to know the third parties in Turkey or abroad it is transferred to; to ask for incomplete or wrong data to be corrected, and for it to be deleted; to ask that a correction or deletion be passed on to those third parties; to object to an outcome against you that arises only from automated analysis; and to ask for compensation if unlawful processing causes you damage.",
+       "KVKK m. 11 kapsamındaki hakların: verinin işlenip işlenmediğini öğrenme ve işlendiyse bilgi isteme; işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme; yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilme; eksik ya da yanlış işlendiyse düzeltilmesini ve silinmesini isteme; düzeltme ve silme işlemlerinin bu üçüncü kişilere bildirilmesini isteme; yalnızca otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğrarsan zararın giderilmesini isteme."
+      ]
+     ]
+    ],
+    [
+     "p",
+     "To use these rights, email me at vyneapp.help@gmail.com from your account's email address. I answer free of charge within 30 days at the latest.",
+     "Bu hakları kullanmak için hesabının e-posta adresinden vyneapp.help@gmail.com adresine yaz. Ücretsiz olarak en geç 30 gün içinde yanıtlarım."
     ],
     [
      "h2",
@@ -376,8 +500,8 @@
     ],
     [
      "updated",
-     "Last updated: September 30, 2026",
-     "Son güncelleme: 30 Eylül 2026"
+     "Last updated: October 20, 2026",
+     "Son güncelleme: 20 Ekim 2026"
     ],
     [
      "p",
@@ -419,8 +543,8 @@
     ],
     [
      "p",
-     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted; the Privacy Policy explains what that means. You can delete your account and cloud data at any time from within the App.",
-     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; bunun ne demek olduğunu Gizlilik Politikası anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
+     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted; the Privacy Policy explains what that means. If you share a profile, I also show it to its other member, as the Privacy Policy explains. You can delete your account and cloud data at any time from within the App.",
+     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; bunun ne demek olduğunu Gizlilik Politikası anlatır. Bir profili paylaşırsan onu diğer üyesine de gösteririm; Gizlilik Politikası bunu anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
     ],
     [
      "h2",
@@ -546,8 +670,8 @@
     ],
     [
      "updated",
-     "Last updated: September 30, 2026",
-     "Son güncelleme: 30 Eylül 2026"
+     "Last updated: October 20, 2026",
+     "Son güncelleme: 20 Ekim 2026"
     ],
     [
      "p",
@@ -590,8 +714,8 @@
     ],
     [
      "p",
-     "If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I'll write back once it's done.",
-     "Uygulamayı kullanamıyorsan (telefonunu kaybettin, uygulamayı kaldırdın vb.), hesabındaki adresten vyneapp.help@gmail.com adresine yaz ve silmemi iste. Silince sana dönerim."
+     "If you can't use the app (you lost your phone, uninstalled it, and so on), email me at vyneapp.help@gmail.com from the address on your account and ask me to delete it. I take the same steps as the app, including for shared profiles, and write back once it's done, usually within a few days and always within 30 days.",
+     "Uygulamayı kullanamıyorsan (telefonunu kaybettin, uygulamayı kaldırdın vb.), hesabındaki adresten vyneapp.help@gmail.com adresine yaz ve silmemi iste. Ortak profiller dahil uygulamayla aynı adımları izlerim ve silince sana dönerim, genellikle birkaç gün içinde, her durumda 30 gün içinde."
     ],
     [
      "h2",
@@ -601,8 +725,19 @@
     ],
     [
      "p",
-     "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. This can't be undone.",
-     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Geri alınamaz."
+     "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
+     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
+    ],
+    [
+     "h2",
+     "If you share a profile",
+     "Bir profili paylaşıyorsan",
+     "people"
+    ],
+    [
+     "p",
+     "Deleting your account takes you out of every shared profile first, and removes them from your phone. The other member keeps the shared profile, including what you added to it. Your name is removed, your account ID is replaced by a random ID, and they see \"Former member\" instead (a phone of theirs that is offline does this when it next connects). Text typed into the profile is not changed. If you want something you added gone, delete it from the shared profile first; it stays in Recently removed for 30 days, where the other member can still restore it. If Vyne cannot finish leaving a shared profile, your backup and account are not deleted and you can try again; shared profiles you have already left stay left.",
+     "Hesabını silmek seni önce bütün ortak profillerden çıkarır ve onları telefonundan kaldırır. Diğer üye ortak profili, senin eklediklerinle birlikte korur. Adın çıkarılır, hesap kimliğin rastgele bir kimlikle değiştirilir ve diğer üye onun yerine \"Eski üye\" görür (onun çevrimdışı olan bir telefonu bunu bir sonraki bağlantısında yapar). Profile yazılmış metin değişmez. Eklediğin bir şeyin gitmesini istiyorsan önce onu ortak profilden sil; 30 gün boyunca Son silinenler'de kalır ve diğer üye bu süre içinde onu hâlâ geri getirebilir. Vyne bir ortak profilden ayrılmayı tamamlayamazsa yedeğin ve hesabın silinmez, tekrar deneyebilirsin; zaten ayrıldığın ortak profillerden ayrılmış olarak kalırsın."
     ],
     [
      "h2",
@@ -612,8 +747,8 @@
     ],
     [
      "p",
-     "Nothing is kept on the servers after deletion. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
-     "Silmeden sonra sunucularda hiçbir şey kalmaz. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
+     "No copy of your own backup is kept after deletion. What stays on the servers is what you added to a shared profile that another member still uses, without your name or account ID. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
+     "Silmeden sonra kendi yedeğinin hiçbir kopyası kalmaz. Sunucularda kalan tek şey, başka bir üyenin hâlâ kullandığı bir ortak profile eklediklerindir; adın ve hesap kimliğin olmadan. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
     ],
     [
      "contact",

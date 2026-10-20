@@ -104,6 +104,10 @@
       [
        "Your profile name",
        "Profil adın"
+      ],
+      [
+       "If you turn on cycle tracking, the health data it keeps; see \"Cycle tracking\" below.",
+       "Döngü takibini açarsan, tuttuğu sağlık verileri; aşağıdaki \"Döngü takibi\" bölümüne bak."
       ]
      ]
     ],
@@ -607,6 +611,11 @@
      "p",
      "Vyne's habits, streaks, statistics, suggestions and the wheel are tools for organizing your own life. They are not medical, psychological, financial or other professional advice, and amounts you track are only the records you type in.",
      "Vyne'daki alışkanlıklar, seriler, istatistikler, öneriler ve çark kendi hayatını düzenlemen için araçlardır. Tıbbi, psikolojik, finansal ya da başka bir profesyonel tavsiye değildir; takip ettiğin tutarlar sadece senin girdiğin kayıtlardır."
+    ],
+    [
+     "p",
+     "Cycle tracking is a log of your own observations. It is not medical advice, it makes no predictions, and it is not birth control.",
+     "Döngü takibi, kendi gözlemlerinin bir kaydıdır. Tıbbi tavsiye değildir, tahmin yapmaz ve doğum kontrol yöntemi değildir."
     ],
     [
      "h2",

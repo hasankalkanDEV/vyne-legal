@@ -970,8 +970,8 @@
        "uygulamaya girdiklerin;"
       ],
       [
-       "files you choose to import: a Tempdrop CSV or a Vyne cycle file. The file is read on your phone, and the copy the file picker made is deleted right away.",
-       "içe aktarmak için seçtiğin dosyalar: bir Tempdrop CSV dosyası ya da bir Vyne döngü dosyası. Dosya telefonunda okunur; dosya seçicinin yaptığı kopya hemen silinir."
+       "files you choose to import: a CSV file exported from another tracking app, or a Vyne cycle file. The file is read on your phone, and the copy the file picker made is deleted right away.",
+       "içe aktarmak için seçtiğin dosyalar: başka bir takip uygulamasından aldığın bir CSV dosyası ya da bir Vyne döngü dosyası. Dosya telefonunda okunur; dosya seçicinin yaptığı kopya hemen silinir."
       ]
      ]
     ],

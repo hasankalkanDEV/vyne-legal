@@ -7,7 +7,7 @@ GitHub Pages `main` dalından yayınlıyor: `main`'e push = canlı (~1 dakika).
 | `index.html` | Gizlilik Politikası |
 | `terms.html` | Kullanım Şartları |
 | `delete-account.html` | Hesabını sil |
-| `consumer-health-data.html` | Tüketici Sağlık Verisi Gizlilik Politikası (Washington MHMDA, Nevada SB 370) |
+| `consumer-health-data.html` | Tüketici Sağlık Verisi Gizlilik Politikası (Washington MHMDA, Nevada SB 370), sadece İngilizce (`"enOnly": true`) |
 
 **Sayfaları elle düzenleme.** Metinler `tools/content.json`'da, İngilizce ve Türkçe yan yana.
 Değiştir, sonra:
@@ -22,5 +22,7 @@ node tools/build.mjs
 - Metin değişince en üstteki tarihi de (`updated`) değiştir.
 
 Gerçekler uygulamanın kodundan: e-posta+şifre ile giriş (Firebase), bulut ve Sentry ABD'de,
-bulut yedeği uçtan uca şifreli değil, reklam ve analiz SDK'sı yok, rehber ve takvim izni yok.
+bulut yedeğinde isteğe bağlı uçtan uca şifreleme var (açılınca bütün yedek telefonda şifrelenir;
+kapalıyken aktarımda ve depoda Google şifreler, uçtan uca değil), döngü verisi uçtan uca şifreleme yoksa
+telefondan çıkmaz, ortak profiller uçtan uca şifreli değil, reklam ve analiz SDK'sı yok, rehber ve takvim izni yok.
 Uygulama bunlardan birini değiştirirse bu sayfalar da değişmeli.

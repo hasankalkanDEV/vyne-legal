@@ -4,6 +4,8 @@
 // Sayfaları elle düzenleme: metin hem sayfada hem dil sözlüğünde durur, ikisini bu betik birlikte yazar.
 // Bloklar: ["h2", EN, TR, ikon] yeni bölüm · ["p", EN, TR] · ["ul"|"ol", [[EN, TR], ...]] · ["callout_p", EN, TR] · ["link", href, EN, TR]
 //          ["callout", [[EN, TR], ...]] "Kısaca" notları · ["contact", EN, TR] · ["h1"|"updated", EN, TR].
+// Sayfada "enOnly": true ise sayfa yalnızca İngilizce çıkar: TR sözlüğü, dil düğmesi ve dil betiği yazılmaz
+// (content.json'daki TR metinleri o sayfa için kullanılmaz).
 // İkonlar uygulamanın çizimleri, tools/glyphs.json'da hazır SVG. Yeni ikon: node tools/export-glyphs.mjs ikon1 ikon2 …
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -100,10 +102,10 @@ li::marker{color:var(--green)}
 `;
 
 function page(fn) {
-  const P = PAGES[fn], en = {}, tr = {};
+  const P = PAGES[fn], en = {}, tr = {}, bilingual = !P.enOnly;
   let n = 0;
   const key = () => `k${++n}`;
-  const T = (k, a, b) => { en[k] = a; tr[k] = b; return k; };
+  const T = (k, a, b) => { en[k] = a; if (bilingual) tr[k] = b; return k; };
   const blocks = P.blocks;
   const h1 = blocks.find((b) => b[0] === 'h1'), upd = blocks.find((b) => b[0] === 'updated');
   T('title', h1[1], h1[2]);
@@ -161,28 +163,10 @@ function page(fn) {
   T('foot', 'your life, one branching map', 'hayatın, dallanan tek bir harita');
   out += `<footer class="foot"><div class="links">${links.join('')}</div><span class="tag">vyne · <span data-i18n="foot">${E(en.foot)}</span></span></footer>`;
 
-  const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${E(en.title)}</title>
-<meta name="description" content="${E(blocks.find((b) => b[0] === 'p')[1])}">
-<link rel="icon" href="app-icon.png" type="image/png">
-<meta name="theme-color" content="#F8F6F0" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1E1C18" media="(prefers-color-scheme: dark)">
-<link rel="preload" href="fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
-<style>${CSS}</style>
-</head>
-<body>
-<header class="bar"><div class="bar-in"><a class="brand" href="${SITE}"><img src="app-icon.png" alt="" width="30" height="30">vyne</a>
-<div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="tr">TR</button></div></div></header>
-<main class="doc">
-${out}
-</main>
-<a class="totop" id="totop" href="#" data-i18n-aria="${T('totop', 'Back to top', 'Başa dön')}" aria-label="Back to top" hidden>↑</a>
-<script>
-(function () {
+  const totopKey = T('totop', 'Back to top', 'Başa dön');
+  const langSwitch = bilingual ? `
+<div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="tr">TR</button></div>` : '';
+  const i18nJs = bilingual ? `
   var translations = ${JSON.stringify({ en, tr }, null, 1)};
   var LANG_KEY = "vyne-site-lang";
   function applyLang(lang) {
@@ -210,7 +194,28 @@ ${out}
   try { saved = localStorage.getItem(LANG_KEY); } catch (e) {}
   var q = (location.search.match(/[?&]lang=(en|tr)/) || [])[1];
   var initial = q || saved || (navigator.language && navigator.language.toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
-  applyLang(initial);
+  applyLang(initial);` : '';
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${E(en.title)}</title>
+<meta name="description" content="${E(blocks.find((b) => b[0] === 'p')[1])}">
+<link rel="icon" href="app-icon.png" type="image/png">
+<meta name="theme-color" content="#F8F6F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1C18" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>${CSS}</style>
+</head>
+<body>
+<header class="bar"><div class="bar-in"><a class="brand" href="${SITE}"><img src="app-icon.png" alt="" width="30" height="30">vyne</a>${langSwitch}</div></header>
+<main class="doc">
+${out}
+</main>
+<a class="totop" id="totop" href="#" data-i18n-aria="${totopKey}" aria-label="Back to top" hidden>↑</a>
+<script>
+(function () {${i18nJs}
   var toc = document.getElementById("toc");
   if (toc && window.matchMedia("(min-width: 700px)").matches) toc.open = true;
   var top = document.getElementById("totop");

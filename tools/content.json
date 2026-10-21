@@ -1,7 +1,7 @@
 {
  "updated": [
-  "Last updated: October 20, 2026",
-  "Son güncelleme: 20 Ekim 2026"
+  "Last updated: October 21, 2026",
+  "Son güncelleme: 21 Ekim 2026"
  ],
  "links": {
   "index.html": [
@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: October 20, 2026",
-     "Son güncelleme: 20 Ekim 2026"
+     "Last updated: October 21, 2026",
+     "Son güncelleme: 21 Ekim 2026"
     ],
     [
      "p",
@@ -71,8 +71,8 @@
        "Hata raporları Sentry'ye adın ya da e-postan olmadan gider."
       ],
       [
-       "Cloud Backup is not end-to-end encrypted, except cycle data when you turn on end-to-end encryption: I could technically read the rest, and I don't.",
-       "Bulut yedeği uçtan uca şifreli değildir; uçtan uca şifrelemeyi açtığında döngü verileri hariç: gerisini teknik olarak okuyabilirim, okumam."
+       "Cloud Backup can be end-to-end encrypted: turn it on and your whole backup is encrypted on your phone before it leaves.",
+       "Bulut yedeği uçtan uca şifrelenebilir: açarsan bütün yedeğin telefonundan çıkmadan önce şifrelenir."
       ]
      ]
     ],
@@ -129,8 +129,8 @@
        "Bulut Yedekleme'yi açarsan kayıt olduğun e-posta adresi Firebase Authentication (bir Google hizmeti) tarafından işlenir; böylece başka bir telefonda tekrar giriş yapıp verini geri yükleyebilirsin. Şifren Firebase tarafından işlenir; ben hiç görmem."
       ],
       [
-       "Your content (everything listed above) is then also stored in Firebase Firestore (a Google Cloud database), linked to your account. Along with it, Vyne stores a random ID for each installation of the app and the platform (iOS or Android), so it can tell which phone wrote a backup. That ID is created by Vyne, isn't tied to your hardware or to any advertising ID, and changes if you reinstall.",
-       "İçeriğin (yukarıda sayılan her şey) bu durumda Firebase Firestore'da (bir Google Cloud veritabanı) da hesabına bağlı olarak saklanır. Yanında, yedeği hangi telefonun yazdığını ayırt etmek için her kurulumun rastgele bir kimliği ve platform bilgisi (iOS ya da Android) tutulur. Bu kimliği Vyne üretir; donanımına ya da herhangi bir reklam kimliğine bağlı değildir ve uygulamayı yeniden kurunca değişir."
+       "Your content (everything listed above, except cycle data, which goes to the cloud only with end-to-end encryption on, as described under \"Cycle tracking\") is then also stored in Firebase Firestore (a Google Cloud database), linked to your account. Along with it, Vyne stores a random ID for each installation of the app and the platform (iOS or Android), so it can tell which phone wrote a backup. That ID is created by Vyne, isn't tied to your hardware or to any advertising ID, and changes if you reinstall.",
+       "İçeriğin (yukarıda sayılan her şey; döngü verisi hariç, o buluta yalnızca uçtan uca şifreleme açıkken gider, \"Döngü takibi\" bölümünde anlatıldığı gibi) bu durumda Firebase Firestore'da (bir Google Cloud veritabanı) da hesabına bağlı olarak saklanır. Yanında, yedeği hangi telefonun yazdığını ayırt etmek için her kurulumun rastgele bir kimliği ve platform bilgisi (iOS ya da Android) tutulur. Bu kimliği Vyne üretir; donanımına ya da herhangi bir reklam kimliğine bağlı değildir ve uygulamayı yeniden kurunca değişir."
       ],
       [
        "If you share a profile, its content and the member details described under \"Shared profiles\" are stored in a shared space that the other member can see.",
@@ -283,8 +283,8 @@
     ],
     [
      "p",
-     "Vyne's cloud. Cycle data reaches Vyne's cloud only if you have turned on end-to-end encryption for your account. It is then encrypted on your phone with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data stays on your phone and is not sent to Vyne's cloud. If you turn end-to-end encryption off, the encrypted cycle copies are deleted from Vyne's cloud and your data stays on your phones.",
-     "Vyne'ın bulutu. Döngü verileri Vyne'ın bulutuna yalnızca hesabın için uçtan uca şifrelemeyi açtıysan ulaşır. O zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri telefonunda kalır, Vyne'ın bulutuna gönderilmez. Uçtan uca şifrelemeyi kapatırsan şifreli döngü kopyaları Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
+     "Vyne's cloud. Cycle data reaches Vyne's cloud only if you have turned on end-to-end encryption for your account. It is then encrypted on your phone, like the rest of your backup, with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data stays on your phone and is not sent to Vyne's cloud. If you turn end-to-end encryption off, the encrypted cycle copies are deleted from Vyne's cloud and your data stays on your phones.",
+     "Vyne'ın bulutu. Döngü verileri Vyne'ın bulutuna yalnızca hesabın için uçtan uca şifrelemeyi açtıysan ulaşır. O zaman, yedeğinin geri kalanı gibi, telefondan çıkmadan önce yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri telefonunda kalır, Vyne'ın bulutuna gönderilmez. Uçtan uca şifrelemeyi kapatırsan şifreli döngü kopyaları Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
     ],
     [
      "p",
@@ -350,8 +350,8 @@
     ],
     [
      "p",
-     "The other member can see everything in the shared profile. Like Cloud Backup, it is not end-to-end encrypted: as the operator of the database I am technically able to access it, and Google stores it on my behalf. Anything the other member can see, they can also keep: for example by keeping a private copy when they leave, by exporting a backup file, or with a screenshot. Copies like these are outside my control, so only share a profile with someone you trust.",
-     "Diğer üye ortak profildeki her şeyi görebilir. Bulut Yedekleme gibi ortak profil de uçtan uca şifreli değildir: veritabanını işleten kişi olarak teknik olarak erişebilirim ve Google onu benim adıma saklar. Diğer üye görebildiği her şeyi saklayabilir de: örneğin ayrılırken kendine özel bir kopya tutarak, bir yedek dosyası dışa aktararak ya da ekran görüntüsü alarak. Bu tür kopyalar benim kontrolümün dışındadır; bu yüzden bir profili sadece güvendiğin biriyle paylaş."
+     "The other member can see everything in the shared profile. A shared profile is not covered by your account's end-to-end encryption: it lives in a separate shared space that both members read. It is encrypted in transit and at rest, protected by access rules that stop anyone other than its two members from reading it, and stored by Google on my behalf, but it is not end-to-end encrypted. Anything the other member can see, they can also keep: for example by keeping a private copy when they leave, by exporting a backup file, or with a screenshot. Copies like these are outside my control, so only share a profile with someone you trust.",
+     "Diğer üye ortak profildeki her şeyi görebilir. Ortak profil, hesabının uçtan uca şifrelemesinin kapsamında değildir: iki üyenin de okuduğu ayrı bir ortak alanda durur. Aktarım sırasında ve depolanırken şifrelenir, iki üyesi dışında kimsenin okumasını engelleyen erişim kurallarıyla korunur ve Google tarafından benim adıma saklanır; ancak uçtan uca şifreli değildir. Diğer üye görebildiği her şeyi saklayabilir de: örneğin ayrılırken kendine özel bir kopya tutarak, bir yedek dosyası dışa aktararak ya da ekran görüntüsü alarak. Bu tür kopyalar benim kontrolümün dışındadır; bu yüzden bir profili sadece güvendiğin biriyle paylaş."
     ],
     [
      "p",
@@ -413,8 +413,13 @@
     ],
     [
      "p",
-     "Cloud data is linked to your account, and the database's access rules stop other users from reading it, except the other member of a profile you chose to share. Google encrypts it in transit and at rest, but it is not end-to-end encrypted (the exception is cycle data once you turn on end-to-end encryption, as described under \"Cycle tracking\"): as the operator of the database, I am technically able to access it. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
-     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları, paylaşmayı seçtiğin bir profilin diğer üyesi dışında, diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler, ancak uçtan uca şifreli değildir (istisnası, uçtan uca şifrelemeyi açtığında döngü verileridir; \"Döngü takibi\" bölümünde anlatıldığı gibi): veritabanını işleten kişi olarak teknik olarak erişebilirim. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
+     "Cloud data is linked to your account, and the database's access rules stop other users from reading it, except the other member of a profile you chose to share. Google encrypts it in transit and at rest. Without end-to-end encryption, that is how your backup is protected, but it is not end-to-end encrypted. I don't look at your content, except when you ask me for help with your own data or when the law requires it.",
+     "Buluttaki verin hesabına bağlıdır ve veritabanının erişim kuralları, paylaşmayı seçtiğin bir profilin diğer üyesi dışında, diğer kullanıcıların onu okumasını engeller. Google verini aktarım sırasında ve depolanırken şifreler. Uçtan uca şifreleme yoksa yedeğin bu şekilde korunur, ancak uçtan uca şifreli değildir. Sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe içeriğine bakmam."
+    ],
+    [
+     "p",
+     "End-to-end encryption is an optional Cloud Backup setting for your account. When you turn it on, the content of your whole cloud backup (branches, habits, notes, journal, lists, calendar items, time clock entries, cycle data and everything else in it) is encrypted on your phone, with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot recover it if you lose your recovery code and all your signed-in devices. Even with it on, your email address, how many items are stored, their approximate size and when they changed stay visible on the server. Cycle data goes to the cloud only with end-to-end encryption on, as described under \"Cycle tracking\". Shared profiles are not covered by it, as described under \"Shared profiles\".",
+     "Uçtan uca şifreleme, hesabın için Bulut Yedekleme'nin isteğe bağlı bir ayarıdır. Açtığında bütün bulut yedeğinin içeriği (dallar, alışkanlıklar, notlar, günlük, listeler, takvim öğeleri, mesai saati kayıtları, döngü verileri ve içindeki diğer her şey) telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam; kurtarma kodunu ve giriş yaptığın bütün cihazları kaybedersen de kurtaramam. Açıkken bile e-posta adresin, kaç öğe saklandığı, yaklaşık boyutları ve ne zaman değiştikleri sunucuda görünür kalır. Döngü verileri buluta yalnızca uçtan uca şifreleme açıkken gider; \"Döngü takibi\" bölümünde anlatıldığı gibi. Ortak profiller bunun kapsamında değildir; \"Ortak profiller\" bölümünde anlatıldığı gibi."
     ],
     [
      "p",
@@ -566,8 +571,8 @@
     ],
     [
      "updated",
-     "Last updated: October 20, 2026",
-     "Son güncelleme: 20 Ekim 2026"
+     "Last updated: October 21, 2026",
+     "Son güncelleme: 21 Ekim 2026"
     ],
     [
      "p",
@@ -609,8 +614,8 @@
     ],
     [
      "p",
-     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup is not end-to-end encrypted, except cycle data when you turn on end-to-end encryption; the Privacy Policy explains what that means. If you share a profile, I also show it to its other member, as the Privacy Policy explains. You can delete your account and cloud data at any time from within the App.",
-     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut yedeği uçtan uca şifreli değildir; uçtan uca şifrelemeyi açtığında döngü verileri hariç; bunun ne demek olduğunu Gizlilik Politikası anlatır. Bir profili paylaşırsan onu diğer üyesine de gösteririm; Gizlilik Politikası bunu anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
+     "Everything you create in Vyne belongs to you. I don't sell it, and I don't look at it or use it for anything other than storing it and giving it back to you through Cloud Backup, unless you ask me for help with your own data or the law requires it. Cloud Backup has an optional end-to-end encryption setting that encrypts your whole backup on your phone before it leaves; without it, your backup is encrypted in transit and at rest but is not end-to-end encrypted. The Privacy Policy explains both. If you share a profile, I also show it to its other member, as the Privacy Policy explains. You can delete your account and cloud data at any time from within the App.",
+     "Vyne'da oluşturduğun her şey senindir. Onu satmam; sen kendi verin için yardım istemedikçe ya da yasa gerektirmedikçe ona bakmam ve onu Bulut Yedekleme ile saklayıp sana geri vermek dışında hiçbir şey için kullanmam. Bulut Yedekleme'nin, bütün yedeğini telefonundan çıkmadan önce şifreleyen isteğe bağlı bir uçtan uca şifreleme ayarı vardır; bu ayar kapalıyken yedeğin aktarım sırasında ve depolanırken şifrelenir, ancak uçtan uca şifreli değildir. Gizlilik Politikası ikisini de anlatır. Bir profili paylaşırsan onu diğer üyesine de gösteririm; Gizlilik Politikası bunu anlatır. Hesabını ve bulut verini istediğin an Uygulama'nın içinden silebilirsin."
     ],
     [
      "h2",
@@ -833,6 +838,7 @@
     "Health data",
     "Sağlık verisi"
    ],
+   "enOnly": true,
    "hero": "shield",
    "notes": [
     "mobile",
@@ -853,8 +859,8 @@
     ],
     [
      "updated",
-     "Last updated: October 20, 2026",
-     "Son güncelleme: 20 Ekim 2026"
+     "Last updated: October 21, 2026",
+     "Son güncelleme: 21 Ekim 2026"
     ],
     [
      "p",
@@ -988,8 +994,8 @@
     ],
     [
      "p",
-     "Vyne's cloud: only if you have turned on end-to-end encryption for your account. Your data is then encrypted on your phone, with a key that only your devices hold, before it leaves the phone, so I cannot read it and cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data never leaves your phone through Vyne. If you turn end-to-end encryption off, the encrypted copies are deleted from Vyne's cloud and your data stays on your phones.",
-     "Vyne'ın bulutu: yalnızca hesabın için uçtan uca şifrelemeyi açtıysan. Verin o zaman telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir; bu yüzden ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri Vyne üzerinden telefonundan hiç çıkmaz. Uçtan uca şifrelemeyi kapatırsan şifreli kopyalar Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
+     "Vyne's cloud: only if you have turned on end-to-end encryption for your account. Your data is then encrypted on your phone, like the rest of your Cloud Backup, with a key that only your devices hold, before it leaves the phone, so I cannot read it and cannot hand it to anyone in readable form. Without end-to-end encryption, cycle data never leaves your phone through Vyne. If you turn end-to-end encryption off, the encrypted copies are deleted from Vyne's cloud and your data stays on your phones.",
+     "Vyne'ın bulutu: yalnızca hesabın için uçtan uca şifrelemeyi açtıysan. Verin o zaman, Bulut Yedekleme'nin geri kalanı gibi, telefondan çıkmadan önce yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir; bu yüzden ben okuyamam ve kimseye okunabilir hâlde veremem. Uçtan uca şifreleme yoksa döngü verileri Vyne üzerinden telefonundan hiç çıkmaz. Uçtan uca şifrelemeyi kapatırsan şifreli kopyalar Vyne'ın bulutundan silinir, verilerin telefonlarında kalır."
     ],
     [
      "p",

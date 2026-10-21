@@ -99,6 +99,10 @@
        "Notlar, listeler ve hatırlatıcılar"
       ],
       [
+       "Calendar items, time clock entries and your hourly rates, and the water and other amounts you log",
+       "Takvim öğeleri, mesai saati kayıtları ve saatlik ücretlerin, kaydettiğin su ve diğer miktarlar"
+      ],
+      [
        "Your daily journal and weekly diary",
        "Günlüğün ve haftalık defterin"
       ],
@@ -118,8 +122,8 @@
     ],
     [
      "p",
-     "Nothing leaves your device unless you turn on Cloud Backup or export a backup file yourself.",
-     "Bulut Yedekleme'yi açmadıkça ya da kendin bir yedek dosyası dışa aktarmadıkça hiçbir şey cihazından çıkmaz."
+     "Nothing you create leaves your device unless you turn on Cloud Backup, share a profile or export a backup file yourself. Crash reports and update checks, which carry none of your content, are described below.",
+     "Bulut Yedekleme'yi açmadıkça, bir profili paylaşmadıkça ya da kendin bir yedek dosyası dışa aktarmadıkça oluşturduğun hiçbir şey cihazından çıkmaz. İçeriğini taşımayan hata raporları ve güncelleme kontrolleri aşağıda anlatılır."
     ],
     [
      "ul",
@@ -139,6 +143,10 @@
       [
        "Crash and performance diagnostics are sent to Sentry, as described in the next section.",
        "Hata ve performans bilgileri, bir sonraki bölümde anlatıldığı gibi Sentry'ye gönderilir."
+      ],
+      [
+       "When Vyne starts, it asks Expo, the service that delivers Vyne's app updates (servers in the United States), whether a newer version is available. That request carries the app version, the platform, a random ID for the installation and, like any internet request, your IP address. It carries none of your content. When your phone talks to Firebase or Sentry, they also see your IP address and basic device information, as any internet service does, and use them only to run and secure their service.",
+       "Vyne açılınca, uygulama güncellemelerini dağıtan hizmet olan Expo'ya (sunucuları Amerika Birleşik Devletleri'nde) yeni bir sürüm olup olmadığını sorar. Bu istek uygulama sürümünü, platformu, kurulum için rastgele bir kimliği ve her internet isteği gibi IP adresini taşır. İçeriğinden hiçbir şey taşımaz. Telefonun Firebase ya da Sentry ile konuşurken onlar da, her internet hizmeti gibi, IP adresini ve temel cihaz bilgilerini görür ve bunları yalnızca kendi hizmetlerini çalıştırmak ve korumak için kullanır."
       ]
      ]
     ],
@@ -170,8 +178,8 @@
        "cihaz modeli, işletim sistemi ve uygulama sürümü"
       ],
       [
-       "an anonymous identifier for the device",
-       "cihaz için anonim bir kimlik"
+       "a random identifier for the device, not linked to your account",
+       "cihaz için hesabına bağlı olmayan rastgele bir kimlik"
       ],
       [
        "a short trail of the most recent taps and screens before the problem",
@@ -181,8 +189,8 @@
     ],
     [
      "p",
-     "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for a limited time and then deletes it automatically.",
-     "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda sınırlı bir süre tutar, sonra kendiliğinden siler."
+     "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for a limited period set in Sentry's settings and then deletes it automatically.",
+     "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda, Sentry ayarlarında belirlenen sınırlı bir süre tutar, sonra kendiliğinden siler."
     ],
     [
      "h2",
@@ -308,13 +316,13 @@
     ],
     [
      "p",
-     "Not medical advice. Vyne shows what you logged. It does not predict, does not tell you when you are fertile or safe, is not medical advice and is not birth control.",
-     "Tıbbi tavsiye değildir. Vyne yalnızca kaydettiğini gösterir. Tahmin yapmaz, ne zaman doğurgan ya da güvende olduğunu söylemez; tıbbi tavsiye ve doğum kontrol yöntemi değildir."
+     "Not medical advice. Vyne shows what you logged. It does not predict, does not tell you when you are fertile or safe, is not medical advice and is not birth control. Optional rule helpers, off until you turn them on, show what one named, published rule says about the days you logged, for example where Sensiplan's coverline falls. They are not a fertile-window calculation and must not be used to avoid or plan a pregnancy.",
+     "Tıbbi tavsiye değildir. Vyne yalnızca kaydettiğini gösterir. Tahmin yapmaz, ne zaman doğurgan ya da güvende olduğunu söylemez; tıbbi tavsiye ve doğum kontrol yöntemi değildir. İsteğe bağlı kural yardımcıları, sen açana kadar kapalıdır; adı verilen, yayımlanmış tek bir kuralın kaydettiğin günler hakkında ne dediğini gösterir, örneğin Sensiplan'ın örtü çizgisinin nerede olduğunu. Doğurgan günleri hesaplamaz; gebelikten korunmak ya da gebelik planlamak için kullanılmamalıdır."
     ],
     [
      "p",
-     "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data are listed above; I collect them only to show them back to you; they come only from you (what you enter or import); I share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask me anything about it, write to vyneapp.help@gmail.com.",
-     "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarım; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmam. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz."
+     "Consumer health data (for example Washington's My Health My Data Act). The categories of consumer health data in cycle tracking are listed above; I collect them only to show them back to you; they come only from you (what you enter or import); I share them with no one. You can see all of it in the app, export it, and delete it at any time as described above; to ask me anything about it, write to vyneapp.help@gmail.com. Health-related things you log or type elsewhere in Vyne, such as a water habit, are covered by the Consumer Health Data Privacy Policy.",
+     "Tüketici sağlık verileri (örneğin Washington eyaletinin My Health My Data yasası). Döngü takibindeki tüketici sağlık verilerinin kategorileri yukarıda sayılmıştır; bunları yalnızca sana geri göstermek için toplarım; yalnızca senden gelir (girdiğin ya da içe aktardığın); kimseyle paylaşmam. Hepsini uygulamada görebilir, dışa aktarabilir ve yukarıda anlatıldığı gibi istediğin zaman silebilirsin; bununla ilgili bir sorun için vyneapp.help@gmail.com adresine yaz. Vyne'ın başka yerlerinde kaydettiğin ya da yazdığın sağlıkla ilgili şeyler, örneğin bir su alışkanlığı, Tüketici Sağlık Verisi Gizlilik Politikası'nda anlatılır."
     ],
     [
      "link",
@@ -381,6 +389,10 @@
        "adın, hesap kimliğin ve katılma tarihin üye listesinden çıkarılır; hesap kimliğin profilin öğelerinde ve Son silinenler'de rastgele bir kimlikle değiştirilir; ortak profilde bu rastgele kimlik ve ayrıldığın tarih kalır;"
       ],
       [
+       "the random installation ID on items you changed stays, and does not tell the other member who you are;",
+       "değiştirdiğin öğelerdeki rastgele kurulum kimliği kalır ve diğer üyeye kim olduğunu söylemez;"
+      ],
+      [
        "invites you made for it, and the one you used to join, are deleted;",
        "bu profil için oluşturduğun davetler ve katılırken kullandığın davet silinir;"
       ],
@@ -418,13 +430,23 @@
     ],
     [
      "p",
-     "End-to-end encryption is an optional Cloud Backup setting for your account. When you turn it on, the content of your whole cloud backup (branches, habits, notes, journal, lists, calendar items, time clock entries, cycle data and everything else in it) is encrypted on your phone, with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot recover it if you lose your recovery code and all your signed-in devices. Even with it on, your email address, how many items are stored, their approximate size and when they changed stay visible on the server. Cycle data goes to the cloud only with end-to-end encryption on, as described under \"Cycle tracking\". A shared profile has its own key and is encrypted separately, as described under \"Shared profiles\".",
-     "Uçtan uca şifreleme, hesabın için Bulut Yedekleme'nin isteğe bağlı bir ayarıdır. Açtığında bütün bulut yedeğinin içeriği (dallar, alışkanlıklar, notlar, günlük, listeler, takvim öğeleri, mesai saati kayıtları, döngü verileri ve içindeki diğer her şey) telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam; kurtarma kodunu ve giriş yaptığın bütün cihazları kaybedersen de kurtaramam. Açıkken bile e-posta adresin, kaç öğe saklandığı, yaklaşık boyutları ve ne zaman değiştikleri sunucuda görünür kalır. Döngü verileri buluta yalnızca uçtan uca şifreleme açıkken gider; \"Döngü takibi\" bölümünde anlatıldığı gibi. Ortak profilin kendi anahtarı vardır ve ayrıca şifrelenir; \"Ortak profiller\" bölümünde anlatıldığı gibi."
+     "End-to-end encryption is an optional Cloud Backup setting for your account. When you turn it on, the content of your whole cloud backup (branches, habits, notes, journal, lists, calendar items, time clock entries, cycle data and everything else in it) is encrypted on your phone, with a key that only your devices hold, before it leaves the phone. I cannot read it, and I cannot recover it if you lose your recovery code and all your signed-in devices. Even with it on, your email address, how many items are stored, their approximate size, when they changed and the random installation ID on each item stay visible on the server. In an end-to-end encrypted shared profile, the member list (each member's account ID, shown name, join date and a public key Vyne uses to pass the profile's key between your phones) and the record of former members stay readable too; the content does not. Cycle data goes to the cloud only with end-to-end encryption on, as described under \"Cycle tracking\". A shared profile has its own key and is encrypted separately, as described under \"Shared profiles\".",
+     "Uçtan uca şifreleme, hesabın için Bulut Yedekleme'nin isteğe bağlı bir ayarıdır. Açtığında bütün bulut yedeğinin içeriği (dallar, alışkanlıklar, notlar, günlük, listeler, takvim öğeleri, mesai saati kayıtları, döngü verileri ve içindeki diğer her şey) telefondan çıkmadan önce, yalnızca senin cihazlarının tuttuğu bir anahtarla telefonunda şifrelenir. Ben okuyamam; kurtarma kodunu ve giriş yaptığın bütün cihazları kaybedersen de kurtaramam. Açıkken bile e-posta adresin, kaç öğe saklandığı, yaklaşık boyutları, ne zaman değiştikleri ve her öğedeki rastgele kurulum kimliği sunucuda görünür kalır. Uçtan uca şifreli bir ortak profilde üye listesi (her üyenin hesap kimliği, gösterilen adı, katılma tarihi ve Vyne'ın profilin anahtarını telefonlarınız arasında iletmek için kullandığı bir açık anahtar) ve eski üyelerin kaydı da okunabilir kalır; içerik okunamaz. Döngü verileri buluta yalnızca uçtan uca şifreleme açıkken gider; \"Döngü takibi\" bölümünde anlatıldığı gibi. Ortak profilin kendi anahtarı vardır ve ayrıca şifrelenir; \"Ortak profiller\" bölümünde anlatıldığı gibi."
     ],
     [
      "p",
-     "Cloud Backup and shared profile data (Google Firebase) and crash reports (Sentry) are stored on servers in the United States; if you use Vyne from outside the US, this data is transferred there. On your phone, your data is protected by the operating system's app sandbox.",
-     "Bulut yedeği ve ortak profiller (Google Firebase) ile hata raporları (Sentry) Amerika Birleşik Devletleri'ndeki sunucularda saklanır; Vyne'ı ABD dışından kullanıyorsan bu veriler oraya aktarılır. Telefonunda verin, işletim sisteminin uygulama korumasıyla (sandbox) korunur."
+     "Cloud Backup and shared profile data (Google Firebase) and crash reports (Sentry) are stored, and app update checks (Expo) are handled, on servers in the United States; if you use Vyne from outside the US, this data is transferred there. For people in the EU, UK and Switzerland, I rely on the EU-U.S. Data Privacy Framework (and its UK and Swiss extensions) where the provider is certified under it, and otherwise on the European Commission's standard contractual clauses in the provider's data processing terms. On your phone, your data is protected by the operating system's app sandbox.",
+     "Bulut yedeği ve ortak profiller (Google Firebase) ile hata raporları (Sentry) Amerika Birleşik Devletleri'ndeki sunucularda saklanır, uygulama güncelleme kontrolleri (Expo) de oradaki sunucularda karşılanır; Vyne'ı ABD dışından kullanıyorsan bu veriler oraya aktarılır. AB, Birleşik Krallık ve İsviçre'deki kullanıcılar için, hizmet sağlayıcı AB-ABD Veri Gizliliği Çerçevesi'ne (ve onun Birleşik Krallık ve İsviçre uzantılarına) sertifikalıysa ona, değilse sağlayıcının veri işleme şartlarındaki Avrupa Komisyonu standart sözleşme maddelerine dayanırım. Telefonunda verin, işletim sisteminin uygulama korumasıyla (sandbox) korunur."
+    ],
+    [
+     "p",
+     "If something goes wrong: if I learn that someone got access to your data who should not have, I will tell you by email without undue delay, explain what happened and what you can do, and tell the authorities where the law requires it (for example within 72 hours under the GDPR, and under the FTC's Health Breach Notification Rule for health data). End-to-end encrypted data stays unreadable without your key.",
+     "Bir şey ters giderse: verine erişmemesi gereken birinin eriştiğini öğrenirsem gecikmeden sana e-postayla haber veririm, ne olduğunu ve neler yapabileceğini anlatırım, yasanın gerektirdiği yerde de yetkililere bildiririm (örneğin GDPR'a göre 72 saat içinde, sağlık verisi için ABD Federal Ticaret Komisyonu'nun Sağlık Verisi İhlali Bildirim Kuralı'na göre). Uçtan uca şifreli veri, senin anahtarın olmadan okunamaz kalır."
+    ],
+    [
+     "p",
+     "If I receive a legal demand for your data, I will check that it is valid, hand over only what the law requires, and tell you unless the law forbids it. For end-to-end encrypted data, including all cycle data in the cloud, I can only hand over encrypted data I cannot read.",
+     "Verin için yasal bir talep alırsam geçerli olup olmadığına bakarım, yalnızca yasanın gerektirdiğini veririm ve yasa yasaklamadıkça sana haber veririm. Bulutta tüm döngü verileri de dahil uçtan uca şifreli veri için yalnızca okuyamadığım şifreli veriyi verebilirim."
     ],
     [
      "h2",
@@ -434,8 +456,8 @@
     ],
     [
      "p",
-     "I don't sell, rent or share your data with advertisers or data brokers. The only third-party services involved are Google Firebase (sign-in and backup storage, on my behalf) and Sentry (crash and performance diagnostics). Neither uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
-     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. İşin içindeki üçüncü taraf hizmetler yalnızca Google Firebase (giriş ve yedek depolama, benim adıma) ve Sentry'dir (hata ve performans bilgileri). İkisi de verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
+     "I don't sell, rent or share your data with advertisers or data brokers. The only services that handle data for me are Google Firebase (Google LLC: sign-in and backup storage), Sentry (Functional Software, Inc.: crash and performance diagnostics) and Expo (650 Industries, Inc.: app updates). None of them uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
+     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. Benim adıma veri işleyen hizmetler yalnızca Google Firebase (Google LLC: giriş ve yedek depolama), Sentry (Functional Software, Inc.: hata ve performans bilgileri) ve Expo'dur (650 Industries, Inc.: uygulama güncellemeleri). Hiçbiri verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
     ],
     [
      "h2",
@@ -464,6 +486,10 @@
        "Hata ve performans bilgileri: uygulamanın çalışmasını sağlamak ve hataları düzeltmek konusundaki meşru menfaatim (GDPR m. 6/1-f, KVKK m. 5/2-f). Bana e-posta atarak itiraz edebilirsin."
       ],
       [
+       "Cycle tracking: this is health data, including data about your sex life, so I process it only with your explicit consent, which you give on the \"Before you start\" screen when you turn cycle tracking on (GDPR Art. 9(2)(a), KVKK Art. 6). Most of it never reaches me: it stays on your phone, and its cloud copy, if there is one, is end-to-end encrypted. You can withdraw your consent at any time: turn cycle tracking off and choose Settings → Cycle tracking → Delete all cycle data. Withdrawing does not affect what was done before.",
+       "Döngü takibi: bu, cinsel hayatına ilişkin bilgiler de dahil sağlık verisidir; bu yüzden onu yalnızca açık rızanla işlerim. Rızanı, döngü takibini açarken \"Başlamadan önce\" ekranında verirsin (GDPR m. 9/2-a, KVKK m. 6). Bu verilerin çoğu bana hiç ulaşmaz: telefonunda kalır, bulut kopyası varsa uçtan uca şifrelidir. Rızanı istediğin an geri alabilirsin: döngü takibini kapat ve Ayarlar → Döngü takibi → Tüm döngü verilerini sil'i seç. Rızanı geri alman, öncesinde yapılanları etkilemez."
+      ],
+      [
        "Nothing is used for advertising, profiling or automated decisions about you.",
        "Hiçbir şey reklam, profil çıkarma ya da hakkında otomatik karar vermek için kullanılmaz."
       ]
@@ -488,8 +514,13 @@
     ],
     [
      "p",
-     "Depending on where you live (for example under the GDPR in the EU and UK, Turkey's KVKK, or US state privacy laws), you may have the right to access, correct, export or delete your data, or to object to how it is used. You can do most of this yourself in the app: edit anything, export a backup file, or delete your account. For anything else, email me.",
-     "Yaşadığın yere göre (örneğin AB ve Birleşik Krallık'ta GDPR, Türkiye'de KVKK ya da ABD eyalet yasaları) verine erişme, düzeltme, dışa aktarma, silme ya da kullanılma şekline itiraz etme hakkın olabilir. Bunların çoğunu uygulamada kendin yapabilirsin: her şeyi düzenleyebilir, yedek dosyası alabilir ya da hesabını silebilirsin. Geri kalanı için bana e-posta at."
+     "Depending on where you live (for example under the GDPR in the EU and UK, Turkey's KVKK, or US state privacy laws), you may have the right to access, correct, export (portability) or delete your data, to restrict or object to how it is used, and to withdraw any consent you gave, without affecting what was done before. You can do most of this yourself in the app: edit anything, export a backup file, or delete your account. For anything else, email me; I answer within 30 days.",
+     "Yaşadığın yere göre (örneğin AB ve Birleşik Krallık'ta GDPR, Türkiye'de KVKK ya da ABD eyalet yasaları) verine erişme, düzeltme, dışa aktarma (taşınabilirlik), silme, işlenmesini kısıtlama ya da itiraz etme ve verdiğin her rızayı geri alma hakkın olabilir; rızanı geri alman, öncesinde yapılanları etkilemez. Bunların çoğunu uygulamada kendin yapabilirsin: her şeyi düzenleyebilir, yedek dosyası alabilir ya da hesabını silebilirsin. Geri kalanı için bana e-posta at; 30 gün içinde yanıtlarım."
+    ],
+    [
+     "p",
+     "If you think I have handled your data wrongly, please write to me first so I can fix it. You also have the right to complain to a data protection authority: in the EU, the authority in the country where you live or work; in the UK, the Information Commissioner's Office (ico.org.uk); in Turkey, the Personal Data Protection Board (kvkk.gov.tr), after you have applied to me.",
+     "Verini yanlış işlediğimi düşünüyorsan önce bana yaz ki düzelteyim. Bir veri koruma otoritesine şikâyette bulunma hakkın da var: AB'de yaşadığın ya da çalıştığın ülkenin otoritesine, Birleşik Krallık'ta Information Commissioner's Office'e (ico.org.uk), Türkiye'de bana başvurduktan sonra Kişisel Verileri Koruma Kurulu'na (kvkk.gov.tr)."
     ],
     [
      "h2",
@@ -543,8 +574,8 @@
     ],
     [
      "p",
-     "When this policy changes, the date at the top changes too. Continued use of the app after an update means you accept the revised policy.",
-     "Bu politika değişirse en üstteki tarih de değişir. Güncellemeden sonra uygulamayı kullanmaya devam etmen, yeni politikayı kabul ettiğin anlamına gelir."
+     "When this policy changes, the date at the top changes too. If a change is significant, for example a new kind of data or a new service that receives it, I will tell you in the app before it takes effect, and I will ask for your consent again where the law requires it.",
+     "Bu politika değişirse en üstteki tarih de değişir. Değişiklik önemliyse, örneğin yeni bir veri türü ya da veriyi alan yeni bir hizmet varsa, yürürlüğe girmeden önce uygulamada sana haber veririm ve yasanın gerektirdiği yerde rızanı yeniden isterim."
     ],
     [
      "contact",
@@ -603,8 +634,8 @@
     ],
     [
      "p",
-     "Cloud Backup is optional and needs an email address and password. You must be at least 13 years old to create an account. Keep your password safe; if you think someone else has used your account, contact me right away.",
-     "Bulut Yedekleme isteğe bağlıdır ve bir e-posta adresi ile şifre gerektirir. Hesap açmak için en az 13 yaşında olmalısın. Şifreni güvende tut; hesabını başka birinin kullandığını düşünürsen hemen bana yaz."
+     "Cloud Backup is optional and needs an email address and password. You must be at least 13 years old to create an account, share a profile or turn on cycle tracking. If you are under 16, or under the age of digital consent where you live, ask a parent or guardian before you do. Keep your password safe; if you think someone else has used your account, contact me right away.",
+     "Bulut Yedekleme isteğe bağlıdır ve bir e-posta adresi ile şifre gerektirir. Hesap açmak, bir profili paylaşmak ya da döngü takibini açmak için en az 13 yaşında olmalısın. 16 yaşından ya da yaşadığın yerdeki dijital rıza yaşından küçüksen bunları yapmadan önce anne, baba ya da vasine sor. Şifreni güvende tut; hesabını başka birinin kullandığını düşünürsen hemen bana yaz."
     ],
     [
      "h2",
@@ -657,6 +688,17 @@
     ],
     [
      "h2",
+     "Sharing a profile",
+     "Bir profili paylaşmak",
+     "people"
+    ],
+    [
+     "p",
+     "When you share a profile, you decide what goes into it. Only put in what you have the right to share, and don't use a shared profile to watch, pressure or harass anyone. The other member can see, change, delete and keep copies of everything in it; I can't undo what they do with a copy outside Vyne. You can leave a shared profile at any time.",
+     "Bir profili paylaşırsan içine ne gireceğine sen karar verirsin. İçine yalnızca paylaşmaya hakkın olanı koy ve ortak profili kimseyi izlemek, baskı altına almak ya da taciz etmek için kullanma. Diğer üye içindeki her şeyi görebilir, değiştirebilir, silebilir ve kopyalayabilir; bir kopyayla Vyne dışında yaptığını ben geri alamam. Bir ortak profilden istediğin zaman ayrılabilirsin."
+    ],
+    [
+     "h2",
      "App stores",
      "Uygulama mağazaları",
      "mobile"
@@ -674,8 +716,8 @@
     ],
     [
      "p",
-     "Vyne is provided \"as is.\" I work to keep it reliable, but I can't guarantee it will always be available or error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up, with Cloud Backup or an exported backup file.",
-     "Vyne \"olduğu gibi\" sunulur. Güvenilir olması için çalışıyorum, ancak her zaman erişilebilir ya da hatasız olacağını veya verinin hiç kaybolmayacağını garanti edemem; özellikle Bulut Yedekleme kullanmıyorsan. Önemli olan her şeyi Bulut Yedekleme ya da bir yedek dosyasıyla yedekle."
+     "Vyne is provided \"as is.\" I work to keep it reliable, but I can't guarantee it will always be available or error-free, or that your data will never be lost, particularly if you don't use Cloud Backup. Keep anything important backed up, with Cloud Backup or an exported backup file. If you turn on end-to-end encryption and lose both your recovery code and all your signed-in devices, I cannot recover your cloud data; nobody can.",
+     "Vyne \"olduğu gibi\" sunulur. Güvenilir olması için çalışıyorum, ancak her zaman erişilebilir ya da hatasız olacağını veya verinin hiç kaybolmayacağını garanti edemem; özellikle Bulut Yedekleme kullanmıyorsan. Önemli olan her şeyi Bulut Yedekleme ya da bir yedek dosyasıyla yedekle. Uçtan uca şifrelemeyi açar ve hem kurtarma kodunu hem giriş yaptığın bütün cihazları kaybedersen bulut verini kurtaramam; kimse kurtaramaz."
     ],
     [
      "h2",
@@ -685,8 +727,8 @@
     ],
     [
      "p",
-     "To the extent permitted by law, I am not liable for indirect, incidental or consequential damages arising from your use of the App, including lost data.",
-     "Yasanın izin verdiği ölçüde, Uygulama'yı kullanmandan doğan dolaylı, arızi ya da sonuçsal zararlardan, veri kaybı dahil, sorumlu değilim."
+     "To the extent permitted by law, I am not liable for indirect, incidental or consequential damages arising from your use of the App, including lost data. Nothing in these terms limits liability that the law does not allow to be limited, such as for death or personal injury caused by negligence, or for fraud, and nothing here takes away rights you have as a consumer where you live.",
+     "Yasanın izin verdiği ölçüde, Uygulama'yı kullanmandan doğan dolaylı, arızi ya da sonuçsal zararlardan, veri kaybı dahil, sorumlu değilim. Bu şartlardaki hiçbir şey, yasanın sınırlanmasına izin vermediği sorumluluğu, örneğin ihmalden kaynaklanan ölüm ya da yaralanma veya hile için olanı, sınırlamaz ve yaşadığın yerde tüketici olarak sahip olduğun hakları elinden almaz."
     ],
     [
      "h2",
@@ -696,8 +738,8 @@
     ],
     [
      "p",
-     "Vyne changes over time: features can be added, changed or removed. When these terms change, the date at the top changes too, and continued use of the App means you accept the revised terms.",
-     "Vyne zamanla değişir: özellikler eklenebilir, değişebilir ya da kaldırılabilir. Bu şartlar değişirse en üstteki tarih de değişir; Uygulama'yı kullanmaya devam etmen yeni şartları kabul ettiğin anlamına gelir."
+     "Vyne changes over time: features can be added, changed or removed. When these terms change, the date at the top changes too. If a change is significant, I will tell you in the app before it takes effect; if you keep using the App after that, the new terms apply. If you don't agree, you can stop using the App and delete your account.",
+     "Vyne zamanla değişir: özellikler eklenebilir, değişebilir ya da kaldırılabilir. Bu şartlar değişirse en üstteki tarih de değişir. Değişiklik önemliyse yürürlüğe girmeden önce uygulamada haber veririm; sonrasında Uygulama'yı kullanmaya devam edersen yeni şartlar geçerli olur. Kabul etmiyorsan Uygulama'yı kullanmayı bırakıp hesabını silebilirsin."
     ],
     [
      "h2",
@@ -746,8 +788,8 @@
     ],
     [
      "updated",
-     "Last updated: October 20, 2026",
-     "Son güncelleme: 20 Ekim 2026"
+     "Last updated: October 21, 2026",
+     "Son güncelleme: 21 Ekim 2026"
     ],
     [
      "p",
@@ -801,8 +843,8 @@
     ],
     [
      "p",
-     "Your account (email and password sign-in) and everything in Cloud Backup — branches, habits, due dates, amounts, notes, lists, reminders, your journal and weekly diary, and the people you added — are permanently deleted from the servers, including backups in older formats. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
-     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, günlüğün ve haftalık defterin, eklediğin kişiler) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
+     "Your account (email and password sign-in) and everything in Cloud Backup (branches, habits, due dates, amounts, notes, lists, reminders, calendar items, time clock entries and hourly rates, your journal and weekly diary, the people you added, the encrypted copy of your cycle data, and your encryption keys) are permanently deleted from the servers, including backups in older formats. Vyne also offers to delete the cycle data on your phone. Google removes deleted data from its own internal backups on its own schedule. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
+     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, takvim öğeleri, mesai saati kayıtları ve saatlik ücretler, günlüğün ve haftalık defterin, eklediğin kişiler, döngü verilerinin şifreli kopyası ve şifreleme anahtarların) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Vyne telefonundaki döngü verilerini de silmeyi önerir. Google silinen veriyi kendi iç yedeklerinden kendi takvimine göre kaldırır. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
     ],
     [
      "h2",
@@ -823,8 +865,8 @@
     ],
     [
      "p",
-     "No copy of your own backup is kept after deletion. What stays on the servers is what you added to a shared profile that another member still uses, without your name or account ID. Data on your phone isn't touched by deleting your cloud account: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
-     "Silmeden sonra kendi yedeğinin hiçbir kopyası kalmaz. Sunucularda kalan tek şey, başka bir üyenin hâlâ kullandığı bir ortak profile eklediklerindir; adın ve hesap kimliğin olmadan. Bulut hesabını silmek telefonundaki veriye dokunmaz: uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
+     "No copy of your own backup is kept after deletion. What stays on the servers is what you added to a shared profile that another member still uses, without your name or account ID. Data on your phone isn't touched by deleting your cloud account, except the cycle data Vyne offers to delete: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
+     "Silmeden sonra kendi yedeğinin hiçbir kopyası kalmaz. Sunucularda kalan tek şey, başka bir üyenin hâlâ kullandığı bir ortak profile eklediklerindir; adın ve hesap kimliğin olmadan. Bulut hesabını silmek telefonundaki veriye dokunmaz (Vyne'ın silmeyi önerdiği döngü verileri hariç): uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
     ],
     [
      "contact",
@@ -859,8 +901,8 @@
     ],
     [
      "updated",
-     "Last updated: October 21, 2026",
-     "Son güncelleme: 21 Ekim 2026"
+     "Effective and last updated: October 21, 2026",
+     "Yürürlük ve son güncelleme: 21 Ekim 2026"
     ],
     [
      "p",
@@ -869,23 +911,23 @@
     ],
     [
      "p",
-     "It covers the same data as the \"Cycle tracking\" section of the Vyne Privacy Policy, which applies too.",
-     "Vyne Gizlilik Politikası'nın \"Döngü takibi\" bölümüyle aynı veriyi kapsar; o bölüm de geçerlidir."
+     "It covers your cycle tracking log, described in the \"Cycle tracking\" section of the Vyne Privacy Policy, and anything health-related you log or type elsewhere in Vyne. The Privacy Policy applies too.",
+     "Vyne Gizlilik Politikası'nın \"Döngü takibi\" bölümünde anlatılan döngü takibi kayıtlarını ve Vyne'ın başka yerlerinde kaydettiğin ya da yazdığın sağlıkla ilgili her şeyi kapsar. Gizlilik Politikası da geçerlidir."
     ],
     [
      "callout",
      [
       [
-       "It stays on your phone, or goes to the cloud only end-to-end encrypted.",
-       "Telefonunda kalır ya da buluta yalnızca uçtan uca şifreli gider."
+       "Cycle data stays on your phone, or goes to the cloud only end-to-end encrypted.",
+       "Döngü verileri telefonunda kalır ya da buluta yalnızca uçtan uca şifreli gider."
       ],
       [
        "I can't read the encrypted cloud copy.",
        "Şifreli bulut kopyasını ben okuyamam."
       ],
       [
-       "Never sold, never shared, no third parties.",
-       "Asla satılmaz, paylaşılmaz, üçüncü tarafa gitmez."
+       "Cycle data: never sold, never shared, no third parties.",
+       "Döngü verileri: asla satılmaz, paylaşılmaz, üçüncü tarafa gitmez."
       ],
       [
        "You can see, export and delete all of it in the app.",
@@ -901,8 +943,8 @@
     ],
     [
      "p",
-     "Only your cycle tracking log, and only if you turn cycle tracking on (it is off until you do). That is what you enter or import:",
-     "Yalnızca döngü takibi kayıtların, o da ancak döngü takibini açarsan (sen açana kadar kapalıdır). Yani girdiğin ya da içe aktardığın şunlar:"
+     "Two kinds. First, your cycle tracking log, if you turn cycle tracking on (it is off until you do): what you enter or import, listed below. Second, anything health-related you choose to log or type elsewhere in Vyne, such as a water habit, a habit like \"take medication\", or a note or journal entry about your health. Vyne does not ask for that, but it may be consumer health data, and this policy covers it too.",
+     "İki tür. Birincisi, döngü takibini açarsan (sen açana kadar kapalıdır) döngü takibi kayıtların: girdiğin ya da içe aktardığın, aşağıda sayılanlar. İkincisi, Vyne'ın başka yerlerinde kaydetmeyi ya da yazmayı seçtiğin sağlıkla ilgili her şey; örneğin bir su alışkanlığı, \"ilaç al\" gibi bir alışkanlık ya da sağlığınla ilgili bir not veya günlük yazısı. Vyne bunları istemez, ama tüketici sağlık verisi olabilirler ve bu politika onları da kapsar."
     ],
     [
      "ul",
@@ -943,6 +985,11 @@
     ],
     [
      "p",
+     "The cycle log is kept apart from the rest of Vyne, as described below. Everything in the second kind is handled like the rest of your Vyne data.",
+     "Döngü kayıtları, aşağıda anlatıldığı gibi Vyne'ın geri kalanından ayrı tutulur. İkinci türdeki her şey, Vyne verilerinin geri kalanı gibi ele alınır."
+    ],
+    [
+     "p",
      "Vyne does not read Apple Health or Android Health Connect.",
      "Vyne, Apple Sağlık ya da Android Health Connect verilerini okumaz."
     ],
@@ -956,6 +1003,16 @@
      "p",
      "Only to show your own log back to you: your chart, your days, and the files you ask for (an export, or a PDF for a clinician). It is not used for advertising, analytics, research or to train any model.",
      "Yalnızca kendi kayıtlarını sana geri göstermek için: grafiğin, günlerin ve istediğin dosyalar (dışa aktarma ya da hekim için PDF). Reklam, analiz, araştırma ya da herhangi bir modeli eğitmek için kullanılmaz."
+    ],
+    [
+     "p",
+     "Health-related things you log or type elsewhere in Vyne are used only to keep them, sync them between your phones and show them to you, and to the other member of a profile you share.",
+     "Vyne'ın başka yerlerinde kaydettiğin ya da yazdığın sağlıkla ilgili şeyler yalnızca saklamak, telefonların arasında eşitlemek ve sana, paylaştığın bir profilin diğer üyesine göstermek için kullanılır."
+    ],
+    [
+     "p",
+     "Optional rule helpers, off until you turn them on, show what one named, published rule says about the days you logged, for example where Sensiplan's coverline falls. They are not a fertile-window calculation and must not be used to avoid or plan a pregnancy.",
+     "İsteğe bağlı kural yardımcıları, sen açana kadar kapalıdır; adı verilen, yayımlanmış tek bir kuralın kaydettiğin günler hakkında ne dediğini gösterir, örneğin Sensiplan'ın örtü çizgisinin nerede olduğunu. Doğurgan günleri hesaplamaz; gebelikten korunmak ya da gebelik planlamak için kullanılmamalıdır."
     ],
     [
      "h2",
@@ -972,8 +1029,8 @@
      "ul",
      [
       [
-       "what you enter in the app;",
-       "uygulamaya girdiklerin;"
+       "what you enter or type in the app;",
+       "uygulamaya girdiklerin ya da yazdıkların;"
       ],
       [
        "files you choose to import: a CSV file exported from another tracking app, or a Vyne cycle file. The file is read on your phone, and the copy the file picker made is deleted right away.",
@@ -999,8 +1056,8 @@
     ],
     [
      "p",
-     "It is never placed in a shared profile.",
-     "Ortak bir profile asla konmaz."
+     "It is never placed in a shared profile. Health-related things outside cycle tracking are kept like the rest of your Vyne data: on your phone; in Vyne's cloud (Google Firebase, which stores it for me) if you turn on Cloud Backup, end-to-end encrypted if you turn that on, otherwise encrypted in transit and at rest; and, if they are in a profile you share, in that shared space, where the other member can see them (end-to-end encrypted if that shared profile is).",
+     "Ortak bir profile asla konmaz. Döngü takibi dışındaki sağlıkla ilgili şeyler Vyne verilerinin geri kalanı gibi saklanır: telefonunda; Bulut Yedekleme'yi açarsan Vyne'ın bulutunda (benim için saklayan Google Firebase), uçtan uca şifrelemeyi açtıysan uçtan uca şifreli, açmadıysan aktarım sırasında ve depolanırken şifreli; paylaştığın bir profildeyseler de o ortak alanda, diğer üyenin görebildiği yerde (o ortak profil uçtan uca şifreliyse uçtan uca şifreli)."
     ],
     [
      "callout_p",
@@ -1017,12 +1074,12 @@
      "ul",
      [
       [
-       "I do not sell your consumer health data, and I do not share it with anyone.",
-       "Tüketici sağlık verilerini satmam ve kimseyle paylaşmam."
+       "I do not sell consumer health data. I do not share cycle data with anyone.",
+       "Tüketici sağlık verilerini satmam. Döngü verilerini kimseyle paylaşmam."
       ],
       [
-       "No third party receives it. Vyne has no advertising or analytics tools.",
-       "Hiçbir üçüncü taraf almaz. Vyne'da reklam ya da analiz aracı yoktur."
+       "Other health-related things you put into a profile you share are seen by the other member, because you chose to share that profile with them. Google stores Cloud Backup for me and does not use it for its own purposes. No one else receives your consumer health data, and no third party collects consumer health data through Vyne over time or across other apps and websites. Vyne has no advertising or analytics tools.",
+       "Paylaştığın bir profile koyduğun sağlıkla ilgili diğer şeyleri diğer üye görür, çünkü o profili onunla paylaşmayı sen seçtin. Google Bulut Yedekleme'yi benim için saklar ve kendi amaçları için kullanmaz. Tüketici sağlık verilerini başka kimse almaz ve hiçbir üçüncü taraf Vyne üzerinden zaman içinde ya da başka uygulama ve siteler arasında tüketici sağlık verisi toplamaz. Vyne'da reklam ya da analiz aracı yoktur."
       ],
       [
        "Crash reports (Sentry) are filtered to exclude it: while a cycle screen is open no activity trail is recorded, cycle terms are removed from every report, and a crash inside a cycle screen is reported as one fixed message without content.",
@@ -1048,12 +1105,20 @@
        "Görmek: kaydettiğin her şey uygulamadadır."
       ],
       [
+       "Correct it: you can edit or delete any day, habit entry, note or journal line in the app.",
+       "Düzeltmek: uygulamada her günü, alışkanlık kaydını, notu ya da günlük satırını düzenleyebilir veya silebilirsin."
+      ],
+      [
        "Get a copy: Export (Vyne file or spreadsheet), or the PDF for a clinician.",
        "Kopyasını almak: Dışa aktar (Vyne dosyası ya da tablo) ya da hekim için PDF."
       ],
       [
        "Delete it: Settings → Cycle tracking → Delete all cycle data removes every day from your phone and from the encrypted cloud copy.",
        "Silmek: Ayarlar → Döngü takibi → Tüm döngü verilerini sil, her günü telefonundan ve şifreli bulut kopyasından kaldırır."
+      ],
+      [
+       "Delete the rest: delete the entry, habit, note or journal day in the app, or delete your account to remove your cloud copy.",
+       "Geri kalanını silmek: uygulamada kaydı, alışkanlığı, notu ya da günlük gününü sil veya bulut kopyanı kaldırmak için hesabını sil."
       ],
       [
        "Delete your account: this deletes your cloud data and offers to delete cycle data from your phone too.",
@@ -1110,8 +1175,8 @@
     ],
     [
      "p",
-     "When this policy changes, the date at the top changes too.",
-     "Bu politika değiştiğinde en üstteki tarih de değişir."
+     "This policy takes effect on the date at the top. When it changes, that date changes too, and if a change is significant, for example a new kind of health data or anyone new receiving it, I will tell you in the app before it takes effect and ask for your consent again where the law requires it.",
+     "Bu politika en üstteki tarihte yürürlüğe girer. Değiştiğinde o tarih de değişir; değişiklik önemliyse, örneğin yeni bir sağlık verisi türü ya da veriyi yeni alan biri varsa, yürürlüğe girmeden önce uygulamada haber veririm ve yasanın gerektirdiği yerde rızanı yeniden isterim."
     ],
     [
      "contact",

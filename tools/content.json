@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: October 21, 2026",
-     "Son güncelleme: 21 Ekim 2026"
+     "Last updated: October 27, 2026",
+     "Son güncelleme: 27 Ekim 2026"
     ],
     [
      "p",
@@ -189,8 +189,8 @@
     ],
     [
      "p",
-     "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for 30 days and then deletes it automatically. Sentry is set not to store your IP address.",
-     "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda, 30 gün tutar, sonra kendiliğinden siler. Sentry, IP adresini saklamayacak şekilde ayarlıdır."
+     "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for 30 days and then deletes it automatically. Sentry is set not to store your IP address. You can turn crash reports off at any time in Account, under Privacy, with Send crash reports; while it is off, your phone sends nothing to Sentry.",
+     "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda, 30 gün tutar, sonra kendiliğinden siler. Sentry, IP adresini saklamayacak şekilde ayarlıdır. Hata raporlarını istediğin an Hesap bölümünde, Gizlilik altındaki \"Çökme raporlarını gönder\" ile kapatabilirsin; kapalıyken telefonun Sentry'ye hiçbir şey göndermez."
     ],
     [
      "h2",

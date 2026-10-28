@@ -99,8 +99,8 @@
        "Notlar, listeler ve hatırlatıcılar"
       ],
       [
-       "Calendar items, time clock entries and your hourly rates, and the water and other amounts you log",
-       "Takvim öğeleri, mesai saati kayıtları ve saatlik ücretlerin, kaydettiğin su ve diğer miktarlar"
+       "Calendar items, time clock entries and your hourly rates, the spending you log in No-spend days, and the water and other amounts you log",
+       "Takvim öğeleri, mesai saati kayıtları ve saatlik ücretlerin, Harcamasız günlerde kaydettiğin harcamalar, kaydettiğin su ve diğer miktarlar"
       ],
       [
        "Your daily journal and weekly diary",
@@ -854,8 +854,8 @@
     ],
     [
      "p",
-     "Your account (email and password sign-in) and everything in Cloud Backup (branches, habits, due dates, amounts, notes, lists, reminders, calendar items, time clock entries and hourly rates, your journal and weekly diary, the people you added, the encrypted copy of your cycle data, and your encryption keys) are permanently deleted from the servers, including backups in older formats. Vyne also offers to delete the cycle data on your phone. Google removes deleted data from its own internal backups on its own schedule. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
-     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, takvim öğeleri, mesai saati kayıtları ve saatlik ücretler, günlüğün ve haftalık defterin, eklediğin kişiler, döngü verilerinin şifreli kopyası ve şifreleme anahtarların) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Vyne telefonundaki döngü verilerini de silmeyi önerir. Google silinen veriyi kendi iç yedeklerinden kendi takvimine göre kaldırır. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
+     "Your account (email and password sign-in) and everything in Cloud Backup (branches, habits, due dates, amounts, notes, lists, reminders, calendar items, time clock entries and hourly rates, the spending you logged in No-spend days, your journal and weekly diary, the people you added, the encrypted copy of your cycle data, and your encryption keys) are permanently deleted from the servers, including backups in older formats. Vyne also offers to delete the cycle data on your phone. Google removes deleted data from its own internal backups on its own schedule. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
+     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, takvim öğeleri, mesai saati kayıtları ve saatlik ücretler, Harcamasız günlerde kaydettiğin harcamalar, günlüğün ve haftalık defterin, eklediğin kişiler, döngü verilerinin şifreli kopyası ve şifreleme anahtarların) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Vyne telefonundaki döngü verilerini de silmeyi önerir. Google silinen veriyi kendi iç yedeklerinden kendi takvimine göre kaldırır. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
     ],
     [
      "h2",

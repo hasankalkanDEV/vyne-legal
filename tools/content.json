@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: October 27, 2026",
-     "Son güncelleme: 27 Ekim 2026"
+     "Last updated: October 28, 2026",
+     "Son güncelleme: 28 Ekim 2026"
     ],
     [
      "p",
@@ -191,6 +191,17 @@
      "p",
      "Vyne also sends Sentry basic performance timings, such as how long a screen took to load. This data is not linked to your name or email, it is used only to diagnose problems, and Sentry does not use it for advertising or for its own purposes. Sentry stores it on servers in the United States, keeps it for 30 days and then deletes it automatically. Sentry is set not to store your IP address. You can turn crash reports off at any time in Account, under Privacy, with Send crash reports; while it is off, your phone sends nothing to Sentry.",
      "Vyne ayrıca Sentry'ye temel performans ölçümleri gönderir (örneğin bir ekranın ne kadar sürede açıldığı). Bu bilgiler adına ya da e-postana bağlı değildir, sadece sorunları anlamak için kullanılır ve Sentry bunları reklam ya da kendi amaçları için kullanmaz. Sentry bunları Amerika Birleşik Devletleri'ndeki sunucularda, 30 gün tutar, sonra kendiliğinden siler. Sentry, IP adresini saklamayacak şekilde ayarlıdır. Hata raporlarını istediğin an Hesap bölümünde, Gizlilik altındaki \"Çökme raporlarını gönder\" ile kapatabilirsin; kapalıyken telefonun Sentry'ye hiçbir şey göndermez."
+    ],
+    [
+     "h2",
+     "Book search (Open Library)",
+     "Kitap arama (Open Library)",
+     "globe"
+    ],
+    [
+     "p",
+     "Typing in the book form's \"Find it\" box searches Open Library, a free book catalogue run by the Internet Archive (servers in the United States). Each search is one HTTPS request to openlibrary.org that carries only the words you typed (3 to 120 characters) plus fixed search settings. As with any web request, it also carries your phone's IP address, a User-Agent of \"Vyne/1.5 (vyneapp.help@gmail.com)\" and the standard headers your phone's operating system adds, such as preferred language and accepted compression. Nothing else goes: no account, device or advertising ID, no shelves, reading log, notes, mood or sleep data. Vyne sends no cookies and does not keep cookies from Open Library. Searching is limited to one request per second and starts only after you have typed 3 characters and paused briefly. If you keep a result that has a cover, your phone fetches that picture from covers.openlibrary.org by its cover number. The picture is stored only in your phone's cache; it is never uploaded and never part of Cloud Backup or exported files. The book itself keeps only the cover number, the Open Library work key and the ISBN. Search is optional: typing a book by hand never uses the network, and the Goodreads or StoryGraph import reads a file on your phone and sends nothing.",
+     "Kitap formundaki \"Bul\" kutusuna yazmak Open Library'de arama yapar; bu, Internet Archive'ın işlettiği ücretsiz bir kitap kataloğudur (sunucuları Amerika Birleşik Devletleri'nde). Her arama, openlibrary.org'a giden tek bir HTTPS isteğidir ve yalnızca yazdığın sözcükleri (3 ile 120 karakter) ve sabit arama ayarlarını taşır. Her web isteği gibi telefonunun IP adresini, \"Vyne/1.5 (vyneapp.help@gmail.com)\" biçiminde bir User-Agent bilgisini ve telefonunun işletim sisteminin eklediği standart başlıkları (tercih edilen dil ve kabul edilen sıkıştırma gibi) da taşır. Başka hiçbir şey gitmez: hesap, cihaz ya da reklam kimliği, raflar, okuma günlüğü, notlar, ruh hali ya da uyku verisi gitmez. Vyne çerez göndermez ve Open Library'nin çerezlerini saklamaz. Arama saniyede en fazla bir istekle sınırlıdır ve ancak 3 karakter yazıp kısa bir süre durduktan sonra başlar. Kapağı olan bir sonucu tutarsan telefonun o resmi kapak numarasıyla covers.openlibrary.org'dan alır. Resim yalnızca telefonunun önbelleğinde durur; hiçbir yere yüklenmez, Bulut Yedekleme'ye ya da dışa aktarılan dosyalara girmez. Kitap yalnızca kapak numarasını, Open Library eser anahtarını ve ISBN'i saklar. Arama isteğe bağlıdır: kitabı elle yazmak ağı hiç kullanmaz; Goodreads ya da StoryGraph içe aktarması telefondaki bir dosyayı okur ve hiçbir şey göndermez."
     ],
     [
      "h2",

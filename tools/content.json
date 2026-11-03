@@ -117,6 +117,10 @@
       [
        "If you turn on cycle tracking, the health data it keeps; see \"Cycle tracking\" below.",
        "Döngü takibini açarsan, tuttuğu sağlık verileri; aşağıdaki \"Döngü takibi\" bölümüne bak."
+      ],
+      [
+       "If you allow it, the days your Steps habit reached its goal and the sleep nights you save after filling them from Apple Health or Health Connect; see \"Apple Health and Health Connect\" below.",
+       "İzin verirsen, Adım alışkanlığının hedefe ulaştığı günler ve Apple Sağlık ya da Health Connect'ten doldurup kaydettiğin uyku geceleri; aşağıdaki \"Apple Sağlık ve Health Connect\" bölümüne bak."
       ]
      ]
     ],
@@ -254,6 +258,37 @@
      "p",
      "If you tap \"Add to Calendar\", Vyne opens your phone's own new-event screen with that item filled in, and you decide whether and where to save it. If you allow it, Vyne reads your phone's calendars to show them next to your plans. It only reads them: events are never copied into Vyne or uploaded. A countdown you turn on keeps only a pointer to that event, on this phone.",
      "\"Takvime Ekle\"ye dokunursan Vyne, telefonunun kendi yeni etkinlik ekranını o madde doldurulmuş olarak açar; kaydedip kaydetmeyeceğine ve nereye kaydedeceğine sen karar verirsin. İzin verirsen Vyne, telefonunun takvimlerini planlarının yanında göstermek için okur. Yalnızca okur: etkinlikler Vyne'a kopyalanmaz ve yüklenmez. Açtığın bir geri sayım, o etkinliği bulmaya yarayan bir işareti yalnızca bu telefonda tutar."
+    ],
+    [
+     "h2",
+     "Apple Health and Health Connect",
+     "Apple Sağlık ve Health Connect",
+     "bars"
+    ],
+    [
+     "p",
+     "This is optional. On iPhone Vyne can read Apple Health, and on Android Health Connect, for two things only, and only after you allow each one: your daily step count, for a Steps habit, and your sleep times, when you tap \"Fill from Health\" on a Sleep habit. Vyne asks the first time you use each one, never when the app opens.",
+     "Bu isteğe bağlıdır. Vyne iPhone'da Apple Sağlık'ı, Android'de Health Connect'i yalnızca iki şey için ve yalnızca her birine izin verdikten sonra okuyabilir: Adım alışkanlığı için günlük adım sayın ve bir Uyku alışkanlığında \"Sağlık'tan doldur\"a dokunduğunda uyku saatlerin. Vyne her birini ilk kullandığında sorar, uygulama açılırken asla sormaz."
+    ],
+    [
+     "p",
+     "Read only. Vyne never writes anything to Apple Health or Health Connect, and reads nothing in the background. What it reads is shown on your phone while the screen is open. It is not stored, not sent to Vyne's cloud, and not put in a backup file, an export, a widget or an error report.",
+     "Yalnızca okur. Vyne, Apple Sağlık'a ya da Health Connect'e hiçbir şey yazmaz ve arka planda hiçbir şey okumaz. Okuduğu şey, ekran açıkken telefonunda gösterilir. Saklanmaz, Vyne'ın bulutuna gönderilmez; yedek dosyasına, dışa aktarmaya, widget'a ya da hata raporuna girmez."
+    ],
+    [
+     "p",
+     "What Vyne keeps. Two things you could also enter by hand: the days your Steps habit reached its goal (a day marked done, like a tick, without the step count), and a sleep night you save after \"Fill from Health\" (the bed and wake times you saved, noted as filled from Health). They are kept and synced like your other habits: on your phone, and in Vyne's cloud if you turn on Cloud Backup, end-to-end encrypted if you turn that on. Steps and Sleep habits are never placed in a shared profile.",
+     "Vyne neyi saklar. Elle de girebileceğin iki şeyi: Adım alışkanlığının hedefe ulaştığı günleri (adım sayısı olmadan, bir işaret gibi tamamlandı olarak işaretlenmiş bir gün) ve \"Sağlık'tan doldur\"dan sonra kaydettiğin uyku gecesini (kaydettiğin yatış ve kalkış saatleri, Sağlık'tan doldurulduğu notuyla). Diğer alışkanlıkların gibi saklanır ve eşitlenir: telefonunda, Bulut Yedekleme'yi açarsan Vyne'ın bulutunda, uçtan uca şifrelemeyi açarsan şifreli olarak. Adım ve Uyku alışkanlıkları asla ortak bir profile konmaz."
+    ],
+    [
+     "p",
+     "Never shared. Data from Apple Health or Health Connect is not used for advertising, marketing or analytics, not sold, and not shared with anyone.",
+     "Asla paylaşılmaz. Apple Sağlık'tan ya da Health Connect'ten gelen veriler reklam, pazarlama ya da analiz için kullanılmaz, satılmaz ve kimseyle paylaşılmaz."
+    ],
+    [
+     "p",
+     "Turning it off. iPhone: Settings → Privacy & Security → Health → Vyne. Android: Settings → Health Connect → App permissions → Vyne. Days already marked done and sleep nights you saved stay in Vyne until you delete them.",
+     "Kapatmak. iPhone: Ayarlar → Gizlilik ve Güvenlik → Sağlık → Vyne. Android: Ayarlar → Health Connect → Uygulama izinleri → Vyne. Önceden tamamlandı olarak işaretlenmiş günler ve kaydettiğin uyku geceleri, sen silene kadar Vyne'da kalır."
     ],
     [
      "h2",
@@ -912,8 +947,8 @@
     ],
     [
      "updated",
-     "Effective and last updated: October 21, 2026",
-     "Yürürlük ve son güncelleme: 21 Ekim 2026"
+     "Effective and last updated: November 3, 2026",
+     "Yürürlük ve son güncelleme: 3 Kasım 2026"
     ],
     [
      "p",
@@ -1001,8 +1036,8 @@
     ],
     [
      "p",
-     "Vyne does not read Apple Health or Android Health Connect.",
-     "Vyne, Apple Sağlık ya da Android Health Connect verilerini okumaz."
+     "If you allow it, Vyne reads your daily step count and your sleep times from Apple Health or Android Health Connect on your phone, as described in the \"Apple Health and Health Connect\" section of the Privacy Policy. Those readings are only shown and never stored or sent. The days your Steps habit reached its goal and the sleep nights you save are kept like the rest of your habits.",
+     "İzin verirsen Vyne, günlük adım sayını ve uyku saatlerini telefonundaki Apple Sağlık'tan ya da Android Health Connect'ten, Gizlilik Politikası'nın \"Apple Sağlık ve Health Connect\" bölümünde anlatıldığı gibi okur. Bu okumalar yalnızca gösterilir; asla saklanmaz ya da gönderilmez. Adım alışkanlığının hedefe ulaştığı günler ve kaydettiğin uyku geceleri, diğer alışkanlıkların gibi saklanır."
     ],
     [
      "h2",
@@ -1046,6 +1081,10 @@
       [
        "files you choose to import: a CSV file exported from another tracking app, or a Vyne cycle file. The file is read on your phone, and the copy the file picker made is deleted right away.",
        "içe aktarmak için seçtiğin dosyalar: başka bir takip uygulamasından aldığın bir CSV dosyası ya da bir Vyne döngü dosyası. Dosya telefonunda okunur; dosya seçicinin yaptığı kopya hemen silinir."
+      ],
+      [
+       "Apple Health or Android Health Connect, only if you allow it: your daily step count and sleep times, read on your phone (see above).",
+       "Apple Sağlık ya da Android Health Connect, yalnızca izin verirsen: telefonunda okunan günlük adım sayın ve uyku saatlerin (yukarıya bak)."
       ]
      ]
     ],

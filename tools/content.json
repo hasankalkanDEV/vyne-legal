@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: November 2, 2026",
-     "Son güncelleme: 2 Kasım 2026"
+     "Last updated: November 3, 2026",
+     "Son güncelleme: 3 Kasım 2026"
     ],
     [
      "p",
@@ -252,8 +252,8 @@
     ],
     [
      "p",
-     "If you tap \"Add to Calendar\", Vyne opens your phone's own new-event screen with that item filled in, and you decide whether and where to save it. Vyne does not ask for calendar access and cannot read your calendar.",
-     "\"Takvime Ekle\"ye dokunursan Vyne, telefonunun kendi yeni etkinlik ekranını o madde doldurulmuş olarak açar; kaydedip kaydetmeyeceğine ve nereye kaydedeceğine sen karar verirsin. Vyne takvim izni istemez ve takvimini okuyamaz."
+     "If you tap \"Add to Calendar\", Vyne opens your phone's own new-event screen with that item filled in, and you decide whether and where to save it. If you allow it, Vyne reads your phone's calendars to show them next to your plans. It only reads them: events are never copied into Vyne or uploaded. A countdown you turn on keeps only a pointer to that event, on this phone.",
+     "\"Takvime Ekle\"ye dokunursan Vyne, telefonunun kendi yeni etkinlik ekranını o madde doldurulmuş olarak açar; kaydedip kaydetmeyeceğine ve nereye kaydedeceğine sen karar verirsin. İzin verirsen Vyne, telefonunun takvimlerini planlarının yanında göstermek için okur. Yalnızca okur: etkinlikler Vyne'a kopyalanmaz ve yüklenmez. Açtığın bir geri sayım, o etkinliği bulmaya yarayan bir işareti yalnızca bu telefonda tutar."
     ],
     [
      "h2",

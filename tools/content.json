@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: November 3, 2026",
-     "Son güncelleme: 3 Kasım 2026"
+     "Last updated: November 9, 2026",
+     "Son güncelleme: 9 Kasım 2026"
     ],
     [
      "p",
@@ -103,6 +103,10 @@
        "Takvim öğeleri, mesai saati kayıtları ve saatlik ücretlerin, Bütçe ve Harcamasız günlerde kaydettiğin ve planladığın para kayıtları (harcama, gelir, birikim, abonelikler, hedefler ve borçlar), kart destelerin ve çalışma geçmişin, kaydettiğin su ve diğer miktarlar"
       ],
       [
+       "The things you look after in Upkeep (such as a car, a home or documents) with their care items and what you did; your pets with their care routines and logs; your places, visits and trips; your courses and study sessions; and the films and TV shows you log",
+       "Bakım'da ilgilendiğin şeyler (araba, ev ya da belgeler gibi), bakım maddeleri ve yaptıkların; evcil hayvanların, bakım rutinleri ve kayıtları; yerlerin, ziyaretlerin ve gezilerin; kursların ve çalışma oturumların; kaydettiğin filmler ve diziler"
+      ],
+      [
        "Your daily journal and weekly diary",
        "Günlüğün ve haftalık defterin"
       ],
@@ -121,6 +125,10 @@
       [
        "If you allow it, the days your Steps habit reached its goal and the sleep nights you save after filling them from Apple Health or Health Connect; see \"Apple Health and Health Connect\" below.",
        "İzin verirsen, Adım alışkanlığının hedefe ulaştığı günler ve Apple Sağlık ya da Health Connect'ten doldurup kaydettiğin uyku geceleri; aşağıdaki \"Apple Sağlık ve Health Connect\" bölümüne bak."
+      ],
+      [
+       "If you keep a Food branch, what you eat; see \"Food diary\" below.",
+       "Bir Yemek dalı tutarsan, ne yediğin; aşağıdaki \"Yemek günlüğü\" bölümüne bak."
       ]
      ]
     ],
@@ -209,6 +217,38 @@
     ],
     [
      "h2",
+     "Movie and TV search (Trakt)",
+     "Film ve dizi arama (Trakt)",
+     "globe"
+    ],
+    [
+     "p",
+     "When you search for a film or a TV show, Vyne looks it up on Trakt (trakt.tv), a film and TV database. Each search is one HTTPS request to api.trakt.tv that carries only the words you typed (3 to 120 characters) and Vyne's app key, which identifies the app, not you. As with any web request, it also carries your phone's IP address and the standard headers your phone's operating system adds. Nothing else goes: no account, name, email, device or advertising ID, and nothing from your watch log, notes or journal. Vyne sends no cookies. Searching starts only after you have typed 3 characters and paused briefly.",
+     "Bir film ya da dizi aradığında Vyne onu bir film ve dizi veritabanı olan Trakt'ta (trakt.tv) arar. Her arama, api.trakt.tv'ye giden tek bir HTTPS isteğidir ve yalnızca yazdığın sözcükleri (3 ile 120 karakter) ve seni değil uygulamayı tanıtan Vyne uygulama anahtarını taşır. Her web isteği gibi telefonunun IP adresini ve telefonunun işletim sisteminin eklediği standart başlıkları da taşır. Başka hiçbir şey gitmez: hesap, ad, e-posta, cihaz ya da reklam kimliği gitmez; izleme kaydından, notlarından ya da günlüğünden hiçbir şey gitmez. Vyne çerez göndermez. Arama ancak 3 karakter yazıp kısa bir süre durduktan sonra başlar."
+    ],
+    [
+     "p",
+     "When you open a film or a show, Vyne asks Trakt for its details, poster, seasons and episodes using only Trakt's number for that title. Posters, details and episode lists are kept only in your phone's cache: they are never uploaded and never part of Cloud Backup, backup files or exports. Your own watch log stays in Vyne and is stored and backed up like your other data. Search is optional: you can add a film or show by hand without using the network. Vyne uses Trakt but is not endorsed or certified by Trakt.",
+     "Bir filmi ya da diziyi açtığında Vyne, Trakt'tan ayrıntılarını, afişini, sezonlarını ve bölümlerini yalnızca Trakt'ın o yapıma verdiği numarayla ister. Afişler, ayrıntılar ve bölüm listeleri yalnızca telefonunun önbelleğinde tutulur: asla yüklenmez; Bulut Yedekleme'ye, yedek dosyalarına ya da dışa aktarmalara girmez. Kendi izleme kaydın Vyne'da kalır ve diğer verilerin gibi saklanıp yedeklenir. Arama isteğe bağlıdır: bir filmi ya da diziyi ağı kullanmadan elle ekleyebilirsin. Vyne, Trakt'ı kullanır ancak Trakt tarafından onaylanmış ya da sertifikalandırılmış değildir."
+    ],
+    [
+     "h2",
+     "City lookup (Open-Meteo)",
+     "Şehir arama (Open-Meteo)",
+     "globe"
+    ],
+    [
+     "p",
+     "In Places, when you look up a city, Vyne sends the city name you typed (2 to 100 characters) and the app's language (English or Turkish) to Open-Meteo's free geocoding service (geocoding-api.open-meteo.com), to find the city, its region, country, coordinates and time zone. As with any web request, it also carries your phone's IP address. No account, name, email or device ID is sent, and you can always save a place with the city as you typed it.",
+     "Yerler'de bir şehir aradığında Vyne, yazdığın şehir adını (2 ile 100 karakter) ve uygulamanın dilini (İngilizce ya da Türkçe), şehri, bölgesini, ülkesini, koordinatlarını ve saat dilimini bulmak için Open-Meteo'nun ücretsiz konum arama hizmetine (geocoding-api.open-meteo.com) gönderir. Her web isteği gibi telefonunun IP adresini de taşır. Hesap, ad, e-posta ya da cihaz kimliği gönderilmez ve bir yeri her zaman şehri yazdığın gibi kaydedebilirsin."
+    ],
+    [
+     "p",
+     "Vyne never asks for or uses your phone's location: it has no location permission. Your places, visits and trips are stored and backed up like your other data. In the cloud copy that is not end-to-end encrypted, place coordinates are rounded to about 1 km; your phone, the end-to-end encrypted copy and backup files keep them exact. \"Open in Maps\" hands that place to Apple Maps or Google Maps, only when you tap it.",
+     "Vyne telefonunun konumunu asla istemez ve kullanmaz: konum izni yoktur. Yerlerin, ziyaretlerin ve gezilerin diğer verilerin gibi saklanır ve yedeklenir. Uçtan uca şifreli olmayan bulut kopyasında yerlerin koordinatları yaklaşık 1 km'ye yuvarlanır; telefonun, uçtan uca şifreli kopya ve yedek dosyaları onları tam olarak tutar. \"Haritada aç\", o yeri yalnızca dokunduğunda Apple Haritalar'a ya da Google Haritalar'a verir."
+    ],
+    [
+     "h2",
      "Notifications",
      "Bildirimler",
      "bell"
@@ -289,6 +329,22 @@
      "p",
      "Turning it off. iPhone: Settings → Privacy & Security → Health → Vyne. Android: Settings → Health Connect → App permissions → Vyne. Days already marked done and sleep nights you saved stay in Vyne until you delete them.",
      "Kapatmak. iPhone: Ayarlar → Gizlilik ve Güvenlik → Sağlık → Vyne. Android: Ayarlar → Health Connect → Uygulama izinleri → Vyne. Önceden tamamlandı olarak işaretlenmiş günler ve kaydettiğin uyku geceleri, sen silene kadar Vyne'da kalır."
+    ],
+    [
+     "h2",
+     "Food diary",
+     "Yemek günlüğü",
+     "scale"
+    ],
+    [
+     "p",
+     "If you keep a Food branch, Vyne stores what you eat: each day's meals, the foods and amounts, and their nutrition values, plus foods you add yourself from a label and meals you save. It is kept on your phone and backed up like your other data: in Vyne's cloud if you turn on Cloud Backup, end-to-end encrypted if you turn that on. A profile with a Food branch cannot be shared, so your food diary is never placed in a shared profile.",
+     "Bir Yemek dalı tutarsan Vyne ne yediğini saklar: her günün öğünlerini, yiyecekleri ve miktarlarını, besin değerlerini, ayrıca bir etiketten kendin eklediğin yiyecekleri ve kaydettiğin öğünleri. Telefonunda tutulur ve diğer verilerin gibi yedeklenir: Bulut Yedekleme'yi açarsan Vyne'ın bulutunda, uçtan uca şifrelemeyi açarsan şifreli olarak. Yemek dalı olan bir profil paylaşılamaz; bu yüzden yemek günlüğün asla ortak bir profile konmaz."
+    ],
+    [
+     "p",
+     "Nutrition values come from a list built into the app, made from USDA FoodData Central (public domain), so looking up a food sends nothing. Vyne has no barcode scanning and does not use the camera. The values are estimates, not medical advice.",
+     "Besin değerleri uygulamanın içinde gelen, USDA FoodData Central'dan (kamu malı) hazırlanmış bir listeden gelir; bu yüzden bir yiyecek aramak hiçbir şey göndermez. Vyne'da barkod tarama yoktur ve kamera kullanılmaz. Değerler tahminidir, tıbbi tavsiye değildir."
     ],
     [
      "h2",
@@ -389,8 +445,8 @@
     ],
     [
      "p",
-     "While a profile is shared, everything in it (branches, habits and their history, notes, lists, journal, calendar items and time clock entries) is stored in a shared space in the same Firebase database as Cloud Backup. Both of you can see, change and delete everything in it, including what was in the profile before the other person joined. Members are equal: neither of you can remove the other. Your other profiles, notes and settings stay in your private backup and are not shared.",
-     "Bir profil paylaşıldığı sürece içindeki her şey (dallar, alışkanlıklar ve geçmişleri, notlar, listeler, günlük, takvim öğeleri ve mesai saati kayıtları) Bulut Yedekleme ile aynı Firebase veritabanındaki ortak bir alanda saklanır. İkiniz de içindeki her şeyi görebilir, değiştirebilir ve silebilirsiniz; diğer kişi katılmadan önce profilde olanlar da buna dahildir. Üyeler eşittir: hiçbiriniz diğerini çıkaramaz. Diğer profillerin, notların ve ayarların özel yedeğinde kalır ve paylaşılmaz."
+     "While a profile is shared, everything in it (branches, habits and their history, notes, lists, journal, calendar items, time clock entries, and any pets, upkeep, places, courses, films and TV shows kept in it) is stored in a shared space in the same Firebase database as Cloud Backup. Both of you can see, change and delete everything in it, including what was in the profile before the other person joined. Members are equal: neither of you can remove the other. Your other profiles, notes and settings stay in your private backup and are not shared.",
+     "Bir profil paylaşıldığı sürece içindeki her şey (dallar, alışkanlıklar ve geçmişleri, notlar, listeler, günlük, takvim öğeleri, mesai saati kayıtları ve içinde tutulan evcil hayvanlar, bakım, yerler, kurslar, filmler ve diziler) Bulut Yedekleme ile aynı Firebase veritabanındaki ortak bir alanda saklanır. İkiniz de içindeki her şeyi görebilir, değiştirebilir ve silebilirsiniz; diğer kişi katılmadan önce profilde olanlar da buna dahildir. Üyeler eşittir: hiçbiriniz diğerini çıkaramaz. Diğer profillerin, notların ve ayarların özel yedeğinde kalır ve paylaşılmaz."
     ],
     [
      "p",
@@ -502,8 +558,8 @@
     ],
     [
      "p",
-     "I don't sell, rent or share your data with advertisers or data brokers. The only services that handle data for me are Google Firebase (Google LLC: sign-in and backup storage), Sentry (Functional Software, Inc.: crash and performance diagnostics) and Expo (650 Industries, Inc.: app updates). None of them uses your data for its own purposes. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
-     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. Benim adıma veri işleyen hizmetler yalnızca Google Firebase (Google LLC: giriş ve yedek depolama), Sentry (Functional Software, Inc.: hata ve performans bilgileri) ve Expo'dur (650 Industries, Inc.: uygulama güncellemeleri). Hiçbiri verini kendi amaçları için kullanmaz. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
+     "I don't sell, rent or share your data with advertisers or data brokers. The only services that handle data for me are Google Firebase (Google LLC: sign-in and backup storage), Sentry (Functional Software, Inc.: crash and performance diagnostics) and Expo (650 Industries, Inc.: app updates). None of them uses your data for its own purposes. When you search for a book, a film or show, or a city, the words you typed go to Open Library, Trakt or Open-Meteo, as described above; nothing else of yours goes to them. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
+     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. Benim adıma veri işleyen hizmetler yalnızca Google Firebase (Google LLC: giriş ve yedek depolama), Sentry (Functional Software, Inc.: hata ve performans bilgileri) ve Expo'dur (650 Industries, Inc.: uygulama güncellemeleri). Hiçbiri verini kendi amaçları için kullanmaz. Bir kitap, film ya da dizi veya şehir aradığında yazdığın sözcükler, yukarıda anlatıldığı gibi Open Library'ye, Trakt'a ya da Open-Meteo'ya gider; seninle ilgili başka hiçbir şey onlara gitmez. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
     ],
     [
      "h2",
@@ -947,8 +1003,8 @@
     ],
     [
      "updated",
-     "Effective and last updated: November 3, 2026",
-     "Yürürlük ve son güncelleme: 3 Kasım 2026"
+     "Effective and last updated: November 9, 2026",
+     "Yürürlük ve son güncelleme: 9 Kasım 2026"
     ],
     [
      "p",
@@ -989,8 +1045,8 @@
     ],
     [
      "p",
-     "Two kinds. First, your cycle tracking log, if you turn cycle tracking on (it is off until you do): what you enter or import, listed below. Second, anything health-related you choose to log or type elsewhere in Vyne, such as a water habit, a habit like \"take medication\", or a note or journal entry about your health. Vyne does not ask for that, but it may be consumer health data, and this policy covers it too.",
-     "İki tür. Birincisi, döngü takibini açarsan (sen açana kadar kapalıdır) döngü takibi kayıtların: girdiğin ya da içe aktardığın, aşağıda sayılanlar. İkincisi, Vyne'ın başka yerlerinde kaydetmeyi ya da yazmayı seçtiğin sağlıkla ilgili her şey; örneğin bir su alışkanlığı, \"ilaç al\" gibi bir alışkanlık ya da sağlığınla ilgili bir not veya günlük yazısı. Vyne bunları istemez, ama tüketici sağlık verisi olabilirler ve bu politika onları da kapsar."
+     "Two kinds. First, your cycle tracking log, if you turn cycle tracking on (it is off until you do): what you enter or import, listed below. Second, anything health-related you choose to log or type elsewhere in Vyne, such as a water habit, your food diary (what you eat and its nutrition values), a habit like \"take medication\", or a note or journal entry about your health. Vyne does not ask for that, but it may be consumer health data, and this policy covers it too.",
+     "İki tür. Birincisi, döngü takibini açarsan (sen açana kadar kapalıdır) döngü takibi kayıtların: girdiğin ya da içe aktardığın, aşağıda sayılanlar. İkincisi, Vyne'ın başka yerlerinde kaydetmeyi ya da yazmayı seçtiğin sağlıkla ilgili her şey; örneğin bir su alışkanlığı, yemek günlüğün (ne yediğin ve besin değerleri), \"ilaç al\" gibi bir alışkanlık ya da sağlığınla ilgili bir not veya günlük yazısı. Vyne bunları istemez, ama tüketici sağlık verisi olabilirler ve bu politika onları da kapsar."
     ],
     [
      "ul",
@@ -1038,6 +1094,11 @@
      "p",
      "If you allow it, Vyne reads your daily step count and your sleep times from Apple Health or Android Health Connect on your phone, as described in the \"Apple Health and Health Connect\" section of the Privacy Policy. Those readings are only shown and never stored or sent. The days your Steps habit reached its goal and the sleep nights you save are kept like the rest of your habits.",
      "İzin verirsen Vyne, günlük adım sayını ve uyku saatlerini telefonundaki Apple Sağlık'tan ya da Android Health Connect'ten, Gizlilik Politikası'nın \"Apple Sağlık ve Health Connect\" bölümünde anlatıldığı gibi okur. Bu okumalar yalnızca gösterilir; asla saklanmaz ya da gönderilmez. Adım alışkanlığının hedefe ulaştığı günler ve kaydettiğin uyku geceleri, diğer alışkanlıkların gibi saklanır."
+    ],
+    [
+     "p",
+     "If you keep a Food diary, what you eat is kept like the rest of your Vyne data, as described in the \"Food diary\" section of the Privacy Policy. A profile with a Food branch cannot be shared. Nutrition values come from a list built into the app (USDA FoodData Central), so looking up a food sends nothing; they are estimates, not medical advice.",
+     "Bir Yemek günlüğü tutarsan, ne yediğin Gizlilik Politikası'nın \"Yemek günlüğü\" bölümünde anlatıldığı gibi diğer Vyne verilerin gibi tutulur. Yemek dalı olan bir profil paylaşılamaz. Besin değerleri uygulamanın içinde gelen bir listeden (USDA FoodData Central) gelir; bu yüzden bir yiyecek aramak hiçbir şey göndermez; değerler tahminidir, tıbbi tavsiye değildir."
     ],
     [
      "h2",

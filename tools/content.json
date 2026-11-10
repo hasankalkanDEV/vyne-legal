@@ -47,8 +47,8 @@
     ],
     [
      "updated",
-     "Last updated: November 9, 2026",
-     "Son güncelleme: 9 Kasım 2026"
+     "Last updated: November 10, 2026",
+     "Son güncelleme: 10 Kasım 2026"
     ],
     [
      "p",
@@ -164,8 +164,8 @@
     ],
     [
      "p",
-     "Vyne does not collect your location, contacts, photos, microphone or browsing activity, and never asks for your real name. People you add on the People page are typed in by you; Vyne does not read your phone's contacts. Vyne shows no ads and contains no advertising or analytics SDKs. If that ever changes, this policy will be updated before the change takes effect.",
-     "Vyne konumunu, rehberini, fotoğraflarını, mikrofonunu ya da internet geçmişini toplamaz ve gerçek adını hiç sormaz. Çevre sayfasına eklediğin kişileri sen yazarsın; Vyne telefonunun rehberini okumaz. Vyne reklam göstermez ve içinde reklam ya da analiz SDK'sı yoktur. Bu bir gün değişirse, bu politika değişiklik yürürlüğe girmeden önce güncellenir."
+     "Vyne does not collect your location, contacts, microphone or browsing activity, and never asks for your real name. Vyne does not read or upload your photo library: when you add photos to a visit in Places, you pick each one in your phone's photo picker and Vyne gets only those. It keeps a new copy of each on your phone, without the location and camera details stored in the original, and these photos stay on your phone: they are not in Vyne's cloud, a shared profile or a backup file. People you add on the People page are typed in by you; Vyne does not read your phone's contacts. Vyne shows no ads and contains no advertising or analytics SDKs. If that ever changes, this policy will be updated before the change takes effect.",
+     "Vyne konumunu, rehberini, mikrofonunu ya da internet geçmişini toplamaz ve gerçek adını hiç sormaz. Vyne fotoğraf arşivini okumaz ve yüklemez: Yerler'de bir ziyarete fotoğraf eklediğinde her birini telefonunun fotoğraf seçicisinde sen seçersin ve Vyne yalnızca onları alır. Her birinin yeni bir kopyasını, aslındaki konum ve kamera bilgileri olmadan telefonunda tutar; bu fotoğraflar telefonunda kalır: Vyne'ın bulutuna, bir ortak profile ya da yedek dosyasına girmez. Çevre sayfasına eklediğin kişileri sen yazarsın; Vyne telefonunun rehberini okumaz. Vyne reklam göstermez ve içinde reklam ya da analiz SDK'sı yoktur. Bu bir gün değişirse, bu politika değişiklik yürürlüğe girmeden önce güncellenir."
     ],
     [
      "h2",
@@ -232,6 +232,11 @@
      "Bir filmi ya da diziyi açtığında Vyne, Trakt'tan ayrıntılarını, afişini, sezonlarını ve bölümlerini yalnızca Trakt'ın o yapıma verdiği numarayla ister. Afişler, ayrıntılar ve bölüm listeleri yalnızca telefonunun önbelleğinde tutulur: asla yüklenmez; Bulut Yedekleme'ye, yedek dosyalarına ya da dışa aktarmalara girmez. Kendi izleme kaydın Vyne'da kalır ve diğer verilerin gibi saklanıp yedeklenir. Arama isteğe bağlıdır: bir filmi ya da diziyi ağı kullanmadan elle ekleyebilirsin. Vyne, Trakt'ı kullanır ancak Trakt tarafından onaylanmış ya da sertifikalandırılmış değildir."
     ],
     [
+     "p",
+     "The Calendar's TV layer, while you keep it on, shows the next episodes and season premieres of the shows you follow, from the same season lists Vyne already keeps for the TV page (asked from Trakt at most once a day per show, by Trakt's number). It sends nothing new.",
+     "Takvim'in dizi katmanı, açık tuttuğun sürece takip ettiğin dizilerin sıradaki bölümlerini ve sezon başlangıçlarını, Vyne'ın dizi sayfası için zaten tuttuğu sezon listelerinden gösterir (Trakt'tan dizi başına en çok günde bir kez, Trakt'ın numarasıyla istenir). Yeni hiçbir şey göndermez."
+    ],
+    [
      "h2",
      "City lookup (Open-Meteo)",
      "Şehir arama (Open-Meteo)",
@@ -244,8 +249,41 @@
     ],
     [
      "p",
-     "Vyne never asks for or uses your phone's location: it has no location permission. Your places, visits and trips are stored and backed up like your other data. In the cloud copy that is not end-to-end encrypted, place coordinates are rounded to about 1 km; your phone, the end-to-end encrypted copy and backup files keep them exact. \"Open in Maps\" hands that place to Apple Maps or Google Maps, only when you tap it.",
-     "Vyne telefonunun konumunu asla istemez ve kullanmaz: konum izni yoktur. Yerlerin, ziyaretlerin ve gezilerin diğer verilerin gibi saklanır ve yedeklenir. Uçtan uca şifreli olmayan bulut kopyasında yerlerin koordinatları yaklaşık 1 km'ye yuvarlanır; telefonun, uçtan uca şifreli kopya ve yedek dosyaları onları tam olarak tutar. \"Haritada aç\", o yeri yalnızca dokunduğunda Apple Haritalar'a ya da Google Haritalar'a verir."
+     "Vyne never asks for or uses your phone's location: it has no location permission. Your places, visits and trips are stored and backed up like your other data. A place keeps its city (with the city centre from the lookup) and at most a point rounded to about 1 km; the exact spot from a Maps link you paste stays only on your phone (see \"Maps links\" below). In the cloud copy that is not end-to-end encrypted, place coordinates are rounded to about 1 km. \"Open in Maps\" hands that place to Apple Maps or Google Maps, only when you tap it.",
+     "Vyne telefonunun konumunu asla istemez ve kullanmaz: konum izni yoktur. Yerlerin, ziyaretlerin ve gezilerin diğer verilerin gibi saklanır ve yedeklenir. Bir yer, şehrini (aramadan gelen şehir merkeziyle) ve en fazla yaklaşık 1 km'ye yuvarlanmış bir noktayı tutar; yapıştırdığın bir harita bağlantısındaki tam nokta yalnızca telefonunda kalır (aşağıda \"Harita bağlantıları\"na bak). Uçtan uca şifreli olmayan bulut kopyasında yerlerin koordinatları yaklaşık 1 km'ye yuvarlanır. \"Haritada aç\", o yeri yalnızca dokunduğunda Apple Haritalar'a ya da Google Haritalar'a verir."
+    ],
+    [
+     "h2",
+     "Maps links",
+     "Harita bağlantıları",
+     "globe"
+    ],
+    [
+     "p",
+     "In Places you can paste a link shared from Apple Maps or Google Maps to fill in a place. A full link is read on your phone and sends nothing. A short link (maps.app.goo.gl, goo.gl/maps, maps.apple or maps.apple.com/p) is opened once, with one HTTPS request to Google or Apple, only to see which Maps page it leads to; Vyne uses only that final address and does not read the page. Like any web request it carries your phone's IP address and the standard headers your phone's operating system adds; nothing else of yours goes with it. The exact spot a link points to, and any link that carries coordinates, stay only on your phone: they are not in Vyne's cloud, a shared profile or a backup file.",
+     "Yerler'de bir yeri doldurmak için Apple Haritalar'dan ya da Google Haritalar'dan paylaşılmış bir bağlantı yapıştırabilirsin. Tam bir bağlantı telefonunda okunur ve hiçbir şey göndermez. Kısa bir bağlantı (maps.app.goo.gl, goo.gl/maps, maps.apple ya da maps.apple.com/p) yalnızca hangi harita sayfasına gittiğini görmek için, Google'a ya da Apple'a giden tek bir HTTPS isteğiyle bir kez açılır; Vyne yalnızca vardığı son adresi kullanır, sayfayı okumaz. Her web isteği gibi telefonunun IP adresini ve işletim sisteminin eklediği standart başlıkları taşır; seninle ilgili başka hiçbir şey gitmez. Bir bağlantının gösterdiği tam nokta ve koordinat taşıyan her bağlantı yalnızca telefonunda kalır: Vyne'ın bulutuna, bir ortak profile ya da yedek dosyasına girmez."
+    ],
+    [
+     "h2",
+     "City pictures (Wikipedia)",
+     "Şehir resimleri (Wikipedia)",
+     "globe"
+    ],
+    [
+     "p",
+     "When you open a place in a city and have no photo of your own there, Vyne can show a picture of that city from Wikipedia. It asks Wikipedia (en.wikipedia.org) for the city's article using only the city's name (for the US, Canada and Australia, the city and its state or province), then fetches the picture from Wikimedia Commons (upload.wikimedia.org). Wikimedia sees these requests, with your phone's IP address and a header naming the app and its help address. No place name, note, visit, account or device ID goes with them. The picture is kept only in your phone's cache: it is never uploaded and never part of Cloud Backup, a shared profile or backup files.",
+     "Bir şehirdeki bir yeri açtığında ve orada kendi fotoğrafın yoksa, Vyne o şehrin Wikipedia'dan bir resmini gösterebilir. Wikipedia'dan (en.wikipedia.org) şehrin maddesini yalnızca şehrin adıyla ister (ABD, Kanada ve Avustralya'da şehir ve eyaleti ya da bölgesiyle), sonra resmi Wikimedia Commons'tan (upload.wikimedia.org) indirir. Wikimedia bu istekleri, telefonunun IP adresi ve uygulamanın adını ve yardım adresini söyleyen bir başlıkla görür. Yer adı, not, ziyaret, hesap ya da cihaz kimliği gitmez. Resim yalnızca telefonunun önbelleğinde tutulur: asla yüklenmez; Bulut Yedekleme'ye, bir ortak profile ya da yedek dosyalarına girmez."
+    ],
+    [
+     "h2",
+     "Trip weather (Open-Meteo)",
+     "Gezi hava durumu (Open-Meteo)",
+     "globe"
+    ],
+    [
+     "p",
+     "On a trip's page, Vyne can show the weather forecast for its destination from Open-Meteo's free forecast service (api.open-meteo.com). It asks only when a day of the trip falls within the next 7 days, and sends only the destination's rough location (coordinates rounded to about 1 km, the city centre from the city lookup) and the forecast values it needs. No place name, trip, account or device ID is sent; like any web request it carries your phone's IP address. The forecast is kept only in your phone's cache. This does not use your phone's location.",
+     "Bir gezinin sayfasında Vyne, gidilecek yerin hava tahminini Open-Meteo'nun ücretsiz tahmin hizmetinden (api.open-meteo.com) gösterebilir. Yalnızca gezinin bir günü önümüzdeki 7 gün içindeyse sorar ve yalnızca gidilecek yerin kabaca konumunu (yaklaşık 1 km'ye yuvarlanmış koordinatlar, şehir aramasından gelen şehir merkezi) ve gereken tahmin değerlerini gönderir. Yer adı, gezi, hesap ya da cihaz kimliği gönderilmez; her web isteği gibi telefonunun IP adresini taşır. Tahmin yalnızca telefonunun önbelleğinde tutulur. Bu, telefonunun konumunu kullanmaz."
     ],
     [
      "h2",
@@ -445,8 +483,8 @@
     ],
     [
      "p",
-     "While a profile is shared, everything in it (branches, habits and their history, notes, lists, journal, calendar items, time clock entries, and any pets, upkeep, places, courses, films and TV shows kept in it) is stored in a shared space in the same Firebase database as Cloud Backup. Both of you can see, change and delete everything in it, including what was in the profile before the other person joined. Members are equal: neither of you can remove the other. Your other profiles, notes and settings stay in your private backup and are not shared.",
-     "Bir profil paylaşıldığı sürece içindeki her şey (dallar, alışkanlıklar ve geçmişleri, notlar, listeler, günlük, takvim öğeleri, mesai saati kayıtları ve içinde tutulan evcil hayvanlar, bakım, yerler, kurslar, filmler ve diziler) Bulut Yedekleme ile aynı Firebase veritabanındaki ortak bir alanda saklanır. İkiniz de içindeki her şeyi görebilir, değiştirebilir ve silebilirsiniz; diğer kişi katılmadan önce profilde olanlar da buna dahildir. Üyeler eşittir: hiçbiriniz diğerini çıkaramaz. Diğer profillerin, notların ve ayarların özel yedeğinde kalır ve paylaşılmaz."
+     "While a profile is shared, everything in it (branches, habits and their history, notes, lists, journal, calendar items, time clock entries, and any pets, upkeep, places, courses, films and TV shows kept in it) is stored in a shared space in the same Firebase database as Cloud Backup. Both of you can see, change and delete everything in it, including what was in the profile before the other person joined. Members are equal: neither of you can remove the other. Your other profiles, notes and settings stay in your private backup and are not shared. Photos you add to place visits and the exact spots from Maps links stay on your phone and are not shared.",
+     "Bir profil paylaşıldığı sürece içindeki her şey (dallar, alışkanlıklar ve geçmişleri, notlar, listeler, günlük, takvim öğeleri, mesai saati kayıtları ve içinde tutulan evcil hayvanlar, bakım, yerler, kurslar, filmler ve diziler) Bulut Yedekleme ile aynı Firebase veritabanındaki ortak bir alanda saklanır. İkiniz de içindeki her şeyi görebilir, değiştirebilir ve silebilirsiniz; diğer kişi katılmadan önce profilde olanlar da buna dahildir. Üyeler eşittir: hiçbiriniz diğerini çıkaramaz. Diğer profillerin, notların ve ayarların özel yedeğinde kalır ve paylaşılmaz. Yer ziyaretlerine eklediğin fotoğraflar ve harita bağlantılarındaki tam noktalar telefonunda kalır ve paylaşılmaz."
     ],
     [
      "p",
@@ -558,8 +596,8 @@
     ],
     [
      "p",
-     "I don't sell, rent or share your data with advertisers or data brokers. The only services that handle data for me are Google Firebase (Google LLC: sign-in and backup storage), Sentry (Functional Software, Inc.: crash and performance diagnostics) and Expo (650 Industries, Inc.: app updates). None of them uses your data for its own purposes. When you search for a book, a film or show, or a city, the words you typed go to Open Library, Trakt or Open-Meteo, as described above; nothing else of yours goes to them. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
-     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. Benim adıma veri işleyen hizmetler yalnızca Google Firebase (Google LLC: giriş ve yedek depolama), Sentry (Functional Software, Inc.: hata ve performans bilgileri) ve Expo'dur (650 Industries, Inc.: uygulama güncellemeleri). Hiçbiri verini kendi amaçları için kullanmaz. Bir kitap, film ya da dizi veya şehir aradığında yazdığın sözcükler, yukarıda anlatıldığı gibi Open Library'ye, Trakt'a ya da Open-Meteo'ya gider; seninle ilgili başka hiçbir şey onlara gitmez. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
+     "I don't sell, rent or share your data with advertisers or data brokers. The only services that handle data for me are Google Firebase (Google LLC: sign-in and backup storage), Sentry (Functional Software, Inc.: crash and performance diagnostics) and Expo (650 Industries, Inc.: app updates). None of them uses your data for its own purposes. When you search for a book, a film or show, or a city, the words you typed go to Open Library, Trakt or Open-Meteo; a short Maps link you paste is opened once at Google or Apple; a city's name goes to Wikipedia for its picture; and a trip's rough location goes to Open-Meteo for its forecast, all as described above. Nothing else of yours goes to them. Apple and Google, as the app stores, may collect information about downloads and purchases under their own privacy policies. If you share a profile, its content is also visible to the person you invited (or who invited you), as described under \"Shared profiles\".",
+     "Verini reklamcılara ya da veri simsarlarına satmam, kiralamam ya da paylaşmam. Benim adıma veri işleyen hizmetler yalnızca Google Firebase (Google LLC: giriş ve yedek depolama), Sentry (Functional Software, Inc.: hata ve performans bilgileri) ve Expo'dur (650 Industries, Inc.: uygulama güncellemeleri). Hiçbiri verini kendi amaçları için kullanmaz. Bir kitap, film ya da dizi veya şehir aradığında yazdığın sözcükler Open Library'ye, Trakt'a ya da Open-Meteo'ya gider; yapıştırdığın kısa bir harita bağlantısı Google'da ya da Apple'da bir kez açılır; bir şehrin adı resmi için Wikipedia'ya gider; bir gezinin kabaca konumu da hava tahmini için Open-Meteo'ya gider; hepsi yukarıda anlatıldığı gibi. Seninle ilgili başka hiçbir şey onlara gitmez. Uygulama mağazaları olarak Apple ve Google, indirmelerle ilgili bilgileri kendi gizlilik politikalarına göre toplayabilir. Bir profili paylaşırsan, içeriği \"Ortak profiller\" bölümünde anlatıldığı gibi davet ettiğin (ya da seni davet eden) kişiye de görünür."
     ],
     [
      "h2",
@@ -890,8 +928,8 @@
     ],
     [
      "updated",
-     "Last updated: November 2, 2026",
-     "Son güncelleme: 2 Kasım 2026"
+     "Last updated: November 10, 2026",
+     "Son güncelleme: 10 Kasım 2026"
     ],
     [
      "p",
@@ -945,8 +983,8 @@
     ],
     [
      "p",
-     "Your account (email and password sign-in) and everything in Cloud Backup (branches, habits, due dates, amounts, notes, lists, reminders, calendar items, time clock entries and hourly rates, the money you logged and planned in Budget and No-spend days (spending, income, savings, subscriptions, goals and debts), your flashcard decks and study history, your journal and weekly diary, the people you added, the encrypted copy of your cycle data, and your encryption keys) are permanently deleted from the servers, including backups in older formats. Vyne also offers to delete the cycle data on your phone. Google removes deleted data from its own internal backups on its own schedule. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
-     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, takvim öğeleri, mesai saati kayıtları ve saatlik ücretler, Bütçe ve Harcamasız günlerde kaydettiğin ve planladığın para kayıtları (harcama, gelir, birikim, abonelikler, hedefler ve borçlar), kart destelerin ve çalışma geçmişin, günlüğün ve haftalık defterin, eklediğin kişiler, döngü verilerinin şifreli kopyası ve şifreleme anahtarların) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Vyne telefonundaki döngü verilerini de silmeyi önerir. Google silinen veriyi kendi iç yedeklerinden kendi takvimine göre kaldırır. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
+     "Your account (email and password sign-in) and everything in Cloud Backup (branches, habits, due dates, amounts, notes, lists, reminders, calendar items, time clock entries and hourly rates, the money you logged and planned in Budget and No-spend days (spending, income, savings, subscriptions, goals and debts), your flashcard decks and study history, your Food diary (days, your own foods and saved meals), the things you look after in Upkeep and your pets with their care routines and logs, your places, visits and trips, your courses and study sessions, the films and TV shows you log, your journal and weekly diary, the people you added, the encrypted copy of your cycle data, and your encryption keys) are permanently deleted from the servers, including backups in older formats. Vyne also offers to delete the cycle data on your phone. Google removes deleted data from its own internal backups on its own schedule. You are also taken out of every shared profile, and a shared profile that only you were in is deleted with all its content. This can't be undone.",
+     "Hesabın (e-posta ve şifreyle giriş) ve Bulut Yedekleme'deki her şey (dallar, alışkanlıklar, tarihli işler, tutarlar, notlar, listeler, hatırlatıcılar, takvim öğeleri, mesai saati kayıtları ve saatlik ücretler, Bütçe ve Harcamasız günlerde kaydettiğin ve planladığın para kayıtları (harcama, gelir, birikim, abonelikler, hedefler ve borçlar), kart destelerin ve çalışma geçmişin, Yemek günlüğün (günler, kendi yiyeceklerin ve kaydettiğin öğünler), Bakım'da takip ettiğin şeyler ve bakım rutinleri ve kayıtlarıyla evcil hayvanların, yerlerin, ziyaretlerin ve gezilerin, kursların ve çalışma oturumların, kaydettiğin filmler ve diziler, günlüğün ve haftalık defterin, eklediğin kişiler, döngü verilerinin şifreli kopyası ve şifreleme anahtarların) eski biçimdeki yedekler dahil sunuculardan kalıcı olarak silinir. Vyne telefonundaki döngü verilerini de silmeyi önerir. Google silinen veriyi kendi iç yedeklerinden kendi takvimine göre kaldırır. Ayrıca bütün ortak profillerden çıkarılırsın; sadece senin olduğun bir ortak profil bütün içeriğiyle silinir. Geri alınamaz."
     ],
     [
      "h2",
@@ -967,8 +1005,8 @@
     ],
     [
      "p",
-     "No copy of your own backup is kept after deletion. What stays on the servers is what you added to a shared profile that another member still uses, without your name or account ID. Data on your phone isn't touched by deleting your cloud account, except the cycle data Vyne offers to delete: it stays there until you delete it in the app or uninstall Vyne. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
-     "Silmeden sonra kendi yedeğinin hiçbir kopyası kalmaz. Sunucularda kalan tek şey, başka bir üyenin hâlâ kullandığı bir ortak profile eklediklerindir; adın ve hesap kimliğin olmadan. Bulut hesabını silmek telefonundaki veriye dokunmaz (Vyne'ın silmeyi önerdiği döngü verileri hariç): uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
+     "No copy of your own backup is kept after deletion. What stays on the servers is what you added to a shared profile that another member still uses, without your name or account ID. Data on your phone isn't touched by deleting your cloud account, except the cycle data Vyne offers to delete: it stays there until you delete it in the app or uninstall Vyne. Some things are kept only on your phone and never reach the cloud: photos you add to place visits, the exact spots from Maps links, and settings that belong to that phone. Deleting your account does not touch them; deleting a profile in Vyne removes its place photos and exact spots from the phone, and uninstalling Vyne removes all of them. Crash reports in Sentry aren't linked to your account and are deleted automatically after a limited time.",
+     "Silmeden sonra kendi yedeğinin hiçbir kopyası kalmaz. Sunucularda kalan tek şey, başka bir üyenin hâlâ kullandığı bir ortak profile eklediklerindir; adın ve hesap kimliğin olmadan. Bulut hesabını silmek telefonundaki veriye dokunmaz (Vyne'ın silmeyi önerdiği döngü verileri hariç): uygulamada silene ya da Vyne'ı kaldırana kadar orada kalır. Bazı şeyler yalnızca telefonunda tutulur ve buluta hiç gitmez: yer ziyaretlerine eklediğin fotoğraflar, harita bağlantılarındaki tam noktalar ve o telefona ait ayarlar. Hesabını silmek onlara dokunmaz; Vyne'da bir profili silmek o profilin yer fotoğraflarını ve tam noktalarını telefondan kaldırır, Vyne'ı kaldırmak da hepsini kaldırır. Sentry'deki hata raporları hesabına bağlı değildir ve sınırlı bir süre sonra kendiliğinden silinir."
     ],
     [
      "contact",

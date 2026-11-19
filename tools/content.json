@@ -233,6 +233,17 @@
      "Open Food Facts gizlilik politikası"
     ],
     [
+     "p",
+     "When Open Food Facts has no match for a barcode, Vyne asks USDA FoodData Central, the free food database of the U.S. Department of Agriculture, next (api.nal.usda.gov, through api.data.gov, over HTTPS). That request carries only the barcode number, fixed search settings and Vyne's own access key, plus your phone's IP address and the standard headers, the same as above. Nothing else goes. A product you save from a barcode keeps that barcode on your phone, so the next scan of it finds your saved values without asking any database.",
+     "Open Food Facts bir barkod için sonuç bulamazsa Vyne sırada ABD Tarım Bakanlığı'nın ücretsiz gıda veritabanı USDA FoodData Central'a sorar (api.nal.usda.gov, api.data.gov üzerinden, HTTPS ile). Bu istek yalnızca barkod numarasını, sabit arama ayarlarını ve Vyne'ın kendi erişim anahtarını, ayrıca yukarıdaki gibi telefonunun IP adresini ve standart başlıkları taşır. Başka hiçbir şey gitmez. Barkoddan kaydettiğin bir ürün o barkodu telefonunda saklar; aynı ürünü bir dahaki taramanda hiçbir veritabanına sormadan kaydettiğin değerler gelir."
+    ],
+    [
+     "link",
+     "https://www.usda.gov/privacy-policy",
+     "USDA privacy policy",
+     "USDA gizlilik politikası"
+    ],
+    [
      "h2",
      "Movie and TV search (Trakt)",
      "Film ve dizi arama (Trakt)",
